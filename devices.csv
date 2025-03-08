@@ -1,0 +1,701 @@
+SerialNumber,IPAddress,DeviceFamily,User,Password,InletConnect,SSHConnect,InletServerIP,InletServerPort,Model,Location
+EOND-000000,192.168.0.1,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Guaraciaba do Norte_site|Guaraciaba do Norte_site_building 1|Guaraciaba do Norte_site_building 1_floor 1
+EOND-000001,192.168.0.2,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Khathjari_site|Khathjari_site_building 1|Khathjari_site_building 1_floor 1
+EOND-000002,192.168.0.3,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,New Braunfels_site|New Braunfels_site_building 1|New Braunfels_site_building 1_floor 1
+EOND-000003,192.168.0.4,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Kuna_site|Kuna_site_building 1|Kuna_site_building 1_floor 1
+EOND-000004,192.168.0.5,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Eupen_site|Eupen_site_building 1|Eupen_site_building 1_floor 1
+EOND-000005,192.168.0.6,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Encantado_site|Encantado_site_building 1|Encantado_site_building 1_floor 1
+EOND-000006,192.168.0.7,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Heule_site|Heule_site_building 1|Heule_site_building 1_floor 1
+EOND-000007,192.168.0.8,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Puerto Maldonado_site|Puerto Maldonado_site_building 1|Puerto Maldonado_site_building 1_floor 1
+EOND-000008,192.168.0.9,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Guiseley_site|Guiseley_site_building 1|Guiseley_site_building 1_floor 1
+EOND-000009,192.168.0.10,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Ōsakasayama_site|Ōsakasayama_site_building 1|Ōsakasayama_site_building 1_floor 1
+EOND-000010,192.168.0.11,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Minatitlán_site|Minatitlán_site_building 1|Minatitlán_site_building 1_floor 1
+EOND-000011,192.168.0.12,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Usumatlán_site|Usumatlán_site_building 1|Usumatlán_site_building 1_floor 1
+EOND-000012,192.168.0.13,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Houmt Souk_site|Houmt Souk_site_building 1|Houmt Souk_site_building 1_floor 1
+EOND-000013,192.168.0.14,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Canterbury_site|Canterbury_site_building 1|Canterbury_site_building 1_floor 1
+EOND-000014,192.168.0.15,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Hōyachō_site|Hōyachō_site_building 1|Hōyachō_site_building 1_floor 1
+EOND-000015,192.168.0.16,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Patuakhāli_site|Patuakhāli_site_building 1|Patuakhāli_site_building 1_floor 1
+EOND-000016,192.168.0.17,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Garhshankar_site|Garhshankar_site_building 1|Garhshankar_site_building 1_floor 1
+EOND-000017,192.168.0.18,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Karūr_site|Karūr_site_building 1|Karūr_site_building 1_floor 1
+EOND-000018,192.168.0.19,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Bhawānipatna_site|Bhawānipatna_site_building 1|Bhawānipatna_site_building 1_floor 1
+EOND-000019,192.168.0.20,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Ricaurte_site|Ricaurte_site_building 1|Ricaurte_site_building 1_floor 1
+EOND-000020,192.168.0.21,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Przasnysz_site|Przasnysz_site_building 1|Przasnysz_site_building 1_floor 1
+EOND-000021,192.168.0.22,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Toronto_site|Toronto_site_building 1|Toronto_site_building 1_floor 1
+EOND-000022,192.168.0.23,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Hempfield_site|Hempfield_site_building 1|Hempfield_site_building 1_floor 1
+EOND-000023,192.168.0.24,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,San Vicente_site|San Vicente_site_building 1|San Vicente_site_building 1_floor 1
+EOND-000024,192.168.0.25,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Alcarraz_site|Alcarraz_site_building 1|Alcarraz_site_building 1_floor 1
+EOND-000025,192.168.0.26,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Samdrup Jongkhar_site|Samdrup Jongkhar_site_building 1|Samdrup Jongkhar_site_building 1_floor 1
+EOND-000026,192.168.0.27,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Shuinancun_site|Shuinancun_site_building 1|Shuinancun_site_building 1_floor 1
+EOND-000027,192.168.0.28,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Shuichecun_site|Shuichecun_site_building 1|Shuichecun_site_building 1_floor 1
+EOND-000028,192.168.0.29,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Plaza Huincul_site|Plaza Huincul_site_building 1|Plaza Huincul_site_building 1_floor 1
+EOND-000029,192.168.0.30,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Khamānon Kalān_site|Khamānon Kalān_site_building 1|Khamānon Kalān_site_building 1_floor 1
+EOND-000030,192.168.0.31,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Berri_site|Berri_site_building 1|Berri_site_building 1_floor 1
+EOND-000031,192.168.0.32,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Eureka_site|Eureka_site_building 1|Eureka_site_building 1_floor 1
+EOND-000032,192.168.0.33,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Santo Antônio_site|Santo Antônio_site_building 1|Santo Antônio_site_building 1_floor 1
+EOND-000033,192.168.0.34,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Saidoke_site|Saidoke_site_building 1|Saidoke_site_building 1_floor 1
+EOND-000034,192.168.0.35,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Zhaodong_site|Zhaodong_site_building 1|Zhaodong_site_building 1_floor 1
+EOND-000035,192.168.0.36,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Dumarao_site|Dumarao_site_building 1|Dumarao_site_building 1_floor 1
+EOND-000036,192.168.0.37,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Deruta_site|Deruta_site_building 1|Deruta_site_building 1_floor 1
+EOND-000037,192.168.0.38,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Rava-Rus’ka_site|Rava-Rus’ka_site_building 1|Rava-Rus’ka_site_building 1_floor 1
+EOND-000038,192.168.0.39,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Mahela_site|Mahela_site_building 1|Mahela_site_building 1_floor 1
+EOND-000039,192.168.0.40,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Shelbyville_site|Shelbyville_site_building 1|Shelbyville_site_building 1_floor 1
+EOND-000040,192.168.0.41,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Alajuela_site|Alajuela_site_building 1|Alajuela_site_building 1_floor 1
+EOND-000041,192.168.0.42,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Nakano_site|Nakano_site_building 1|Nakano_site_building 1_floor 1
+EOND-000042,192.168.0.43,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Goldbach_site|Goldbach_site_building 1|Goldbach_site_building 1_floor 1
+EOND-000043,192.168.0.44,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Khimlāsa_site|Khimlāsa_site_building 1|Khimlāsa_site_building 1_floor 1
+EOND-000044,192.168.0.45,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Porcia_site|Porcia_site_building 1|Porcia_site_building 1_floor 1
+EOND-000045,192.168.0.46,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Leutkirch im Allgäu_site|Leutkirch im Allgäu_site_building 1|Leutkirch im Allgäu_site_building 1_floor 1
+EOND-000046,192.168.0.47,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Fanyang_site|Fanyang_site_building 1|Fanyang_site_building 1_floor 1
+EOND-000047,192.168.0.48,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Minamikarasuyama_site|Minamikarasuyama_site_building 1|Minamikarasuyama_site_building 1_floor 1
+EOND-000048,192.168.0.49,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Bayeux_site|Bayeux_site_building 1|Bayeux_site_building 1_floor 1
+EOND-000049,192.168.0.50,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,El Tránsito_site|El Tránsito_site_building 1|El Tránsito_site_building 1_floor 1
+EOND-000050,192.168.0.51,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Gateway_site|Gateway_site_building 1|Gateway_site_building 1_floor 1
+EOND-000051,192.168.0.52,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Sankt Augustin_site|Sankt Augustin_site_building 1|Sankt Augustin_site_building 1_floor 1
+EOND-000052,192.168.0.53,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Lakeshore_site|Lakeshore_site_building 1|Lakeshore_site_building 1_floor 1
+EOND-000053,192.168.0.54,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Morubāgalu_site|Morubāgalu_site_building 1|Morubāgalu_site_building 1_floor 1
+EOND-000054,192.168.0.55,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Abington_site|Abington_site_building 1|Abington_site_building 1_floor 1
+EOND-000055,192.168.0.56,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Solonópole_site|Solonópole_site_building 1|Solonópole_site_building 1_floor 1
+EOND-000056,192.168.0.57,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Għargħur_site|Għargħur_site_building 1|Għargħur_site_building 1_floor 1
+EOND-000057,192.168.0.58,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Moravče_site|Moravče_site_building 1|Moravče_site_building 1_floor 1
+EOND-000058,192.168.0.59,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Somain_site|Somain_site_building 1|Somain_site_building 1_floor 1
+EOND-000059,192.168.0.60,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Tiptūr_site|Tiptūr_site_building 1|Tiptūr_site_building 1_floor 1
+EOND-000060,192.168.0.61,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Monett_site|Monett_site_building 1|Monett_site_building 1_floor 1
+EOND-000061,192.168.0.62,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Kankanālapalle_site|Kankanālapalle_site_building 1|Kankanālapalle_site_building 1_floor 1
+EOND-000062,192.168.0.63,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Przeworsk_site|Przeworsk_site_building 1|Przeworsk_site_building 1_floor 1
+EOND-000063,192.168.0.64,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Bad Frankenhausen_site|Bad Frankenhausen_site_building 1|Bad Frankenhausen_site_building 1_floor 1
+EOND-000064,192.168.0.65,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Cetraro_site|Cetraro_site_building 1|Cetraro_site_building 1_floor 1
+EOND-000065,192.168.0.66,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Mājra_site|Mājra_site_building 1|Mājra_site_building 1_floor 1
+EOND-000066,192.168.0.67,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,’Aïn Babouche_site|’Aïn Babouche_site_building 1|’Aïn Babouche_site_building 1_floor 1
+EOND-000067,192.168.0.68,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Decatur_site|Decatur_site_building 1|Decatur_site_building 1_floor 1
+EOND-000068,192.168.0.69,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Sunninghill_site|Sunninghill_site_building 1|Sunninghill_site_building 1_floor 1
+EOND-000069,192.168.0.70,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Colangute_site|Colangute_site_building 1|Colangute_site_building 1_floor 1
+EOND-000070,192.168.0.71,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Santa Luzia_site|Santa Luzia_site_building 1|Santa Luzia_site_building 1_floor 1
+EOND-000071,192.168.0.72,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Biro_site|Biro_site_building 1|Biro_site_building 1_floor 1
+EOND-000072,192.168.0.73,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Schiller Park_site|Schiller Park_site_building 1|Schiller Park_site_building 1_floor 1
+EOND-000073,192.168.0.74,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Puerto Triunfo_site|Puerto Triunfo_site_building 1|Puerto Triunfo_site_building 1_floor 1
+EOND-000074,192.168.0.75,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Yihezhuang_site|Yihezhuang_site_building 1|Yihezhuang_site_building 1_floor 1
+EOND-000075,192.168.0.76,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Dumbarton_site|Dumbarton_site_building 1|Dumbarton_site_building 1_floor 1
+EOND-000076,192.168.0.77,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Irmo_site|Irmo_site_building 1|Irmo_site_building 1_floor 1
+EOND-000077,192.168.0.78,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Semra_site|Semra_site_building 1|Semra_site_building 1_floor 1
+EOND-000078,192.168.0.79,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Dzitbalché_site|Dzitbalché_site_building 1|Dzitbalché_site_building 1_floor 1
+EOND-000079,192.168.0.80,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Iheddadene_site|Iheddadene_site_building 1|Iheddadene_site_building 1_floor 1
+EOND-000080,192.168.0.81,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Lac-Brome_site|Lac-Brome_site_building 1|Lac-Brome_site_building 1_floor 1
+EOND-000081,192.168.0.82,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Cangandala_site|Cangandala_site_building 1|Cangandala_site_building 1_floor 1
+EOND-000082,192.168.0.83,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Paducah_site|Paducah_site_building 1|Paducah_site_building 1_floor 1
+EOND-000083,192.168.0.84,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Säter_site|Säter_site_building 1|Säter_site_building 1_floor 1
+EOND-000084,192.168.0.85,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Shanshan_site|Shanshan_site_building 1|Shanshan_site_building 1_floor 1
+EOND-000085,192.168.0.86,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Cardoso_site|Cardoso_site_building 1|Cardoso_site_building 1_floor 1
+EOND-000086,192.168.0.87,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Manne Ekeli_site|Manne Ekeli_site_building 1|Manne Ekeli_site_building 1_floor 1
+EOND-000087,192.168.0.88,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Hong Kong_site|Hong Kong_site_building 1|Hong Kong_site_building 1_floor 1
+EOND-000088,192.168.0.89,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Fern Down_site|Fern Down_site_building 1|Fern Down_site_building 1_floor 1
+EOND-000089,192.168.0.90,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Carmo_site|Carmo_site_building 1|Carmo_site_building 1_floor 1
+EOND-000090,192.168.0.91,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Uch-Korgon_site|Uch-Korgon_site_building 1|Uch-Korgon_site_building 1_floor 1
+EOND-000091,192.168.0.92,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Babahoyo_site|Babahoyo_site_building 1|Babahoyo_site_building 1_floor 1
+EOND-000092,192.168.0.93,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Jettihalli_site|Jettihalli_site_building 1|Jettihalli_site_building 1_floor 1
+EOND-000093,192.168.0.94,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Norala_site|Norala_site_building 1|Norala_site_building 1_floor 1
+EOND-000094,192.168.0.95,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Lohāgāra_site|Lohāgāra_site_building 1|Lohāgāra_site_building 1_floor 1
+EOND-000095,192.168.0.96,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Duartina_site|Duartina_site_building 1|Duartina_site_building 1_floor 1
+EOND-000096,192.168.0.97,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Saint-Dié-des-Vosges_site|Saint-Dié-des-Vosges_site_building 1|Saint-Dié-des-Vosges_site_building 1_floor 1
+EOND-000097,192.168.0.98,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Dinga_site|Dinga_site_building 1|Dinga_site_building 1_floor 1
+EOND-000098,192.168.0.99,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Costa de Caparica_site|Costa de Caparica_site_building 1|Costa de Caparica_site_building 1_floor 1
+EOND-000099,192.168.0.100,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Santa Lucia La Reforma_site|Santa Lucia La Reforma_site_building 1|Santa Lucia La Reforma_site_building 1_floor 1
+EOND-000100,192.168.0.101,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Douentza_site|Douentza_site_building 1|Douentza_site_building 1_floor 1
+EOND-000101,192.168.0.102,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Motiong_site|Motiong_site_building 1|Motiong_site_building 1_floor 1
+EOND-000102,192.168.0.103,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Tzucacab_site|Tzucacab_site_building 1|Tzucacab_site_building 1_floor 1
+EOND-000103,192.168.0.104,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Gonzalez_site|Gonzalez_site_building 1|Gonzalez_site_building 1_floor 1
+EOND-000104,192.168.0.105,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Sisai_site|Sisai_site_building 1|Sisai_site_building 1_floor 1
+EOND-000105,192.168.0.106,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Navelim_site|Navelim_site_building 1|Navelim_site_building 1_floor 1
+EOND-000106,192.168.0.107,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Sherwood_site|Sherwood_site_building 1|Sherwood_site_building 1_floor 1
+EOND-000107,192.168.0.108,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Los Hidalgos_site|Los Hidalgos_site_building 1|Los Hidalgos_site_building 1_floor 1
+EOND-000108,192.168.0.109,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Qualiano_site|Qualiano_site_building 1|Qualiano_site_building 1_floor 1
+EOND-000109,192.168.0.110,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Shar_site|Shar_site_building 1|Shar_site_building 1_floor 1
+EOND-000110,192.168.0.111,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Sabnima_site|Sabnima_site_building 1|Sabnima_site_building 1_floor 1
+EOND-000111,192.168.0.112,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Qo‘rg‘ontepa_site|Qo‘rg‘ontepa_site_building 1|Qo‘rg‘ontepa_site_building 1_floor 1
+EOND-000112,192.168.0.113,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Balsas_site|Balsas_site_building 1|Balsas_site_building 1_floor 1
+EOND-000113,192.168.0.114,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Linganaboyinacherla_site|Linganaboyinacherla_site_building 1|Linganaboyinacherla_site_building 1_floor 1
+EOND-000114,192.168.0.115,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Riverview_site|Riverview_site_building 1|Riverview_site_building 1_floor 1
+EOND-000115,192.168.0.116,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Front Royal_site|Front Royal_site_building 1|Front Royal_site_building 1_floor 1
+EOND-000116,192.168.0.117,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Puerto Galera_site|Puerto Galera_site_building 1|Puerto Galera_site_building 1_floor 1
+EOND-000117,192.168.0.118,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Pimpalgaon Rājā_site|Pimpalgaon Rājā_site_building 1|Pimpalgaon Rājā_site_building 1_floor 1
+EOND-000118,192.168.0.119,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Al Midhnab_site|Al Midhnab_site_building 1|Al Midhnab_site_building 1_floor 1
+EOND-000119,192.168.0.120,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Bariyārpur_site|Bariyārpur_site_building 1|Bariyārpur_site_building 1_floor 1
+EOND-000120,192.168.0.121,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Racconigi_site|Racconigi_site_building 1|Racconigi_site_building 1_floor 1
+EOND-000121,192.168.0.122,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Welver_site|Welver_site_building 1|Welver_site_building 1_floor 1
+EOND-000122,192.168.0.123,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Günzburg_site|Günzburg_site_building 1|Günzburg_site_building 1_floor 1
+EOND-000123,192.168.0.124,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Nayāgaon_site|Nayāgaon_site_building 1|Nayāgaon_site_building 1_floor 1
+EOND-000124,192.168.0.125,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Guararapes_site|Guararapes_site_building 1|Guararapes_site_building 1_floor 1
+EOND-000125,192.168.0.126,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Sai Wan Ho_site|Sai Wan Ho_site_building 1|Sai Wan Ho_site_building 1_floor 1
+EOND-000126,192.168.0.127,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Westchester_site|Westchester_site_building 1|Westchester_site_building 1_floor 1
+EOND-000127,192.168.0.128,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Alagoinha_site|Alagoinha_site_building 1|Alagoinha_site_building 1_floor 1
+EOND-000128,192.168.0.129,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Camoapa_site|Camoapa_site_building 1|Camoapa_site_building 1_floor 1
+EOND-000129,192.168.0.130,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Nicoya_site|Nicoya_site_building 1|Nicoya_site_building 1_floor 1
+EOND-000130,192.168.0.131,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Khiria_site|Khiria_site_building 1|Khiria_site_building 1_floor 1
+EOND-000131,192.168.0.132,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Kaviti_site|Kaviti_site_building 1|Kaviti_site_building 1_floor 1
+EOND-000132,192.168.0.133,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Adjahomé_site|Adjahomé_site_building 1|Adjahomé_site_building 1_floor 1
+EOND-000133,192.168.0.134,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Samacá_site|Samacá_site_building 1|Samacá_site_building 1_floor 1
+EOND-000134,192.168.0.135,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Piratininga_site|Piratininga_site_building 1|Piratininga_site_building 1_floor 1
+EOND-000135,192.168.0.136,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Stillorgan_site|Stillorgan_site_building 1|Stillorgan_site_building 1_floor 1
+EOND-000136,192.168.0.137,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Americana_site|Americana_site_building 1|Americana_site_building 1_floor 1
+EOND-000137,192.168.0.138,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Loxstedt_site|Loxstedt_site_building 1|Loxstedt_site_building 1_floor 1
+EOND-000138,192.168.0.139,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,San Vito_site|San Vito_site_building 1|San Vito_site_building 1_floor 1
+EOND-000139,192.168.0.140,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Lala Musa_site|Lala Musa_site_building 1|Lala Musa_site_building 1_floor 1
+EOND-000140,192.168.0.141,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Vienna_site|Vienna_site_building 1|Vienna_site_building 1_floor 1
+EOND-000141,192.168.0.142,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Brieselang_site|Brieselang_site_building 1|Brieselang_site_building 1_floor 1
+EOND-000142,192.168.0.143,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Roncador_site|Roncador_site_building 1|Roncador_site_building 1_floor 1
+EOND-000143,192.168.0.144,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Oullins_site|Oullins_site_building 1|Oullins_site_building 1_floor 1
+EOND-000144,192.168.0.145,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Tāramangalam_site|Tāramangalam_site_building 1|Tāramangalam_site_building 1_floor 1
+EOND-000145,192.168.0.146,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Catacamas_site|Catacamas_site_building 1|Catacamas_site_building 1_floor 1
+EOND-000146,192.168.0.147,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Kasba Tanora_site|Kasba Tanora_site_building 1|Kasba Tanora_site_building 1_floor 1
+EOND-000147,192.168.0.148,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Covina_site|Covina_site_building 1|Covina_site_building 1_floor 1
+EOND-000148,192.168.0.149,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Castel Maggiore_site|Castel Maggiore_site_building 1|Castel Maggiore_site_building 1_floor 1
+EOND-000149,192.168.0.150,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Tlagasana_site|Tlagasana_site_building 1|Tlagasana_site_building 1_floor 1
+EOND-000150,192.168.0.151,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Norfolk_site|Norfolk_site_building 1|Norfolk_site_building 1_floor 1
+EOND-000151,192.168.0.152,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Salémata_site|Salémata_site_building 1|Salémata_site_building 1_floor 1
+EOND-000152,192.168.0.153,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Nagaizumi_site|Nagaizumi_site_building 1|Nagaizumi_site_building 1_floor 1
+EOND-000153,192.168.0.154,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Devirammanahalli_site|Devirammanahalli_site_building 1|Devirammanahalli_site_building 1_floor 1
+EOND-000154,192.168.0.155,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Podgórze_site|Podgórze_site_building 1|Podgórze_site_building 1_floor 1
+EOND-000155,192.168.0.156,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,South Ockendon_site|South Ockendon_site_building 1|South Ockendon_site_building 1_floor 1
+EOND-000156,192.168.0.157,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Pulpí_site|Pulpí_site_building 1|Pulpí_site_building 1_floor 1
+EOND-000157,192.168.0.158,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Ban Bo Luang_site|Ban Bo Luang_site_building 1|Ban Bo Luang_site_building 1_floor 1
+EOND-000158,192.168.0.159,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Angat_site|Angat_site_building 1|Angat_site_building 1_floor 1
+EOND-000159,192.168.0.160,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Patāmundai_site|Patāmundai_site_building 1|Patāmundai_site_building 1_floor 1
+EOND-000160,192.168.0.161,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Tarmount_site|Tarmount_site_building 1|Tarmount_site_building 1_floor 1
+EOND-000161,192.168.0.162,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Mbini_site|Mbini_site_building 1|Mbini_site_building 1_floor 1
+EOND-000162,192.168.0.163,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Pontinia_site|Pontinia_site_building 1|Pontinia_site_building 1_floor 1
+EOND-000163,192.168.0.164,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Guimba_site|Guimba_site_building 1|Guimba_site_building 1_floor 1
+EOND-000164,192.168.0.165,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Hampton_site|Hampton_site_building 1|Hampton_site_building 1_floor 1
+EOND-000165,192.168.0.166,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Manduria_site|Manduria_site_building 1|Manduria_site_building 1_floor 1
+EOND-000166,192.168.0.167,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Greenbelt_site|Greenbelt_site_building 1|Greenbelt_site_building 1_floor 1
+EOND-000167,192.168.0.168,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Kant_site|Kant_site_building 1|Kant_site_building 1_floor 1
+EOND-000168,192.168.0.169,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,San Juan del Rio del Centauro del Norte_site|San Juan del Rio del Centauro del Norte_site_building 1|San Juan del Rio del Centauro del Norte_site_building 1_floor 1
+EOND-000169,192.168.0.170,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Mitanty_site|Mitanty_site_building 1|Mitanty_site_building 1_floor 1
+EOND-000170,192.168.0.171,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Cipanas_site|Cipanas_site_building 1|Cipanas_site_building 1_floor 1
+EOND-000171,192.168.0.172,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Capanema_site|Capanema_site_building 1|Capanema_site_building 1_floor 1
+EOND-000172,192.168.0.173,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Samrāla_site|Samrāla_site_building 1|Samrāla_site_building 1_floor 1
+EOND-000173,192.168.0.174,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Gutalac_site|Gutalac_site_building 1|Gutalac_site_building 1_floor 1
+EOND-000174,192.168.0.175,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Tokmak_site|Tokmak_site_building 1|Tokmak_site_building 1_floor 1
+EOND-000175,192.168.0.176,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Monteforte Irpino_site|Monteforte Irpino_site_building 1|Monteforte Irpino_site_building 1_floor 1
+EOND-000176,192.168.0.177,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Pelsall_site|Pelsall_site_building 1|Pelsall_site_building 1_floor 1
+EOND-000177,192.168.0.178,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Sylvania_site|Sylvania_site_building 1|Sylvania_site_building 1_floor 1
+EOND-000178,192.168.0.179,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Stowmarket_site|Stowmarket_site_building 1|Stowmarket_site_building 1_floor 1
+EOND-000179,192.168.0.180,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Mokolo_site|Mokolo_site_building 1|Mokolo_site_building 1_floor 1
+EOND-000180,192.168.0.181,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Guinguinéo_site|Guinguinéo_site_building 1|Guinguinéo_site_building 1_floor 1
+EOND-000181,192.168.0.182,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Tijuana_site|Tijuana_site_building 1|Tijuana_site_building 1_floor 1
+EOND-000182,192.168.0.183,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Balzers_site|Balzers_site_building 1|Balzers_site_building 1_floor 1
+EOND-000183,192.168.0.184,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Baleno_site|Baleno_site_building 1|Baleno_site_building 1_floor 1
+EOND-000184,192.168.0.185,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Vilāttikulam_site|Vilāttikulam_site_building 1|Vilāttikulam_site_building 1_floor 1
+EOND-000185,192.168.0.186,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Agrínio_site|Agrínio_site_building 1|Agrínio_site_building 1_floor 1
+EOND-000186,192.168.0.187,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Luchong_site|Luchong_site_building 1|Luchong_site_building 1_floor 1
+EOND-000187,192.168.0.188,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Weymouth_site|Weymouth_site_building 1|Weymouth_site_building 1_floor 1
+EOND-000188,192.168.0.189,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Chavasshēri_site|Chavasshēri_site_building 1|Chavasshēri_site_building 1_floor 1
+EOND-000189,192.168.0.190,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Niéna_site|Niéna_site_building 1|Niéna_site_building 1_floor 1
+EOND-000190,192.168.0.191,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Ban Samo Khae_site|Ban Samo Khae_site_building 1|Ban Samo Khae_site_building 1_floor 1
+EOND-000191,192.168.0.192,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Durango_site|Durango_site_building 1|Durango_site_building 1_floor 1
+EOND-000192,192.168.0.193,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Marcianise_site|Marcianise_site_building 1|Marcianise_site_building 1_floor 1
+EOND-000193,192.168.0.194,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Buba_site|Buba_site_building 1|Buba_site_building 1_floor 1
+EOND-000194,192.168.0.195,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Castellanza_site|Castellanza_site_building 1|Castellanza_site_building 1_floor 1
+EOND-000195,192.168.0.196,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Turiaçu_site|Turiaçu_site_building 1|Turiaçu_site_building 1_floor 1
+EOND-000196,192.168.0.197,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Berea_site|Berea_site_building 1|Berea_site_building 1_floor 1
+EOND-000197,192.168.0.198,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Nieuw-Lekkerland_site|Nieuw-Lekkerland_site_building 1|Nieuw-Lekkerland_site_building 1_floor 1
+EOND-000198,192.168.0.199,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Abiko_site|Abiko_site_building 1|Abiko_site_building 1_floor 1
+EOND-000199,192.168.0.200,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Tāla_site|Tāla_site_building 1|Tāla_site_building 1_floor 1
+EOND-000200,192.168.0.201,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Nakao_site|Nakao_site_building 1|Nakao_site_building 1_floor 1
+EOND-000201,192.168.0.202,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Pelham_site|Pelham_site_building 1|Pelham_site_building 1_floor 1
+EOND-000202,192.168.0.203,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Bacuri_site|Bacuri_site_building 1|Bacuri_site_building 1_floor 1
+EOND-000203,192.168.0.204,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Brezno_site|Brezno_site_building 1|Brezno_site_building 1_floor 1
+EOND-000204,192.168.0.205,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Gennep_site|Gennep_site_building 1|Gennep_site_building 1_floor 1
+EOND-000205,192.168.0.206,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Ixtlahuacán del Río_site|Ixtlahuacán del Río_site_building 1|Ixtlahuacán del Río_site_building 1_floor 1
+EOND-000206,192.168.0.207,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Maracanã_site|Maracanã_site_building 1|Maracanã_site_building 1_floor 1
+EOND-000207,192.168.0.208,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Attili_site|Attili_site_building 1|Attili_site_building 1_floor 1
+EOND-000208,192.168.0.209,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Santa María del Tule_site|Santa María del Tule_site_building 1|Santa María del Tule_site_building 1_floor 1
+EOND-000209,192.168.0.210,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Barga_site|Barga_site_building 1|Barga_site_building 1_floor 1
+EOND-000210,192.168.0.211,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Cochrane_site|Cochrane_site_building 1|Cochrane_site_building 1_floor 1
+EOND-000211,192.168.0.212,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Vrindāvan_site|Vrindāvan_site_building 1|Vrindāvan_site_building 1_floor 1
+EOND-000212,192.168.0.213,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Higashiōmi_site|Higashiōmi_site_building 1|Higashiōmi_site_building 1_floor 1
+EOND-000213,192.168.0.214,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Ban Pong Yaeng Nai_site|Ban Pong Yaeng Nai_site_building 1|Ban Pong Yaeng Nai_site_building 1_floor 1
+EOND-000214,192.168.0.215,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Aḑ Ḑab‘ah_site|Aḑ Ḑab‘ah_site_building 1|Aḑ Ḑab‘ah_site_building 1_floor 1
+EOND-000215,192.168.0.216,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Planken_site|Planken_site_building 1|Planken_site_building 1_floor 1
+EOND-000216,192.168.0.217,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Mopipi_site|Mopipi_site_building 1|Mopipi_site_building 1_floor 1
+EOND-000217,192.168.0.218,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Grave_site|Grave_site_building 1|Grave_site_building 1_floor 1
+EOND-000218,192.168.0.219,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Pavullo nel Frignano_site|Pavullo nel Frignano_site_building 1|Pavullo nel Frignano_site_building 1_floor 1
+EOND-000219,192.168.0.220,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Wolfratshausen_site|Wolfratshausen_site_building 1|Wolfratshausen_site_building 1_floor 1
+EOND-000220,192.168.0.221,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Brownsweg_site|Brownsweg_site_building 1|Brownsweg_site_building 1_floor 1
+EOND-000221,192.168.0.222,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Fiume Veneto_site|Fiume Veneto_site_building 1|Fiume Veneto_site_building 1_floor 1
+EOND-000222,192.168.0.223,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Kotamobagu_site|Kotamobagu_site_building 1|Kotamobagu_site_building 1_floor 1
+EOND-000223,192.168.0.224,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Pikit_site|Pikit_site_building 1|Pikit_site_building 1_floor 1
+EOND-000224,192.168.0.225,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Ayr_site|Ayr_site_building 1|Ayr_site_building 1_floor 1
+EOND-000225,192.168.0.226,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Beccles_site|Beccles_site_building 1|Beccles_site_building 1_floor 1
+EOND-000226,192.168.0.227,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Tiburon_site|Tiburon_site_building 1|Tiburon_site_building 1_floor 1
+EOND-000227,192.168.0.228,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Thomassique_site|Thomassique_site_building 1|Thomassique_site_building 1_floor 1
+EOND-000228,192.168.0.229,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Quimbaya_site|Quimbaya_site_building 1|Quimbaya_site_building 1_floor 1
+EOND-000229,192.168.0.230,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Coroneo_site|Coroneo_site_building 1|Coroneo_site_building 1_floor 1
+EOND-000230,192.168.0.231,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,El Idrissia_site|El Idrissia_site_building 1|El Idrissia_site_building 1_floor 1
+EOND-000231,192.168.0.232,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Dongxishan_site|Dongxishan_site_building 1|Dongxishan_site_building 1_floor 1
+EOND-000232,192.168.0.233,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Yongping_site|Yongping_site_building 1|Yongping_site_building 1_floor 1
+EOND-000233,192.168.0.234,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Ksar_site|Ksar_site_building 1|Ksar_site_building 1_floor 1
+EOND-000234,192.168.0.235,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Hunucmá_site|Hunucmá_site_building 1|Hunucmá_site_building 1_floor 1
+EOND-000235,192.168.0.236,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Qaşr al Qarabūllī_site|Qaşr al Qarabūllī_site_building 1|Qaşr al Qarabūllī_site_building 1_floor 1
+EOND-000236,192.168.0.237,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Moka_site|Moka_site_building 1|Moka_site_building 1_floor 1
+EOND-000237,192.168.0.238,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,West Perth_site|West Perth_site_building 1|West Perth_site_building 1_floor 1
+EOND-000238,192.168.0.239,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Magny-le-Hongre_site|Magny-le-Hongre_site_building 1|Magny-le-Hongre_site_building 1_floor 1
+EOND-000239,192.168.0.240,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Kālna_site|Kālna_site_building 1|Kālna_site_building 1_floor 1
+EOND-000240,192.168.0.241,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Pindorama_site|Pindorama_site_building 1|Pindorama_site_building 1_floor 1
+EOND-000241,192.168.0.242,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Brookside_site|Brookside_site_building 1|Brookside_site_building 1_floor 1
+EOND-000242,192.168.0.243,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Yby Yaú_site|Yby Yaú_site_building 1|Yby Yaú_site_building 1_floor 1
+EOND-000243,192.168.0.244,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Teroual_site|Teroual_site_building 1|Teroual_site_building 1_floor 1
+EOND-000244,192.168.0.245,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Rio das Pedras_site|Rio das Pedras_site_building 1|Rio das Pedras_site_building 1_floor 1
+EOND-000245,192.168.0.246,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,San Isidro_site|San Isidro_site_building 1|San Isidro_site_building 1_floor 1
+EOND-000246,192.168.0.247,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Logansport_site|Logansport_site_building 1|Logansport_site_building 1_floor 1
+EOND-000247,192.168.0.248,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Cesson_site|Cesson_site_building 1|Cesson_site_building 1_floor 1
+EOND-000248,192.168.0.249,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,As Sallūm_site|As Sallūm_site_building 1|As Sallūm_site_building 1_floor 1
+EOND-000249,192.168.0.250,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Ararica_site|Ararica_site_building 1|Ararica_site_building 1_floor 1
+EOND-000250,192.168.0.251,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Owen Sound_site|Owen Sound_site_building 1|Owen Sound_site_building 1_floor 1
+EOND-000251,192.168.0.252,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Lengede_site|Lengede_site_building 1|Lengede_site_building 1_floor 1
+EOND-000252,192.168.0.253,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Jönköping_site|Jönköping_site_building 1|Jönköping_site_building 1_floor 1
+EOND-000253,192.168.0.254,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Francisco Beltrão_site|Francisco Beltrão_site_building 1|Francisco Beltrão_site_building 1_floor 1
+EOND-000254,192.168.0.1,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Freiburg im Breisgau_site|Freiburg im Breisgau_site_building 1|Freiburg im Breisgau_site_building 1_floor 1
+EOND-000255,192.168.0.2,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Desaguadero_site|Desaguadero_site_building 1|Desaguadero_site_building 1_floor 1
+EOND-000256,192.168.0.3,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Piripá_site|Piripá_site_building 1|Piripá_site_building 1_floor 1
+EOND-000257,192.168.0.4,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Sušice_site|Sušice_site_building 1|Sušice_site_building 1_floor 1
+EOND-000258,192.168.0.5,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Pueblo Viejo_site|Pueblo Viejo_site_building 1|Pueblo Viejo_site_building 1_floor 1
+EOND-000259,192.168.0.6,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Douera_site|Douera_site_building 1|Douera_site_building 1_floor 1
+EOND-000260,192.168.0.7,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,South Normanton_site|South Normanton_site_building 1|South Normanton_site_building 1_floor 1
+EOND-000261,192.168.0.8,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Punjai Puliyampatti_site|Punjai Puliyampatti_site_building 1|Punjai Puliyampatti_site_building 1_floor 1
+EOND-000262,192.168.0.9,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Jilotepec_site|Jilotepec_site_building 1|Jilotepec_site_building 1_floor 1
+EOND-000263,192.168.0.10,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Palayad_site|Palayad_site_building 1|Palayad_site_building 1_floor 1
+EOND-000264,192.168.0.11,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Halfway_site|Halfway_site_building 1|Halfway_site_building 1_floor 1
+EOND-000265,192.168.0.12,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Le Teil_site|Le Teil_site_building 1|Le Teil_site_building 1_floor 1
+EOND-000266,192.168.0.13,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Fushë-Krujë_site|Fushë-Krujë_site_building 1|Fushë-Krujë_site_building 1_floor 1
+EOND-000267,192.168.0.14,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Welzheim_site|Welzheim_site_building 1|Welzheim_site_building 1_floor 1
+EOND-000268,192.168.0.15,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Nova Londrina_site|Nova Londrina_site_building 1|Nova Londrina_site_building 1_floor 1
+EOND-000269,192.168.0.16,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Pontevedra_site|Pontevedra_site_building 1|Pontevedra_site_building 1_floor 1
+EOND-000270,192.168.0.17,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Saidpur_site|Saidpur_site_building 1|Saidpur_site_building 1_floor 1
+EOND-000271,192.168.0.18,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Hille_site|Hille_site_building 1|Hille_site_building 1_floor 1
+EOND-000272,192.168.0.19,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Kirkop_site|Kirkop_site_building 1|Kirkop_site_building 1_floor 1
+EOND-000273,192.168.0.20,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Yedappalli_site|Yedappalli_site_building 1|Yedappalli_site_building 1_floor 1
+EOND-000274,192.168.0.21,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Nārāyanpur_site|Nārāyanpur_site_building 1|Nārāyanpur_site_building 1_floor 1
+EOND-000275,192.168.0.22,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Antsampanimahazo_site|Antsampanimahazo_site_building 1|Antsampanimahazo_site_building 1_floor 1
+EOND-000276,192.168.0.23,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Santa Perpetua de Moguda_site|Santa Perpetua de Moguda_site_building 1|Santa Perpetua de Moguda_site_building 1_floor 1
+EOND-000277,192.168.0.24,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Pont-à-Celles_site|Pont-à-Celles_site_building 1|Pont-à-Celles_site_building 1_floor 1
+EOND-000278,192.168.0.25,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Kalinagar_site|Kalinagar_site_building 1|Kalinagar_site_building 1_floor 1
+EOND-000279,192.168.0.26,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Amalāpuram_site|Amalāpuram_site_building 1|Amalāpuram_site_building 1_floor 1
+EOND-000280,192.168.0.27,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Komárno_site|Komárno_site_building 1|Komárno_site_building 1_floor 1
+EOND-000281,192.168.0.28,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Santa Cruz do Monte Castelo_site|Santa Cruz do Monte Castelo_site_building 1|Santa Cruz do Monte Castelo_site_building 1_floor 1
+EOND-000282,192.168.0.29,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Tokmok_site|Tokmok_site_building 1|Tokmok_site_building 1_floor 1
+EOND-000283,192.168.0.30,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Kurman_site|Kurman_site_building 1|Kurman_site_building 1_floor 1
+EOND-000284,192.168.0.31,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Bad Hersfeld_site|Bad Hersfeld_site_building 1|Bad Hersfeld_site_building 1_floor 1
+EOND-000285,192.168.0.32,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Imdina_site|Imdina_site_building 1|Imdina_site_building 1_floor 1
+EOND-000286,192.168.0.33,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Mannamangalam_site|Mannamangalam_site_building 1|Mannamangalam_site_building 1_floor 1
+EOND-000287,192.168.0.34,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Selden_site|Selden_site_building 1|Selden_site_building 1_floor 1
+EOND-000288,192.168.0.35,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Hohoe_site|Hohoe_site_building 1|Hohoe_site_building 1_floor 1
+EOND-000289,192.168.0.36,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Tiorpāra_site|Tiorpāra_site_building 1|Tiorpāra_site_building 1_floor 1
+EOND-000290,192.168.0.37,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Saint-Avold_site|Saint-Avold_site_building 1|Saint-Avold_site_building 1_floor 1
+EOND-000291,192.168.0.38,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Ceará-Mirim_site|Ceará-Mirim_site_building 1|Ceará-Mirim_site_building 1_floor 1
+EOND-000292,192.168.0.39,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Zolotonosha_site|Zolotonosha_site_building 1|Zolotonosha_site_building 1_floor 1
+EOND-000293,192.168.0.40,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Vidauban_site|Vidauban_site_building 1|Vidauban_site_building 1_floor 1
+EOND-000294,192.168.0.41,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Solāpur_site|Solāpur_site_building 1|Solāpur_site_building 1_floor 1
+EOND-000295,192.168.0.42,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Akiruno_site|Akiruno_site_building 1|Akiruno_site_building 1_floor 1
+EOND-000296,192.168.0.43,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Rochdale_site|Rochdale_site_building 1|Rochdale_site_building 1_floor 1
+EOND-000297,192.168.0.44,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Togoch’alē_site|Togoch’alē_site_building 1|Togoch’alē_site_building 1_floor 1
+EOND-000298,192.168.0.45,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Langenberg_site|Langenberg_site_building 1|Langenberg_site_building 1_floor 1
+EOND-000299,192.168.0.46,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Malhada_site|Malhada_site_building 1|Malhada_site_building 1_floor 1
+EOND-000300,192.168.0.47,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Huétor Vega_site|Huétor Vega_site_building 1|Huétor Vega_site_building 1_floor 1
+EOND-000301,192.168.0.48,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Puxi_site|Puxi_site_building 1|Puxi_site_building 1_floor 1
+EOND-000302,192.168.0.49,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Tacheng_site|Tacheng_site_building 1|Tacheng_site_building 1_floor 1
+EOND-000303,192.168.0.50,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Medeiros Neto_site|Medeiros Neto_site_building 1|Medeiros Neto_site_building 1_floor 1
+EOND-000304,192.168.0.51,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Soreang_site|Soreang_site_building 1|Soreang_site_building 1_floor 1
+EOND-000305,192.168.0.52,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,San Antonio Ilotenango_site|San Antonio Ilotenango_site_building 1|San Antonio Ilotenango_site_building 1_floor 1
+EOND-000306,192.168.0.53,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Stockton_site|Stockton_site_building 1|Stockton_site_building 1_floor 1
+EOND-000307,192.168.0.54,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Bemarivo_site|Bemarivo_site_building 1|Bemarivo_site_building 1_floor 1
+EOND-000308,192.168.0.55,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Punta Gorda_site|Punta Gorda_site_building 1|Punta Gorda_site_building 1_floor 1
+EOND-000309,192.168.0.56,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Collier_site|Collier_site_building 1|Collier_site_building 1_floor 1
+EOND-000310,192.168.0.57,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Tapiales_site|Tapiales_site_building 1|Tapiales_site_building 1_floor 1
+EOND-000311,192.168.0.58,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Maroantsetra_site|Maroantsetra_site_building 1|Maroantsetra_site_building 1_floor 1
+EOND-000312,192.168.0.59,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Hilversum_site|Hilversum_site_building 1|Hilversum_site_building 1_floor 1
+EOND-000313,192.168.0.60,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Seguin_site|Seguin_site_building 1|Seguin_site_building 1_floor 1
+EOND-000314,192.168.0.61,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Dunakeszi_site|Dunakeszi_site_building 1|Dunakeszi_site_building 1_floor 1
+EOND-000315,192.168.0.62,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Bīrpur_site|Bīrpur_site_building 1|Bīrpur_site_building 1_floor 1
+EOND-000316,192.168.0.63,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Avigliana_site|Avigliana_site_building 1|Avigliana_site_building 1_floor 1
+EOND-000317,192.168.0.64,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Bakwa_site|Bakwa_site_building 1|Bakwa_site_building 1_floor 1
+EOND-000318,192.168.0.65,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Brisbane_site|Brisbane_site_building 1|Brisbane_site_building 1_floor 1
+EOND-000319,192.168.0.66,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Wen’anyi_site|Wen’anyi_site_building 1|Wen’anyi_site_building 1_floor 1
+EOND-000320,192.168.0.67,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Okegawa_site|Okegawa_site_building 1|Okegawa_site_building 1_floor 1
+EOND-000321,192.168.0.68,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Mayfield Heights_site|Mayfield Heights_site_building 1|Mayfield Heights_site_building 1_floor 1
+EOND-000322,192.168.0.69,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Adjumani_site|Adjumani_site_building 1|Adjumani_site_building 1_floor 1
+EOND-000323,192.168.0.70,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Phra Samut Chedi_site|Phra Samut Chedi_site_building 1|Phra Samut Chedi_site_building 1_floor 1
+EOND-000324,192.168.0.71,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Pāiker_site|Pāiker_site_building 1|Pāiker_site_building 1_floor 1
+EOND-000325,192.168.0.72,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Grândola_site|Grândola_site_building 1|Grândola_site_building 1_floor 1
+EOND-000326,192.168.0.73,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Fortuna_site|Fortuna_site_building 1|Fortuna_site_building 1_floor 1
+EOND-000327,192.168.0.74,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Yankou_site|Yankou_site_building 1|Yankou_site_building 1_floor 1
+EOND-000328,192.168.0.75,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Køge_site|Køge_site_building 1|Køge_site_building 1_floor 1
+EOND-000329,192.168.0.76,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Jaguaripe_site|Jaguaripe_site_building 1|Jaguaripe_site_building 1_floor 1
+EOND-000330,192.168.0.77,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Qarqan_site|Qarqan_site_building 1|Qarqan_site_building 1_floor 1
+EOND-000331,192.168.0.78,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Cujubim_site|Cujubim_site_building 1|Cujubim_site_building 1_floor 1
+EOND-000332,192.168.0.79,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Zafra_site|Zafra_site_building 1|Zafra_site_building 1_floor 1
+EOND-000333,192.168.0.80,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Maydolong_site|Maydolong_site_building 1|Maydolong_site_building 1_floor 1
+EOND-000334,192.168.0.81,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Karugamād_site|Karugamād_site_building 1|Karugamād_site_building 1_floor 1
+EOND-000335,192.168.0.82,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Kalayaan_site|Kalayaan_site_building 1|Kalayaan_site_building 1_floor 1
+EOND-000336,192.168.0.83,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Francisville_site|Francisville_site_building 1|Francisville_site_building 1_floor 1
+EOND-000337,192.168.0.84,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Pomigliano d’Arco_site|Pomigliano d’Arco_site_building 1|Pomigliano d’Arco_site_building 1_floor 1
+EOND-000338,192.168.0.85,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Bodmin_site|Bodmin_site_building 1|Bodmin_site_building 1_floor 1
+EOND-000339,192.168.0.86,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Bābura_site|Bābura_site_building 1|Bābura_site_building 1_floor 1
+EOND-000340,192.168.0.87,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Landsmeer_site|Landsmeer_site_building 1|Landsmeer_site_building 1_floor 1
+EOND-000341,192.168.0.88,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Hīrna_site|Hīrna_site_building 1|Hīrna_site_building 1_floor 1
+EOND-000342,192.168.0.89,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Maroteza_site|Maroteza_site_building 1|Maroteza_site_building 1_floor 1
+EOND-000343,192.168.0.90,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Cinere_site|Cinere_site_building 1|Cinere_site_building 1_floor 1
+EOND-000344,192.168.0.91,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Chaodongcun_site|Chaodongcun_site_building 1|Chaodongcun_site_building 1_floor 1
+EOND-000345,192.168.0.92,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Purāini_site|Purāini_site_building 1|Purāini_site_building 1_floor 1
+EOND-000346,192.168.0.93,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Schöningen_site|Schöningen_site_building 1|Schöningen_site_building 1_floor 1
+EOND-000347,192.168.0.94,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Serowe_site|Serowe_site_building 1|Serowe_site_building 1_floor 1
+EOND-000348,192.168.0.95,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Orchard Park_site|Orchard Park_site_building 1|Orchard Park_site_building 1_floor 1
+EOND-000349,192.168.0.96,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Harrow_site|Harrow_site_building 1|Harrow_site_building 1_floor 1
+EOND-000350,192.168.0.97,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Molteno_site|Molteno_site_building 1|Molteno_site_building 1_floor 1
+EOND-000351,192.168.0.98,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Omuthiya_site|Omuthiya_site_building 1|Omuthiya_site_building 1_floor 1
+EOND-000352,192.168.0.99,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Daxincun_site|Daxincun_site_building 1|Daxincun_site_building 1_floor 1
+EOND-000353,192.168.0.100,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Glendora_site|Glendora_site_building 1|Glendora_site_building 1_floor 1
+EOND-000354,192.168.0.101,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Villamaría_site|Villamaría_site_building 1|Villamaría_site_building 1_floor 1
+EOND-000355,192.168.0.102,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Głubczyce_site|Głubczyce_site_building 1|Głubczyce_site_building 1_floor 1
+EOND-000356,192.168.0.103,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Corsico_site|Corsico_site_building 1|Corsico_site_building 1_floor 1
+EOND-000357,192.168.0.104,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Bellmead_site|Bellmead_site_building 1|Bellmead_site_building 1_floor 1
+EOND-000358,192.168.0.105,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Venecia_site|Venecia_site_building 1|Venecia_site_building 1_floor 1
+EOND-000359,192.168.0.106,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Qostanay_site|Qostanay_site_building 1|Qostanay_site_building 1_floor 1
+EOND-000360,192.168.0.107,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Hatoyama_site|Hatoyama_site_building 1|Hatoyama_site_building 1_floor 1
+EOND-000361,192.168.0.108,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Finote Selam_site|Finote Selam_site_building 1|Finote Selam_site_building 1_floor 1
+EOND-000362,192.168.0.109,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Paulo Lopes_site|Paulo Lopes_site_building 1|Paulo Lopes_site_building 1_floor 1
+EOND-000363,192.168.0.110,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Palestina_site|Palestina_site_building 1|Palestina_site_building 1_floor 1
+EOND-000364,192.168.0.111,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Anantasāgaram_site|Anantasāgaram_site_building 1|Anantasāgaram_site_building 1_floor 1
+EOND-000365,192.168.0.112,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Sidi Ali_site|Sidi Ali_site_building 1|Sidi Ali_site_building 1_floor 1
+EOND-000366,192.168.0.113,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Widnes_site|Widnes_site_building 1|Widnes_site_building 1_floor 1
+EOND-000367,192.168.0.114,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Avilés_site|Avilés_site_building 1|Avilés_site_building 1_floor 1
+EOND-000368,192.168.0.115,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Barberton_site|Barberton_site_building 1|Barberton_site_building 1_floor 1
+EOND-000369,192.168.0.116,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Caln_site|Caln_site_building 1|Caln_site_building 1_floor 1
+EOND-000370,192.168.0.117,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Qarqaraly_site|Qarqaraly_site_building 1|Qarqaraly_site_building 1_floor 1
+EOND-000371,192.168.0.118,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Betton_site|Betton_site_building 1|Betton_site_building 1_floor 1
+EOND-000372,192.168.0.119,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Pasir Gudang_site|Pasir Gudang_site_building 1|Pasir Gudang_site_building 1_floor 1
+EOND-000373,192.168.0.120,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Al Miqdādīyah_site|Al Miqdādīyah_site_building 1|Al Miqdādīyah_site_building 1_floor 1
+EOND-000374,192.168.0.121,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Rio Preto da Eva_site|Rio Preto da Eva_site_building 1|Rio Preto da Eva_site_building 1_floor 1
+EOND-000375,192.168.0.122,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Marcq-en-Baroeul_site|Marcq-en-Baroeul_site_building 1|Marcq-en-Baroeul_site_building 1_floor 1
+EOND-000376,192.168.0.123,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Xalatlaco_site|Xalatlaco_site_building 1|Xalatlaco_site_building 1_floor 1
+EOND-000377,192.168.0.124,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Córdoba_site|Córdoba_site_building 1|Córdoba_site_building 1_floor 1
+EOND-000378,192.168.0.125,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Abbottabad_site|Abbottabad_site_building 1|Abbottabad_site_building 1_floor 1
+EOND-000379,192.168.0.126,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Yuasa_site|Yuasa_site_building 1|Yuasa_site_building 1_floor 1
+EOND-000380,192.168.0.127,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Zittau_site|Zittau_site_building 1|Zittau_site_building 1_floor 1
+EOND-000381,192.168.0.128,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Khandpara_site|Khandpara_site_building 1|Khandpara_site_building 1_floor 1
+EOND-000382,192.168.0.129,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Westphalia_site|Westphalia_site_building 1|Westphalia_site_building 1_floor 1
+EOND-000383,192.168.0.130,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Tres Ríos_site|Tres Ríos_site_building 1|Tres Ríos_site_building 1_floor 1
+EOND-000384,192.168.0.131,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Djibo_site|Djibo_site_building 1|Djibo_site_building 1_floor 1
+EOND-000385,192.168.0.132,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Morton_site|Morton_site_building 1|Morton_site_building 1_floor 1
+EOND-000386,192.168.0.133,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Les Herbiers_site|Les Herbiers_site_building 1|Les Herbiers_site_building 1_floor 1
+EOND-000387,192.168.0.134,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Guachucal_site|Guachucal_site_building 1|Guachucal_site_building 1_floor 1
+EOND-000388,192.168.0.135,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Volterra_site|Volterra_site_building 1|Volterra_site_building 1_floor 1
+EOND-000389,192.168.0.136,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Sacapulas_site|Sacapulas_site_building 1|Sacapulas_site_building 1_floor 1
+EOND-000390,192.168.0.137,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Medulla_site|Medulla_site_building 1|Medulla_site_building 1_floor 1
+EOND-000391,192.168.0.138,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Aračinovo_site|Aračinovo_site_building 1|Aračinovo_site_building 1_floor 1
+EOND-000392,192.168.0.139,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Perehinske_site|Perehinske_site_building 1|Perehinske_site_building 1_floor 1
+EOND-000393,192.168.0.140,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Ar Rumaythah_site|Ar Rumaythah_site_building 1|Ar Rumaythah_site_building 1_floor 1
+EOND-000394,192.168.0.141,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Brooklyn_site|Brooklyn_site_building 1|Brooklyn_site_building 1_floor 1
+EOND-000395,192.168.0.142,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,El Salto_site|El Salto_site_building 1|El Salto_site_building 1_floor 1
+EOND-000396,192.168.0.143,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Cholchol_site|Cholchol_site_building 1|Cholchol_site_building 1_floor 1
+EOND-000397,192.168.0.144,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Yamada_site|Yamada_site_building 1|Yamada_site_building 1_floor 1
+EOND-000398,192.168.0.145,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Rende_site|Rende_site_building 1|Rende_site_building 1_floor 1
+EOND-000399,192.168.0.146,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Gagnef_site|Gagnef_site_building 1|Gagnef_site_building 1_floor 1
+EOND-000400,192.168.0.147,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Pilibangan_site|Pilibangan_site_building 1|Pilibangan_site_building 1_floor 1
+EOND-000401,192.168.0.148,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Tittachcheri_site|Tittachcheri_site_building 1|Tittachcheri_site_building 1_floor 1
+EOND-000402,192.168.0.149,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Fuldabrück_site|Fuldabrück_site_building 1|Fuldabrück_site_building 1_floor 1
+EOND-000403,192.168.0.150,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,São Cristóvão_site|São Cristóvão_site_building 1|São Cristóvão_site_building 1_floor 1
+EOND-000404,192.168.0.151,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Kaithal_site|Kaithal_site_building 1|Kaithal_site_building 1_floor 1
+EOND-000405,192.168.0.152,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,San Pedro Pinula_site|San Pedro Pinula_site_building 1|San Pedro Pinula_site_building 1_floor 1
+EOND-000406,192.168.0.153,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Rangpur_site|Rangpur_site_building 1|Rangpur_site_building 1_floor 1
+EOND-000407,192.168.0.154,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Tetāri_site|Tetāri_site_building 1|Tetāri_site_building 1_floor 1
+EOND-000408,192.168.0.155,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,University of California-Santa Barbara_site|University of California-Santa Barbara_site_building 1|University of California-Santa Barbara_site_building 1_floor 1
+EOND-000409,192.168.0.156,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Castelo Branco_site|Castelo Branco_site_building 1|Castelo Branco_site_building 1_floor 1
+EOND-000410,192.168.0.157,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Ōmura_site|Ōmura_site_building 1|Ōmura_site_building 1_floor 1
+EOND-000411,192.168.0.158,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Nezahualcóyotl_site|Nezahualcóyotl_site_building 1|Nezahualcóyotl_site_building 1_floor 1
+EOND-000412,192.168.0.159,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Salinas da Margarida_site|Salinas da Margarida_site_building 1|Salinas da Margarida_site_building 1_floor 1
+EOND-000413,192.168.0.160,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Los Alcarrizos_site|Los Alcarrizos_site_building 1|Los Alcarrizos_site_building 1_floor 1
+EOND-000414,192.168.0.161,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Manakana_site|Manakana_site_building 1|Manakana_site_building 1_floor 1
+EOND-000415,192.168.0.162,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Kāyalpattanam_site|Kāyalpattanam_site_building 1|Kāyalpattanam_site_building 1_floor 1
+EOND-000416,192.168.0.163,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Sainte-Savine_site|Sainte-Savine_site_building 1|Sainte-Savine_site_building 1_floor 1
+EOND-000417,192.168.0.164,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Città di Castello_site|Città di Castello_site_building 1|Città di Castello_site_building 1_floor 1
+EOND-000418,192.168.0.165,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Hushihacun_site|Hushihacun_site_building 1|Hushihacun_site_building 1_floor 1
+EOND-000419,192.168.0.166,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Puntarenas_site|Puntarenas_site_building 1|Puntarenas_site_building 1_floor 1
+EOND-000420,192.168.0.167,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Zábřeh_site|Zábřeh_site_building 1|Zábřeh_site_building 1_floor 1
+EOND-000421,192.168.0.168,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Verl_site|Verl_site_building 1|Verl_site_building 1_floor 1
+EOND-000422,192.168.0.169,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Kallidaikurichi_site|Kallidaikurichi_site_building 1|Kallidaikurichi_site_building 1_floor 1
+EOND-000423,192.168.0.170,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Pinillos_site|Pinillos_site_building 1|Pinillos_site_building 1_floor 1
+EOND-000424,192.168.0.171,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Ranbīrsinghpura_site|Ranbīrsinghpura_site_building 1|Ranbīrsinghpura_site_building 1_floor 1
+EOND-000425,192.168.0.172,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Kundli_site|Kundli_site_building 1|Kundli_site_building 1_floor 1
+EOND-000426,192.168.0.173,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Buckingham_site|Buckingham_site_building 1|Buckingham_site_building 1_floor 1
+EOND-000427,192.168.0.174,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Moulins_site|Moulins_site_building 1|Moulins_site_building 1_floor 1
+EOND-000428,192.168.0.175,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Ōki_site|Ōki_site_building 1|Ōki_site_building 1_floor 1
+EOND-000429,192.168.0.176,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Sadābād_site|Sadābād_site_building 1|Sadābād_site_building 1_floor 1
+EOND-000430,192.168.0.177,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Reggio di Calabria_site|Reggio di Calabria_site_building 1|Reggio di Calabria_site_building 1_floor 1
+EOND-000431,192.168.0.178,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,North Union_site|North Union_site_building 1|North Union_site_building 1_floor 1
+EOND-000432,192.168.0.179,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Novyi Buh_site|Novyi Buh_site_building 1|Novyi Buh_site_building 1_floor 1
+EOND-000433,192.168.0.180,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Upanema_site|Upanema_site_building 1|Upanema_site_building 1_floor 1
+EOND-000434,192.168.0.181,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Ajodhya_site|Ajodhya_site_building 1|Ajodhya_site_building 1_floor 1
+EOND-000435,192.168.0.182,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,East Norriton_site|East Norriton_site_building 1|East Norriton_site_building 1_floor 1
+EOND-000436,192.168.0.183,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Sunrise Manor_site|Sunrise Manor_site_building 1|Sunrise Manor_site_building 1_floor 1
+EOND-000437,192.168.0.184,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Hopewell_site|Hopewell_site_building 1|Hopewell_site_building 1_floor 1
+EOND-000438,192.168.0.185,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Goz-Beida_site|Goz-Beida_site_building 1|Goz-Beida_site_building 1_floor 1
+EOND-000439,192.168.0.186,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Saint-Ouen_site|Saint-Ouen_site_building 1|Saint-Ouen_site_building 1_floor 1
+EOND-000440,192.168.0.187,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Sirālkoppa_site|Sirālkoppa_site_building 1|Sirālkoppa_site_building 1_floor 1
+EOND-000441,192.168.0.188,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Bamenda_site|Bamenda_site_building 1|Bamenda_site_building 1_floor 1
+EOND-000442,192.168.0.189,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Montevideo_site|Montevideo_site_building 1|Montevideo_site_building 1_floor 1
+EOND-000443,192.168.0.190,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Autlán de Navarro_site|Autlán de Navarro_site_building 1|Autlán de Navarro_site_building 1_floor 1
+EOND-000444,192.168.0.191,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Canhotinho_site|Canhotinho_site_building 1|Canhotinho_site_building 1_floor 1
+EOND-000445,192.168.0.192,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Echternach_site|Echternach_site_building 1|Echternach_site_building 1_floor 1
+EOND-000446,192.168.0.193,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Guagua_site|Guagua_site_building 1|Guagua_site_building 1_floor 1
+EOND-000447,192.168.0.194,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Kolwāra_site|Kolwāra_site_building 1|Kolwāra_site_building 1_floor 1
+EOND-000448,192.168.0.195,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Martínez de la Torre_site|Martínez de la Torre_site_building 1|Martínez de la Torre_site_building 1_floor 1
+EOND-000449,192.168.0.196,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Höhenkirchen-Siegertsbrunn_site|Höhenkirchen-Siegertsbrunn_site_building 1|Höhenkirchen-Siegertsbrunn_site_building 1_floor 1
+EOND-000450,192.168.0.197,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Montilla_site|Montilla_site_building 1|Montilla_site_building 1_floor 1
+EOND-000451,192.168.0.198,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Velilla de San Antonio_site|Velilla de San Antonio_site_building 1|Velilla de San Antonio_site_building 1_floor 1
+EOND-000452,192.168.0.199,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Fundão_site|Fundão_site_building 1|Fundão_site_building 1_floor 1
+EOND-000453,192.168.0.200,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Molina de Segura_site|Molina de Segura_site_building 1|Molina de Segura_site_building 1_floor 1
+EOND-000454,192.168.0.201,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Iferhounene_site|Iferhounene_site_building 1|Iferhounene_site_building 1_floor 1
+EOND-000455,192.168.0.202,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Bāgeshwar_site|Bāgeshwar_site_building 1|Bāgeshwar_site_building 1_floor 1
+EOND-000456,192.168.0.203,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Weybridge_site|Weybridge_site_building 1|Weybridge_site_building 1_floor 1
+EOND-000457,192.168.0.204,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Kovilpatti_site|Kovilpatti_site_building 1|Kovilpatti_site_building 1_floor 1
+EOND-000458,192.168.0.205,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Baitoa_site|Baitoa_site_building 1|Baitoa_site_building 1_floor 1
+EOND-000459,192.168.0.206,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Ashmyany_site|Ashmyany_site_building 1|Ashmyany_site_building 1_floor 1
+EOND-000460,192.168.0.207,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Lebane_site|Lebane_site_building 1|Lebane_site_building 1_floor 1
+EOND-000461,192.168.0.208,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Venmani_site|Venmani_site_building 1|Venmani_site_building 1_floor 1
+EOND-000462,192.168.0.209,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Apodi_site|Apodi_site_building 1|Apodi_site_building 1_floor 1
+EOND-000463,192.168.0.210,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Iklod_site|Iklod_site_building 1|Iklod_site_building 1_floor 1
+EOND-000464,192.168.0.211,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Sharan_site|Sharan_site_building 1|Sharan_site_building 1_floor 1
+EOND-000465,192.168.0.212,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Kélibia_site|Kélibia_site_building 1|Kélibia_site_building 1_floor 1
+EOND-000466,192.168.0.213,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,San Juan Nonualco_site|San Juan Nonualco_site_building 1|San Juan Nonualco_site_building 1_floor 1
+EOND-000467,192.168.0.214,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Borovnica_site|Borovnica_site_building 1|Borovnica_site_building 1_floor 1
+EOND-000468,192.168.0.215,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Bāsudebpur_site|Bāsudebpur_site_building 1|Bāsudebpur_site_building 1_floor 1
+EOND-000469,192.168.0.216,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Sayram_site|Sayram_site_building 1|Sayram_site_building 1_floor 1
+EOND-000470,192.168.0.217,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Amelia_site|Amelia_site_building 1|Amelia_site_building 1_floor 1
+EOND-000471,192.168.0.218,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Ocampo_site|Ocampo_site_building 1|Ocampo_site_building 1_floor 1
+EOND-000472,192.168.0.219,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Aci Catena_site|Aci Catena_site_building 1|Aci Catena_site_building 1_floor 1
+EOND-000473,192.168.0.220,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Harinākunda_site|Harinākunda_site_building 1|Harinākunda_site_building 1_floor 1
+EOND-000474,192.168.0.221,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Arukutti_site|Arukutti_site_building 1|Arukutti_site_building 1_floor 1
+EOND-000475,192.168.0.222,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Playa Grande_site|Playa Grande_site_building 1|Playa Grande_site_building 1_floor 1
+EOND-000476,192.168.0.223,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Maripād_site|Maripād_site_building 1|Maripād_site_building 1_floor 1
+EOND-000477,192.168.0.224,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Dachau_site|Dachau_site_building 1|Dachau_site_building 1_floor 1
+EOND-000478,192.168.0.225,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Carnarvon_site|Carnarvon_site_building 1|Carnarvon_site_building 1_floor 1
+EOND-000479,192.168.0.226,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Mount Holly_site|Mount Holly_site_building 1|Mount Holly_site_building 1_floor 1
+EOND-000480,192.168.0.227,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Kyrenia_site|Kyrenia_site_building 1|Kyrenia_site_building 1_floor 1
+EOND-000481,192.168.0.228,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Delémont_site|Delémont_site_building 1|Delémont_site_building 1_floor 1
+EOND-000482,192.168.0.229,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Camas_site|Camas_site_building 1|Camas_site_building 1_floor 1
+EOND-000483,192.168.0.230,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Zierikzee_site|Zierikzee_site_building 1|Zierikzee_site_building 1_floor 1
+EOND-000484,192.168.0.231,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Amatitlán_site|Amatitlán_site_building 1|Amatitlán_site_building 1_floor 1
+EOND-000485,192.168.0.232,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Walcourt_site|Walcourt_site_building 1|Walcourt_site_building 1_floor 1
+EOND-000486,192.168.0.233,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Veldhoven_site|Veldhoven_site_building 1|Veldhoven_site_building 1_floor 1
+EOND-000487,192.168.0.234,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Santa Fe_site|Santa Fe_site_building 1|Santa Fe_site_building 1_floor 1
+EOND-000488,192.168.0.235,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Mazagran_site|Mazagran_site_building 1|Mazagran_site_building 1_floor 1
+EOND-000489,192.168.0.236,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Kolondiéba_site|Kolondiéba_site_building 1|Kolondiéba_site_building 1_floor 1
+EOND-000490,192.168.0.237,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Rājānagaram_site|Rājānagaram_site_building 1|Rājānagaram_site_building 1_floor 1
+EOND-000491,192.168.0.238,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Agcogon_site|Agcogon_site_building 1|Agcogon_site_building 1_floor 1
+EOND-000492,192.168.0.239,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Morafeno_site|Morafeno_site_building 1|Morafeno_site_building 1_floor 1
+EOND-000493,192.168.0.240,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Ankiabe-Salohy_site|Ankiabe-Salohy_site_building 1|Ankiabe-Salohy_site_building 1_floor 1
+EOND-000494,192.168.0.241,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Ézanville_site|Ézanville_site_building 1|Ézanville_site_building 1_floor 1
+EOND-000495,192.168.0.242,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Tamanar_site|Tamanar_site_building 1|Tamanar_site_building 1_floor 1
+EOND-000496,192.168.0.243,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Kißlegg_site|Kißlegg_site_building 1|Kißlegg_site_building 1_floor 1
+EOND-000497,192.168.0.244,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Eskilstuna_site|Eskilstuna_site_building 1|Eskilstuna_site_building 1_floor 1
+EOND-000498,192.168.0.245,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Pine Hills_site|Pine Hills_site_building 1|Pine Hills_site_building 1_floor 1
+EOND-000499,192.168.0.246,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Horodnia_site|Horodnia_site_building 1|Horodnia_site_building 1_floor 1
+EOND-000500,192.168.0.247,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Penonomé_site|Penonomé_site_building 1|Penonomé_site_building 1_floor 1
+EOND-000501,192.168.0.248,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Västerås_site|Västerås_site_building 1|Västerås_site_building 1_floor 1
+EOND-000502,192.168.0.249,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Salzwedel_site|Salzwedel_site_building 1|Salzwedel_site_building 1_floor 1
+EOND-000503,192.168.0.250,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,New Germany_site|New Germany_site_building 1|New Germany_site_building 1_floor 1
+EOND-000504,192.168.0.251,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Erdőkertes_site|Erdőkertes_site_building 1|Erdőkertes_site_building 1_floor 1
+EOND-000505,192.168.0.252,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Sugito_site|Sugito_site_building 1|Sugito_site_building 1_floor 1
+EOND-000506,192.168.0.253,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Barra Velha_site|Barra Velha_site_building 1|Barra Velha_site_building 1_floor 1
+EOND-000507,192.168.0.254,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Kolea_site|Kolea_site_building 1|Kolea_site_building 1_floor 1
+EOND-000508,192.168.0.1,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Zegzel_site|Zegzel_site_building 1|Zegzel_site_building 1_floor 1
+EOND-000509,192.168.0.2,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Alabat_site|Alabat_site_building 1|Alabat_site_building 1_floor 1
+EOND-000510,192.168.0.3,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Kadanganeri_site|Kadanganeri_site_building 1|Kadanganeri_site_building 1_floor 1
+EOND-000511,192.168.0.4,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Berkley_site|Berkley_site_building 1|Berkley_site_building 1_floor 1
+EOND-000512,192.168.0.5,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Cold Lake_site|Cold Lake_site_building 1|Cold Lake_site_building 1_floor 1
+EOND-000513,192.168.0.6,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Estrêla_site|Estrêla_site_building 1|Estrêla_site_building 1_floor 1
+EOND-000514,192.168.0.7,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Sarmiento_site|Sarmiento_site_building 1|Sarmiento_site_building 1_floor 1
+EOND-000515,192.168.0.8,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Taquarituba_site|Taquarituba_site_building 1|Taquarituba_site_building 1_floor 1
+EOND-000516,192.168.0.9,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Saint-Omer_site|Saint-Omer_site_building 1|Saint-Omer_site_building 1_floor 1
+EOND-000517,192.168.0.10,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Morarano-Gara_site|Morarano-Gara_site_building 1|Morarano-Gara_site_building 1_floor 1
+EOND-000518,192.168.0.11,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Bind_site|Bind_site_building 1|Bind_site_building 1_floor 1
+EOND-000519,192.168.0.12,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Mions_site|Mions_site_building 1|Mions_site_building 1_floor 1
+EOND-000520,192.168.0.13,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Sijua_site|Sijua_site_building 1|Sijua_site_building 1_floor 1
+EOND-000521,192.168.0.14,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Bridgetown_site|Bridgetown_site_building 1|Bridgetown_site_building 1_floor 1
+EOND-000522,192.168.0.15,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Curacaví_site|Curacaví_site_building 1|Curacaví_site_building 1_floor 1
+EOND-000523,192.168.0.16,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Ankaraobato_site|Ankaraobato_site_building 1|Ankaraobato_site_building 1_floor 1
+EOND-000524,192.168.0.17,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Vianden_site|Vianden_site_building 1|Vianden_site_building 1_floor 1
+EOND-000525,192.168.0.18,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Chaital_site|Chaital_site_building 1|Chaital_site_building 1_floor 1
+EOND-000526,192.168.0.19,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Sāhpur_site|Sāhpur_site_building 1|Sāhpur_site_building 1_floor 1
+EOND-000527,192.168.0.20,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Roosevelt_site|Roosevelt_site_building 1|Roosevelt_site_building 1_floor 1
+EOND-000528,192.168.0.21,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Jolo_site|Jolo_site_building 1|Jolo_site_building 1_floor 1
+EOND-000529,192.168.0.22,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Jiaojiazhuang_site|Jiaojiazhuang_site_building 1|Jiaojiazhuang_site_building 1_floor 1
+EOND-000530,192.168.0.23,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Peters_site|Peters_site_building 1|Peters_site_building 1_floor 1
+EOND-000531,192.168.0.24,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Lalmatie_site|Lalmatie_site_building 1|Lalmatie_site_building 1_floor 1
+EOND-000532,192.168.0.25,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Villa Park_site|Villa Park_site_building 1|Villa Park_site_building 1_floor 1
+EOND-000533,192.168.0.26,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Wanderlândia_site|Wanderlândia_site_building 1|Wanderlândia_site_building 1_floor 1
+EOND-000534,192.168.0.27,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Chiniot_site|Chiniot_site_building 1|Chiniot_site_building 1_floor 1
+EOND-000535,192.168.0.28,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Jardín_site|Jardín_site_building 1|Jardín_site_building 1_floor 1
+EOND-000536,192.168.0.29,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Comayagüela_site|Comayagüela_site_building 1|Comayagüela_site_building 1_floor 1
+EOND-000537,192.168.0.30,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Sigtuna_site|Sigtuna_site_building 1|Sigtuna_site_building 1_floor 1
+EOND-000538,192.168.0.31,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Kafr ash Shaykh_site|Kafr ash Shaykh_site_building 1|Kafr ash Shaykh_site_building 1_floor 1
+EOND-000539,192.168.0.32,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Talachyn_site|Talachyn_site_building 1|Talachyn_site_building 1_floor 1
+EOND-000540,192.168.0.33,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Guelph/Eramosa_site|Guelph/Eramosa_site_building 1|Guelph/Eramosa_site_building 1_floor 1
+EOND-000541,192.168.0.34,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Weißenburg_site|Weißenburg_site_building 1|Weißenburg_site_building 1_floor 1
+EOND-000542,192.168.0.35,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Puerto Pilón_site|Puerto Pilón_site_building 1|Puerto Pilón_site_building 1_floor 1
+EOND-000543,192.168.0.36,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Belmont_site|Belmont_site_building 1|Belmont_site_building 1_floor 1
+EOND-000544,192.168.0.37,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Elze_site|Elze_site_building 1|Elze_site_building 1_floor 1
+EOND-000545,192.168.0.38,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Setouchi_site|Setouchi_site_building 1|Setouchi_site_building 1_floor 1
+EOND-000546,192.168.0.39,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Caluco_site|Caluco_site_building 1|Caluco_site_building 1_floor 1
+EOND-000547,192.168.0.40,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Raghunāthpur_site|Raghunāthpur_site_building 1|Raghunāthpur_site_building 1_floor 1
+EOND-000548,192.168.0.41,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Hamilton_site|Hamilton_site_building 1|Hamilton_site_building 1_floor 1
+EOND-000549,192.168.0.42,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Rāgampet_site|Rāgampet_site_building 1|Rāgampet_site_building 1_floor 1
+EOND-000550,192.168.0.43,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Khujner_site|Khujner_site_building 1|Khujner_site_building 1_floor 1
+EOND-000551,192.168.0.44,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Santana do Paraíso_site|Santana do Paraíso_site_building 1|Santana do Paraíso_site_building 1_floor 1
+EOND-000552,192.168.0.45,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Piracuruca_site|Piracuruca_site_building 1|Piracuruca_site_building 1_floor 1
+EOND-000553,192.168.0.46,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Chartiers_site|Chartiers_site_building 1|Chartiers_site_building 1_floor 1
+EOND-000554,192.168.0.47,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Kayes_site|Kayes_site_building 1|Kayes_site_building 1_floor 1
+EOND-000555,192.168.0.48,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Bagabag_site|Bagabag_site_building 1|Bagabag_site_building 1_floor 1
+EOND-000556,192.168.0.49,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Antanambaobe_site|Antanambaobe_site_building 1|Antanambaobe_site_building 1_floor 1
+EOND-000557,192.168.0.50,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Swift Current_site|Swift Current_site_building 1|Swift Current_site_building 1_floor 1
+EOND-000558,192.168.0.51,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Stirling_site|Stirling_site_building 1|Stirling_site_building 1_floor 1
+EOND-000559,192.168.0.52,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Itanhandu_site|Itanhandu_site_building 1|Itanhandu_site_building 1_floor 1
+EOND-000560,192.168.0.53,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Vaddādi_site|Vaddādi_site_building 1|Vaddādi_site_building 1_floor 1
+EOND-000561,192.168.0.54,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Manampaneva_site|Manampaneva_site_building 1|Manampaneva_site_building 1_floor 1
+EOND-000562,192.168.0.55,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Carapebus_site|Carapebus_site_building 1|Carapebus_site_building 1_floor 1
+EOND-000563,192.168.0.56,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Sampona_site|Sampona_site_building 1|Sampona_site_building 1_floor 1
+EOND-000564,192.168.0.57,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Ouled Fares_site|Ouled Fares_site_building 1|Ouled Fares_site_building 1_floor 1
+EOND-000565,192.168.0.58,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Nannestad_site|Nannestad_site_building 1|Nannestad_site_building 1_floor 1
+EOND-000566,192.168.0.59,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Chesapeake_site|Chesapeake_site_building 1|Chesapeake_site_building 1_floor 1
+EOND-000567,192.168.0.60,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Doña Remedios Trinidad_site|Doña Remedios Trinidad_site_building 1|Doña Remedios Trinidad_site_building 1_floor 1
+EOND-000568,192.168.0.61,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Midlothian_site|Midlothian_site_building 1|Midlothian_site_building 1_floor 1
+EOND-000569,192.168.0.62,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Alushta_site|Alushta_site_building 1|Alushta_site_building 1_floor 1
+EOND-000570,192.168.0.63,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Musashimurayama_site|Musashimurayama_site_building 1|Musashimurayama_site_building 1_floor 1
+EOND-000571,192.168.0.64,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,San Carlos_site|San Carlos_site_building 1|San Carlos_site_building 1_floor 1
+EOND-000572,192.168.0.65,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Holly Hill_site|Holly Hill_site_building 1|Holly Hill_site_building 1_floor 1
+EOND-000573,192.168.0.66,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Ambolomoty_site|Ambolomoty_site_building 1|Ambolomoty_site_building 1_floor 1
+EOND-000574,192.168.0.67,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Los Baños_site|Los Baños_site_building 1|Los Baños_site_building 1_floor 1
+EOND-000575,192.168.0.68,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Garforth_site|Garforth_site_building 1|Garforth_site_building 1_floor 1
+EOND-000576,192.168.0.69,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Villars-sur-Glâne_site|Villars-sur-Glâne_site_building 1|Villars-sur-Glâne_site_building 1_floor 1
+EOND-000577,192.168.0.70,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Chaddesden_site|Chaddesden_site_building 1|Chaddesden_site_building 1_floor 1
+EOND-000578,192.168.0.71,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Barahpur_site|Barahpur_site_building 1|Barahpur_site_building 1_floor 1
+EOND-000579,192.168.0.72,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Karuhatan_site|Karuhatan_site_building 1|Karuhatan_site_building 1_floor 1
+EOND-000580,192.168.0.73,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Benedikt_site|Benedikt_site_building 1|Benedikt_site_building 1_floor 1
+EOND-000581,192.168.0.74,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Altopascio_site|Altopascio_site_building 1|Altopascio_site_building 1_floor 1
+EOND-000582,192.168.0.75,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Oakland_site|Oakland_site_building 1|Oakland_site_building 1_floor 1
+EOND-000583,192.168.0.76,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Yangiobod_site|Yangiobod_site_building 1|Yangiobod_site_building 1_floor 1
+EOND-000584,192.168.0.77,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Porto Alegre_site|Porto Alegre_site_building 1|Porto Alegre_site_building 1_floor 1
+EOND-000585,192.168.0.78,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Auerbach_site|Auerbach_site_building 1|Auerbach_site_building 1_floor 1
+EOND-000586,192.168.0.79,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Delčevo_site|Delčevo_site_building 1|Delčevo_site_building 1_floor 1
+EOND-000587,192.168.0.80,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Ajacuba_site|Ajacuba_site_building 1|Ajacuba_site_building 1_floor 1
+EOND-000588,192.168.0.81,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Askim_site|Askim_site_building 1|Askim_site_building 1_floor 1
+EOND-000589,192.168.0.82,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Ichinohe_site|Ichinohe_site_building 1|Ichinohe_site_building 1_floor 1
+EOND-000590,192.168.0.83,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Carnaíba_site|Carnaíba_site_building 1|Carnaíba_site_building 1_floor 1
+EOND-000591,192.168.0.84,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Premnagar_site|Premnagar_site_building 1|Premnagar_site_building 1_floor 1
+EOND-000592,192.168.0.85,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Duraiswāmipuram_site|Duraiswāmipuram_site_building 1|Duraiswāmipuram_site_building 1_floor 1
+EOND-000593,192.168.0.86,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Union City_site|Union City_site_building 1|Union City_site_building 1_floor 1
+EOND-000594,192.168.0.87,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Ban Tap Tao_site|Ban Tap Tao_site_building 1|Ban Tap Tao_site_building 1_floor 1
+EOND-000595,192.168.0.88,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Westerkappeln_site|Westerkappeln_site_building 1|Westerkappeln_site_building 1_floor 1
+EOND-000596,192.168.0.89,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Tuchín_site|Tuchín_site_building 1|Tuchín_site_building 1_floor 1
+EOND-000597,192.168.0.90,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Voerde_site|Voerde_site_building 1|Voerde_site_building 1_floor 1
+EOND-000598,192.168.0.91,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Miho_site|Miho_site_building 1|Miho_site_building 1_floor 1
+EOND-000599,192.168.0.92,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Monte Sant’Angelo_site|Monte Sant’Angelo_site_building 1|Monte Sant’Angelo_site_building 1_floor 1
+EOND-000600,192.168.0.93,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Medford_site|Medford_site_building 1|Medford_site_building 1_floor 1
+EOND-000601,192.168.0.94,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Somers Point_site|Somers Point_site_building 1|Somers Point_site_building 1_floor 1
+EOND-000602,192.168.0.95,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Watampone_site|Watampone_site_building 1|Watampone_site_building 1_floor 1
+EOND-000603,192.168.0.96,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Bussy_site|Bussy_site_building 1|Bussy_site_building 1_floor 1
+EOND-000604,192.168.0.97,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Aduku_site|Aduku_site_building 1|Aduku_site_building 1_floor 1
+EOND-000605,192.168.0.98,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Kutaisi_site|Kutaisi_site_building 1|Kutaisi_site_building 1_floor 1
+EOND-000606,192.168.0.99,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Ponmundam_site|Ponmundam_site_building 1|Ponmundam_site_building 1_floor 1
+EOND-000607,192.168.0.100,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Danzao_site|Danzao_site_building 1|Danzao_site_building 1_floor 1
+EOND-000608,192.168.0.101,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Hadano_site|Hadano_site_building 1|Hadano_site_building 1_floor 1
+EOND-000609,192.168.0.102,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Olongapo_site|Olongapo_site_building 1|Olongapo_site_building 1_floor 1
+EOND-000610,192.168.0.103,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Koganei_site|Koganei_site_building 1|Koganei_site_building 1_floor 1
+EOND-000611,192.168.0.104,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Māchalpur_site|Māchalpur_site_building 1|Māchalpur_site_building 1_floor 1
+EOND-000612,192.168.0.105,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Jesús María_site|Jesús María_site_building 1|Jesús María_site_building 1_floor 1
+EOND-000613,192.168.0.106,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Mountougoula_site|Mountougoula_site_building 1|Mountougoula_site_building 1_floor 1
+EOND-000614,192.168.0.107,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Mali_site|Mali_site_building 1|Mali_site_building 1_floor 1
+EOND-000615,192.168.0.108,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Moose Jaw_site|Moose Jaw_site_building 1|Moose Jaw_site_building 1_floor 1
+EOND-000616,192.168.0.109,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Hønefoss_site|Hønefoss_site_building 1|Hønefoss_site_building 1_floor 1
+EOND-000617,192.168.0.110,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Yichun_site|Yichun_site_building 1|Yichun_site_building 1_floor 1
+EOND-000618,192.168.0.111,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Chitral_site|Chitral_site_building 1|Chitral_site_building 1_floor 1
+EOND-000619,192.168.0.112,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Pacifica_site|Pacifica_site_building 1|Pacifica_site_building 1_floor 1
+EOND-000620,192.168.0.113,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Itapira_site|Itapira_site_building 1|Itapira_site_building 1_floor 1
+EOND-000621,192.168.0.114,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Gonesse_site|Gonesse_site_building 1|Gonesse_site_building 1_floor 1
+EOND-000622,192.168.0.115,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Ile-Ife_site|Ile-Ife_site_building 1|Ile-Ife_site_building 1_floor 1
+EOND-000623,192.168.0.116,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Tuktukan_site|Tuktukan_site_building 1|Tuktukan_site_building 1_floor 1
+EOND-000624,192.168.0.117,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Åmål_site|Åmål_site_building 1|Åmål_site_building 1_floor 1
+EOND-000625,192.168.0.118,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Seven Oaks_site|Seven Oaks_site_building 1|Seven Oaks_site_building 1_floor 1
+EOND-000626,192.168.0.119,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,La Oliva_site|La Oliva_site_building 1|La Oliva_site_building 1_floor 1
+EOND-000627,192.168.0.120,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Laćarak_site|Laćarak_site_building 1|Laćarak_site_building 1_floor 1
+EOND-000628,192.168.0.121,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Madīnat as Sādāt_site|Madīnat as Sādāt_site_building 1|Madīnat as Sādāt_site_building 1_floor 1
+EOND-000629,192.168.0.122,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Lewisburg_site|Lewisburg_site_building 1|Lewisburg_site_building 1_floor 1
+EOND-000630,192.168.0.123,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Rosemead_site|Rosemead_site_building 1|Rosemead_site_building 1_floor 1
+EOND-000631,192.168.0.124,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Saku_site|Saku_site_building 1|Saku_site_building 1_floor 1
+EOND-000632,192.168.0.125,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Douai_site|Douai_site_building 1|Douai_site_building 1_floor 1
+EOND-000633,192.168.0.126,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Flexeiras_site|Flexeiras_site_building 1|Flexeiras_site_building 1_floor 1
+EOND-000634,192.168.0.127,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Destelbergen_site|Destelbergen_site_building 1|Destelbergen_site_building 1_floor 1
+EOND-000635,192.168.0.128,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Meiningen_site|Meiningen_site_building 1|Meiningen_site_building 1_floor 1
+EOND-000636,192.168.0.129,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Sendafa_site|Sendafa_site_building 1|Sendafa_site_building 1_floor 1
+EOND-000637,192.168.0.130,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Perinton_site|Perinton_site_building 1|Perinton_site_building 1_floor 1
+EOND-000638,192.168.0.131,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Mpessoba_site|Mpessoba_site_building 1|Mpessoba_site_building 1_floor 1
+EOND-000639,192.168.0.132,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Val-d’Or_site|Val-d’Or_site_building 1|Val-d’Or_site_building 1_floor 1
+EOND-000640,192.168.0.133,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Shāntipur_site|Shāntipur_site_building 1|Shāntipur_site_building 1_floor 1
+EOND-000641,192.168.0.134,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Mandiakui_site|Mandiakui_site_building 1|Mandiakui_site_building 1_floor 1
+EOND-000642,192.168.0.135,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Hampden_site|Hampden_site_building 1|Hampden_site_building 1_floor 1
+EOND-000643,192.168.0.136,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Port-au-Prince_site|Port-au-Prince_site_building 1|Port-au-Prince_site_building 1_floor 1
+EOND-000644,192.168.0.137,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Nāḩiyat Ghammās_site|Nāḩiyat Ghammās_site_building 1|Nāḩiyat Ghammās_site_building 1_floor 1
+EOND-000645,192.168.0.138,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Lubaczów_site|Lubaczów_site_building 1|Lubaczów_site_building 1_floor 1
+EOND-000646,192.168.0.139,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Muddāda_site|Muddāda_site_building 1|Muddāda_site_building 1_floor 1
+EOND-000647,192.168.0.140,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Ivoti_site|Ivoti_site_building 1|Ivoti_site_building 1_floor 1
+EOND-000648,192.168.0.141,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Longonjo_site|Longonjo_site_building 1|Longonjo_site_building 1_floor 1
+EOND-000649,192.168.0.142,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Figueira da Foz_site|Figueira da Foz_site_building 1|Figueira da Foz_site_building 1_floor 1
+EOND-000650,192.168.0.143,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Nacozari de García_site|Nacozari de García_site_building 1|Nacozari de García_site_building 1_floor 1
+EOND-000651,192.168.0.144,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Holubivske_site|Holubivske_site_building 1|Holubivske_site_building 1_floor 1
+EOND-000652,192.168.0.145,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Fyzabad_site|Fyzabad_site_building 1|Fyzabad_site_building 1_floor 1
+EOND-000653,192.168.0.146,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Harvard_site|Harvard_site_building 1|Harvard_site_building 1_floor 1
+EOND-000654,192.168.0.147,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Princesa Isabel_site|Princesa Isabel_site_building 1|Princesa Isabel_site_building 1_floor 1
+EOND-000655,192.168.0.148,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,San Antonio_site|San Antonio_site_building 1|San Antonio_site_building 1_floor 1
+EOND-000656,192.168.0.149,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Whitchurch_site|Whitchurch_site_building 1|Whitchurch_site_building 1_floor 1
+EOND-000657,192.168.0.150,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Tolmezzo_site|Tolmezzo_site_building 1|Tolmezzo_site_building 1_floor 1
+EOND-000658,192.168.0.151,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Vecsés_site|Vecsés_site_building 1|Vecsés_site_building 1_floor 1
+EOND-000659,192.168.0.152,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Rizal_site|Rizal_site_building 1|Rizal_site_building 1_floor 1
+EOND-000660,192.168.0.153,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Paripiranga_site|Paripiranga_site_building 1|Paripiranga_site_building 1_floor 1
+EOND-000661,192.168.0.154,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Itamogi_site|Itamogi_site_building 1|Itamogi_site_building 1_floor 1
+EOND-000662,192.168.0.155,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Dazhangzi_site|Dazhangzi_site_building 1|Dazhangzi_site_building 1_floor 1
+EOND-000663,192.168.0.156,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Bocaue_site|Bocaue_site_building 1|Bocaue_site_building 1_floor 1
+EOND-000664,192.168.0.157,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Paddhari_site|Paddhari_site_building 1|Paddhari_site_building 1_floor 1
+EOND-000665,192.168.0.158,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Yufu_site|Yufu_site_building 1|Yufu_site_building 1_floor 1
+EOND-000666,192.168.0.159,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Nueva Concepción_site|Nueva Concepción_site_building 1|Nueva Concepción_site_building 1_floor 1
+EOND-000667,192.168.0.160,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Úrsulo Galván_site|Úrsulo Galván_site_building 1|Úrsulo Galván_site_building 1_floor 1
+EOND-000668,192.168.0.161,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Ridgeland_site|Ridgeland_site_building 1|Ridgeland_site_building 1_floor 1
+EOND-000669,192.168.0.162,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Ajaigarh_site|Ajaigarh_site_building 1|Ajaigarh_site_building 1_floor 1
+EOND-000670,192.168.0.163,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Santa Teresita_site|Santa Teresita_site_building 1|Santa Teresita_site_building 1_floor 1
+EOND-000671,192.168.0.164,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Lanling_site|Lanling_site_building 1|Lanling_site_building 1_floor 1
+EOND-000672,192.168.0.165,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Elesbão Veloso_site|Elesbão Veloso_site_building 1|Elesbão Veloso_site_building 1_floor 1
+EOND-000673,192.168.0.166,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Tipton_site|Tipton_site_building 1|Tipton_site_building 1_floor 1
+EOND-000674,192.168.0.167,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Grottaglie_site|Grottaglie_site_building 1|Grottaglie_site_building 1_floor 1
+EOND-000675,192.168.0.168,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Lomma_site|Lomma_site_building 1|Lomma_site_building 1_floor 1
+EOND-000676,192.168.0.169,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Cajueiro_site|Cajueiro_site_building 1|Cajueiro_site_building 1_floor 1
+EOND-000677,192.168.0.170,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Ishikawa_site|Ishikawa_site_building 1|Ishikawa_site_building 1_floor 1
+EOND-000678,192.168.0.171,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Oberhausen-Rheinhausen_site|Oberhausen-Rheinhausen_site_building 1|Oberhausen-Rheinhausen_site_building 1_floor 1
+EOND-000679,192.168.0.172,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Mamou_site|Mamou_site_building 1|Mamou_site_building 1_floor 1
+EOND-000680,192.168.0.173,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Maner_site|Maner_site_building 1|Maner_site_building 1_floor 1
+EOND-000681,192.168.0.174,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Huilong_site|Huilong_site_building 1|Huilong_site_building 1_floor 1
+EOND-000682,192.168.0.175,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Nsanje_site|Nsanje_site_building 1|Nsanje_site_building 1_floor 1
+EOND-000683,192.168.0.176,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Dison_site|Dison_site_building 1|Dison_site_building 1_floor 1
+EOND-000684,192.168.0.177,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Pescia_site|Pescia_site_building 1|Pescia_site_building 1_floor 1
+EOND-000685,192.168.0.178,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,South Huntington_site|South Huntington_site_building 1|South Huntington_site_building 1_floor 1
+EOND-000686,192.168.0.179,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Soteapan_site|Soteapan_site_building 1|Soteapan_site_building 1_floor 1
+EOND-000687,192.168.0.180,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Kawachinagano_site|Kawachinagano_site_building 1|Kawachinagano_site_building 1_floor 1
+EOND-000688,192.168.0.181,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Châteaubriant_site|Châteaubriant_site_building 1|Châteaubriant_site_building 1_floor 1
+EOND-000689,192.168.0.182,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Merchweiler_site|Merchweiler_site_building 1|Merchweiler_site_building 1_floor 1
+EOND-000690,192.168.0.183,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Garešnica_site|Garešnica_site_building 1|Garešnica_site_building 1_floor 1
+EOND-000691,192.168.0.184,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Ruoqiang_site|Ruoqiang_site_building 1|Ruoqiang_site_building 1_floor 1
+EOND-000692,192.168.0.185,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Simón Bolívar_site|Simón Bolívar_site_building 1|Simón Bolívar_site_building 1_floor 1
+EOND-000693,192.168.0.186,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Burām_site|Burām_site_building 1|Burām_site_building 1_floor 1
+EOND-000694,192.168.0.187,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Neuenrade_site|Neuenrade_site_building 1|Neuenrade_site_building 1_floor 1
+EOND-000695,192.168.0.188,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Rechaïga_site|Rechaïga_site_building 1|Rechaïga_site_building 1_floor 1
+EOND-000696,192.168.0.189,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Vandiperiyār_site|Vandiperiyār_site_building 1|Vandiperiyār_site_building 1_floor 1
+EOND-000697,192.168.0.190,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Kāmākhyānagar_site|Kāmākhyānagar_site_building 1|Kāmākhyānagar_site_building 1_floor 1
+EOND-000698,192.168.0.191,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Pangururan_site|Pangururan_site_building 1|Pangururan_site_building 1_floor 1
+EOND-000699,192.168.0.192,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X435-24P-4S,Burgum_site|Burgum_site_building 1|Burgum_site_building 1_floor 1

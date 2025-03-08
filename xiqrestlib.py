@@ -1173,9 +1173,9 @@ if __name__=="__main__":
         num_buildings=num_buildings,
         num_floors=num_floors
     )
-
+'''
 
     # Generate CSV file for VOSS devices
-    generateOnboardCsv(device_type="EXOS", num_devices=700, model="X435-24P-4S", serial_prefix="EOND", serial_start=0, output_dir=".")'''
+    #generateOnboardCsv(device_type="EXOS", num_devices=700, model="X435-24P-4S", serial_prefix="EOND", serial_start=0, output_dir=".")
 
     postAdvanceOnboard(apiurl, authurl, xiquser, xiqpass, csv_file_path="devices.csv")

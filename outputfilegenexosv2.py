@@ -216,11 +216,18 @@ curl -k -H Host: openapi.00496CE5F82 http://10.139.44.110:20161/rest/openapi/v0/
     return file_name, full_content
 
 def write_output_files(prefix, num_files, base_mac, output_dir):
+    cmd_lines = []
     for i in range(1, num_files + 1):
         file_name, content = generate_file_content(prefix, i, base_mac)
         file_path = f"{output_dir}/{file_name}"
         with open(file_path, "w") as output_file:
             output_file.write(content)
+        cmd_lines.append(f"nos upload response {prefix}-{i:06} {file_name}")
+
+    # Write the a.cmd file
+    cmd_file_path = f"{output_dir}/a.cmd"
+    with open(cmd_file_path, "w") as cmd_file:
+        cmd_file.write("\n".join(cmd_lines) + "\n")
 
 def main():
     #example run: python3 outputfilegenexos.py SKS 10 00:ab:01:00:00:00 /Users/sasrinivasan/Downloads/output
