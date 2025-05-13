@@ -1,0 +1,12 @@
+SerialNumber,IPAddress,DeviceFamily,User,Password,InletConnect,SSHConnect,InletServerIP,InletServerPort,Model,Location
+FF012335G-00067,10.127.13.13,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,Switch Engine 4120-24MW-4Y,Chennai|Temple Steps|conf shree
+1847F-10114,10.127.16.49,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X465-24MU,Chennai|Temple Steps|conf bharat
+1847F-10109,10.127.16.49,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X465-24MU,Chennai|Temple Steps|conf bharat
+1847F-10125,10.127.16.49,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,X465-24MU,Chennai|Temple Steps|conf bharat
+JA022113G-00012,10.127.16.196,VOSS,admin,Extreme@123,false,false,10.64.194.54,8090,Fabric Engine 5420F-8W-16P-4XE,Chennai|Temple Steps|8
+JA132145G-00083,10.127.16.197,VOSS,admin,Extreme@123,false,false,10.64.194.54,8090,Fabric Engine 5420M-48T-4YE,Chennai|Temple Steps|8
+2008G-01253,10.127.16.198,VOSS,admin,Extreme@123,false,false,10.64.194.54,8090,Fabric Engine 5520-48T,Chennai|Temple Steps|8
+AR032225Q-40003,10.127.16.44,VOSS,admin,Extreme@123,false,false,10.64.194.54,8090,Fabric Engine 5720-48MW,Chennai|Temple Steps|8
+AR042224Q-40008,10.127.16.62,VOSS,admin,Extreme@123,false,false,10.64.194.54,8090,Fabric Engine 5720-48MXW,Chennai|Temple Steps|8
+AR042204Q-40013,10.127.16.195,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,Switch Engine 5720-48MXW,Chennai|Temple Steps|4
+AR012225Q-40004,10.127.16.47,EXOS,admin,Extreme@123,false,false,10.64.194.54,8090,Switch Engine 5720-24MW,Chennai|Temple Steps|4

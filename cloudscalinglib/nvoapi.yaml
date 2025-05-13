@@ -1,0 +1,4338 @@
+openapi: 3.0.3
+info:
+  title: Common Infra
+  description: "This is the specification that defines the API provided for Common Infra"
+  contact:
+    name: Extreme Networks
+    url: https://www.extremenetworks.com
+    email: support@extremenetworks.com
+  license:
+    name: Apache license
+    url: https://www.extremenetworks.com
+  version: 3.0.0
+
+tags:
+  - name: Topology Management
+  - name: Tag Management
+  - name: User Preferences
+  - name: Custom logging
+  - name: Device Management
+  - name: Service Management
+  - name: Schemas
+  - name: General
+  - name: Hide Node or Link Management
+  - name: Unhide Node or Link Management
+paths:
+  /retrieve-topology:
+    post:
+      tags:
+        - Topology Management
+      summary: Retrieve Topology
+      description: Retrieve the topology
+      operationId: RetrieveTopology
+      requestBody:
+        description: Request body for topology.
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TopologyCriteria'
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/topology"
+  /hide:
+    post:
+      tags:
+        - Hide Node or Link Management
+      summary: Hide Node or Link
+      description: Hide the node or link on a topology
+      operationId: Hide
+      requestBody:
+        description: Request body for hide a node or link
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/HideUnhideParamInfo'
+      responses:
+        "200":
+          description: Hide of node or links are successful.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HideUnhideResponse'
+        "400":
+          description: Bad Request - The request was invalid or cannot be otherwise served.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HideUnhideResponse'
+        "404":
+          description: Not Found - The specified resource could not be found.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HideUnhideResponse'
+        "500":
+          description: Internal Server Error - An error occurred on the server.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HideUnhideResponse'
+  /unhide:
+    post:
+      tags:
+        - Unhide Node or Link Management
+      summary: Unhide Node or Link
+      description: Unhide the node or link on a topology
+      operationId: Unhide
+      requestBody:
+        description: Request body to hide a node or link
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/HideUnhideParamInfo'
+      responses:
+        "200":
+          description: Hide of node or links are successful.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HideUnhideResponse'
+        "400":
+          description: Bad Request - The request was invalid or cannot be otherwise served.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HideUnhideResponse'
+        "404":
+          description: Not Found - The specified resource could not be found.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HideUnhideResponse'
+        "500":
+          description: Internal Server Error - An error occurred on the server.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HideUnhideResponse'
+  /group:
+    get:
+      tags:
+        - Topology Management
+      summary: Get Group Hierarchy
+      description: Get the Group hierarchy
+      operationId: GetGroupHierarchy
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/group"
+
+  /tags:
+    get:
+      tags:
+        - Tag Management
+      operationId: GetTags
+      description: Retrieve a list of tags
+      summary: Retrieve a list of tags
+      parameters:
+        - in: query
+          name: page_number
+          required: false
+          schema:
+            type: number
+            description: The current page number.
+            example: 1
+        - in: query
+          name: filter
+          required: false
+          schema:
+            type: string
+            items:
+              $ref: "#/components/schemas/FilterQuery"
+        - in: query
+          name: sort
+          required: false
+          schema:
+            type: string
+            items:
+              $ref: "#/components/schemas/SortQuery"
+        - in: query
+          name: page_size
+          required: false
+          schema:
+            type: number
+            description: The current page size
+            example: 10
+      responses:
+        "200":
+          description: Successfully retrieved tags
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/tagResponse"
+
+    post:
+      tags:
+        - Tag Management
+      operationId: CreateTag
+      description: Create a new tag
+      summary: Create a new tag
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/tagInfo"
+      responses:
+        "200":
+          description: Successfully created tag
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/tagInfo"
+    put:
+      tags:
+        - Tag Management
+      operationId: UpdateTag
+      description: Update a tag
+      summary: Update a tag
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/tagInfo"
+      responses:
+        "200":
+          description: Successfully updated tag
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/tagInfo"
+    delete:
+      tags:
+        - Tag Management
+      operationId: DeleteTags
+      description: Delete a tag
+      summary: Delete a tag
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/UUIDList"
+      responses:
+        "200":
+          description: Successfully deleted tag
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/UUIDList"
+        "204":
+          description: Successfully deleted tag
+
+  /tags/entities:
+    post:
+      tags:
+        - Tag Management
+      operationId: AssociateTagEntities
+      description: Associate tags with entities
+      summary: Associate tags with entities
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/AssociateEntities"
+      responses:
+        "200":
+          description: Tags associated with entities successfully.
+        "404":
+          description: One or more entity/tags not found.
+        "500":
+          description: Error occurred while associating tags.
+
+    delete:
+      tags:
+        - Tag Management
+      operationId: DisAssociateTagEntities
+      description: Disassociate tags from nodes
+      summary: Disassociate tags from nodes
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/AssociateEntities"
+      responses:
+        "200":
+          description: Tags disassociated from entities successfully.
+        "404":
+          description: One or more entities/tags not found.
+        "500":
+          description: Error occurred while disassociating tags.
+
+  /user/preferences:
+    get:
+      tags:
+        - User Preferences
+      summary: getUserPreferences
+      description: Get the user preferences
+      operationId: GetUserPreferences
+      parameters:
+        - name: key
+          in: query
+          description: key of preferences
+          schema:
+            type: string
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/UserPreferenceInfo"
+    post:
+      tags:
+        - User Preferences
+      summary: postUserPreferences
+      description: Create  user preferences
+      operationId: CreateUserPreferences
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: array
+              items:
+                $ref: "#/components/schemas/UserPreferenceInfo"
+      responses:
+        "200":
+          description: Successfully created/updated user preference(s)
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/UserPreferenceInfo"
+    delete:
+      tags:
+        - User Preferences
+      summary: deleteUserPreferences
+      description: Delete the user preferences
+      operationId: DeleteUserPreferences
+      parameters:
+        - name: key
+          in: query
+          required: true
+          description: key of preferences
+          schema:
+            type: string
+
+      responses:
+        "200":
+          description: Successfully deleted user preferences
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/UserPreferenceInfo"
+        "204":
+          description: Successfully deleted user preferences
+
+  /custom-positions:
+    post:
+      tags:
+        - Topology Management
+      description: Create/Update the Custom Position
+      summary: Update the Custom Position
+      operationId: UpdateCustomPosition
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              additionalProperties:
+                $ref: "#/components/schemas/customPosition"
+      responses:
+        "200":
+          description: Successfully updated custom positions
+          content:
+            application/json:
+              schema:
+                type: object
+                additionalProperties:
+                  $ref: "#/components/schemas/customPosition"
+    delete:
+      tags:
+        - Topology Management
+      description: Delete a Custom Position
+      summary: Delete custom positions
+      operationId: DeleteCustomPosition
+      parameters:
+        - name: chartHash
+          in: query
+          description: Chart hash for the topology
+          required: true
+          schema:
+            type: string
+            example: abstractFabricView
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                items:
+                  $ref: "#/components/schemas/customPosition"
+
+  /device/physical/link:
+    get:
+      tags:
+        - Device Management
+      summary: Get device physical link details
+      description: Get utilization, various In/Out, error statistics and various other details of ports associated with a link
+      operationId: getDevicePhysicalLinkDetails
+      parameters:
+        - name: linkID
+          in: query
+          description: UUID of the link (edge)
+          required: true
+          schema:
+            type: string
+            example: 5b3da8f6-bfc8-4776-ae72-e388db060000
+        - name: topologyType
+          in: query
+          description: Type of the topology from which link details are queried
+          required: true
+          schema:
+            $ref: "#/components/schemas/TopologyType"
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/DevicePhysicalLinkDetails"
+  /device/fabric/link:
+    get:
+      tags:
+        - Device Management
+      summary: Get device fabric link details
+      description: Get operational state, admin state, auth type, auth key and various other details of a fabric link
+      operationId: getDeviceFabricLinkDetails
+      parameters:
+        - name: linkID
+          in: query
+          description: UUID of the link (edge)
+          required: true
+          schema:
+            type: string
+            example: 5b3da8f6-bfc8-4776-ae72-e388db060000
+        - name: topologyType
+          in: query
+          description: Type of the topology from which link details are queried
+          required: true
+          schema:
+            $ref: "#/components/schemas/TopologyType"
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/DeviceFabricLinkDetails"
+  /device/physical:
+    get:
+      tags:
+        - Device Management
+      summary: Get device physical details
+      description: Get device physical details
+      operationId: getDevicePhysicalDetails
+      parameters:
+        - name: deviceID
+          in: query
+          description: UUID of the device (node)
+          required: true
+          schema:
+            type: string
+            example: 5b3da8f6-bfc8-4776-ae72-e388db060000
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/deviceAttribute"
+
+  /device/fabric:
+    get:
+      tags:
+        - Device Management
+      summary: Get device fabric details
+      description: Get device fabric details
+      operationId: getDeviceFabricDetails
+      parameters:
+        - name: deviceID
+          in: query
+          description: UUID of the device (node)
+          required: true
+          schema:
+            type: string
+            example: 5b3da8f6-bfc8-4776-ae72-e388db060000
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/deviceFabricAttribute"
+
+  /device/sync:
+    post:
+      tags:
+        - Device Management
+      summary: Sync the managed devices to clear the device inconsistencies
+      description: Compare the existing devices with cloud devices and removes the non-existing ones.
+      operationId: clearDeviceInconsistencies
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/deviceSyncAttribute"
+      responses:
+        "200":
+          description: OK
+
+  /retrieve-services:
+    post:
+      tags:
+        - Service Management
+      summary: Retrieve brief/details of L2 Vsn,L3 Vsn, Vlan and Vrf services
+      description: Retrieve brief/details of L2 Vsn,L3 Vsn, Vlan and Vrf services
+      operationId: RetrieveServices
+      requestBody:
+        description: Request body for services.
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ServicesCriteria'
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ServiceListResponse"
+
+  /services/retrieve-vlans:
+    post:
+      tags:
+        - Service Management
+      summary: Retrieve brief/details of Vlan Services
+      description: Retrieve brief/details of Vlan Services
+      operationId: RetrieveVlanServices
+      requestBody:
+        description: Request body for vlan services.
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ServicesCriteria'
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/VlanServiceInfoList"
+
+  /services/retrieve-vrfs:
+    post:
+      tags:
+        - Service Management
+      summary: Retrieve brief/details of Vrf Services
+      description: Retrieve brief/details of Vrf Services
+      operationId: RetrieveVrfServices
+      requestBody:
+        description: Request body for vrf services.
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ServicesCriteria'
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/VrfServiceInfoList"
+  /schemas:
+    get:
+      tags:
+        - Schemas
+      summary: Get schemas
+      description: Get schemas of different features
+      operationId: GetSchemas
+      parameters:
+        - name: type
+          in: query
+          description: Type of schema which needs to be returned
+          required: true
+          schema:
+            $ref: "#/components/schemas/SchemaType"
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SchemaInfo"
+
+  /suggestions:
+    get:
+      tags:
+        - General
+      summary: Get suggestions
+      description: Get suggestions for completion in search string
+      operationId: GetSuggestions
+      parameters:
+        - name: term
+          in: query
+          description: term to search for completion
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Suggestion"
+  /refresh/group:
+    post:
+      tags:
+        - Topology Management
+      summary: Refresh Group Topology
+      description: Refresh the Group topology
+      operationId: RefreshGroupTopology
+      requestBody:
+        description: Request body for refresh topology.
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RefreshCriteria'
+      responses:
+        "202":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/RefreshResponse"
+
+  /custom-logging:
+    get:
+      tags:
+        - Custom logging
+      operationId: GetCustomLogging
+      description: Retrieve the custom logging configuration
+      summary: Retrieve the custom logging configuration
+      parameters:
+        - in: query
+          name: service
+          schema:
+            type: string
+            description: The service names
+            example: network
+          required: true
+        - in: query
+          name: logging_type
+          required: true
+          schema:
+            type: string
+            description: The logging types
+      responses:
+        "200":
+          description: Successfully retrieved custom logging configurations
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/LoggingInfo"
+
+    post:
+      tags:
+        - Custom logging
+      operationId: CreateCustomLogging
+      description: Create the custom logging
+      summary: Create the custom logging
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: array
+              items:
+                $ref: "#/components/schemas/LoggingInfo"
+      responses:
+        "200":
+          description: Successfully created custom logging
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/LoggingInfo"
+    delete:
+      tags:
+        - Custom logging
+      operationId: ResetCustomLogging
+      description: Reset the custom logging
+      summary: Reset the custom logging
+      parameters:
+        - in: query
+          name: service
+          schema:
+            type: string
+            description: The service names
+          required: true
+        - in: query
+          name: logging_type
+          schema:
+            type: string
+            description: The logging type
+          required: true
+      responses:
+        "200":
+          description: Successfully reset the custom logging
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/LoggingInfo"
+        "204":
+          description: Successfully reset the custom logging
+
+components:
+  schemas:
+    ErrorModel:
+      required:
+        - code
+        - message
+      type: object
+      properties:
+        message:
+          type: string
+          example: Unable to get device details
+        code:
+          type: integer
+          example: 101
+
+    SortQuery:
+      type: object
+      required:
+        - name
+        - order
+      properties:
+        name:
+          type: string
+          description: The name of the property to sort by.
+          example: "name"
+        order:
+          type: string
+          description: The sort order.
+          example: "ASC"
+          enum:
+            - ASC
+            - DESC
+
+    FilterQuery:
+      type: object
+      required:
+        - name
+        - value
+      properties:
+        name:
+          type: string
+          description: The name of the filter (single or multi-valued)
+          example: "origin"
+        value:
+          type: array
+          items:
+            type: string
+          description: The values of the filter (single or multi-valued)
+          example: [ "manual","default","provisional" ]
+
+    PaginationResponse:
+      type: object
+      properties:
+        page:
+          type: integer
+          description: The current page number
+          example: 1
+        count:
+          type: integer
+          description: The number of items on the current page i.e page size
+          example: 10
+        total_pages:
+          type: integer
+          description: The total number of pages available
+          example: 2
+        total_count:
+          type: integer
+          description: The total number of items across all pages
+          example: 15
+
+
+    topology:
+      title: topology is a collection of nodes and edges.
+      type: object
+      properties:
+        nodes:
+          description: Array of nodes. Nodes is a hierarchical model of Group Nodes and Leaf Nodes(device)
+          type: array
+          items:
+            $ref: "#/components/schemas/node"
+        edges:
+          description: Array of Edges. Provides a details of how nodes are interconnected.
+          type: array
+          items:
+            $ref: "#/components/schemas/edge"
+        customPositions:
+          description: Fetches the Custom Positions (x,x1,y,y1) as persisted by UI. This is a map and the key is the UUID representing the Node. Example-5b3da8f6-bfc8-4776-ae72-a388db060000.
+          type: object
+          additionalProperties:
+            $ref: "#/components/schemas/customPosition"
+
+    group:
+      title: Hierarchy of Groups
+      type: object
+      properties:
+        id:
+          type: string
+          description: UUID of the Group
+        type:
+          $ref: "#/components/schemas/GroupType"
+        commonServiceID:
+          type: integer
+          format: int64
+          description: ID of the group as identified by Common Services
+        name:
+          type: string
+          description: Name of the Group
+        deviceCount:
+          type: integer
+          description: Number of devices per floor. This is applicable only for floor group type.
+        children:
+          description: Array of Groups. Groups is Hierarchical in nature
+          type: array
+          items:
+            $ref: "#/components/schemas/group"
+          example:
+            - id: "1"
+              commonServiceID: "cs1"
+              name: "Group 1"
+              children: [ ]
+
+    node:
+      title: Detail about Node
+      type: object
+      description: Node can be a group node or leaf node(device).
+      properties:
+        id:
+          type: string
+          description: UUID representing the Node
+          example: 5b3da8f6-bfc8-4776-ae72-a388db060000
+        attributes:
+          $ref: "#/components/schemas/attributeText"
+        data:
+          $ref: "#/components/schemas/nodeData"
+    edge:
+      title: Detail about Edge
+      type: object
+      properties:
+        id:
+          type: string
+          description: UUID representing the link
+          example: 5b3da8f6-bfc8-4776-ae72-e388db060000
+        source:
+          type: string
+          description: UUID of the source Node
+          example: 5b3da8f6-bfc8-4776-ae72-e388db062f21
+        target:
+          type: string
+          description: UUID of the target Node
+          example: 5b3da8f6-bfc8-4776-ae72-e388db062f22
+        attributes:
+          $ref: "#/components/schemas/attributeText"
+        data:
+          $ref: "#/components/schemas/edgeData"
+    nodeData:
+      title: Data about the Node.
+      description: Depending on the type of the node, appropriate details(fabric,physical etc) will get populated.
+      type: object
+      properties:
+        type:
+          $ref: "#/components/schemas/NodeType"
+        groupType:
+          $ref: "#/components/schemas/GroupType"
+        parent:
+          type: string
+          description: UUID of the parent node
+        children:
+          nullable: true
+          type: array
+          description: Array of nodes that are children of the node.
+          items:
+            $ref: "#/components/schemas/node"
+        expanded:
+          type: boolean
+        isBoundaryFloor:
+          type: boolean
+          description: A floor group type which is connected other buildings
+        latitude:
+          type: string
+          example: "2.355"
+        longitude:
+          type: string
+          example: "2.223"
+        commonServiceID:
+          type: integer
+          format: int64
+          description: ID used to refer to the group in common services
+          example: 12345
+        tags:
+          type: array
+          description: List of tags applied on the entity
+          items:
+            $ref: "#/components/schemas/tagInfo"
+        fabricInfo:
+          $ref: "#/components/schemas/fabricNodeInfo"
+        fabricAttachInfo:
+          $ref: "#/components/schemas/fabricAttachNodeInfo"
+        serviceInfo:
+          $ref: "#/components/schemas/serviceNodeInfo"
+        deviceAttribute:
+          $ref: "#/components/schemas/deviceAttribute"
+        deviceState:
+          $ref: "#/components/schemas/deviceState"
+
+    edgeData:
+      title: Data about the Node
+      type: object
+      properties:
+        type:
+          $ref: "#/components/schemas/EdgeType"
+        fabricDetail:
+          $ref: "#/components/schemas/fabricEdgeDetail"
+        physicalDetail:
+          $ref: "#/components/schemas/physicalEdgeDetail"
+        tags:
+          type: array
+          description: List of tags applied on the entity
+          items:
+            $ref: "#/components/schemas/tagInfo"
+        traceDetail:
+          type: object
+          description: UUID of the node that this edge can be traced to other layer
+          properties:
+            fabricID:
+              type: string
+              description: fabric Edge UUID
+            physicalIDList:
+              type: array
+              items:
+                type: string
+                description: Physical Edge UUID,One fabric Link can map to multiple physical links
+            serviceID:
+              type: string
+              description: service Edge UUID
+
+    customPosition:
+      title: Detail about Node
+      type: object
+      properties:
+        chartHash:
+          type: string
+        x:
+          type: number
+          format: double
+        y:
+          type: number
+          format: double
+        x1:
+          type: number
+          format: double
+        y1:
+          type: number
+          format: double
+
+    attributeText:
+      type: object
+      properties:
+        text:
+          type: object
+          properties:
+            content:
+              type: string
+              example: "attribute description"
+        x:
+          type: number
+          format: double
+        y:
+          type: number
+          format: double
+    Cluster:
+      title: Details about the cluster
+      description: Indicates cluster details of the device. Multiple physical devices clustered together act as a single logical device.
+      type: object
+      properties:
+        clusterId:
+          type: string
+          description: UUID of the cluster
+          example: "9f8df486-16c2-4d1c-afe9-d7415aed60f5"
+        clusterType:
+          $ref: "#/components/schemas/ClusterType"
+    ClusterType:
+      type: string
+      description: Type of the cluster
+      enum:
+        - VIST
+        - ISC
+    TopologyType:
+      type: string
+      enum:
+        - physical
+        - fabric
+        - service
+        - accessLayer
+    TopologyViewType:
+      type: string
+      enum:
+        - map
+        - abstract
+        - list
+    VerboseType:
+      type: string
+      description: Enum values to be provided as input to display Verbose/NonVerbose topology diagram.
+      enum:
+        - Verbose
+        - NonVerbose
+    NodeType:
+      type: string
+      description: Enum values to display the type of node.
+      enum:
+        - Group
+        - Device
+        - BorderDevice
+        - L2EP
+        - L3EP
+        - Device_VRF
+        - Device_VLAN
+        - Service_VRF
+        - Service_VLAN
+        - Service_L2VSN
+        - Service_L3VSN
+        - Empty
+        - Internet_Group
+    GroupType:
+      type: string
+      enum:
+        - SiteGroup
+        - Site
+        - Building
+        - Floor
+    EdgeType:
+      type: string
+      enum:
+        - fabricLink
+        - physicalLink
+    ServiceType:
+      type: string
+      description: Enum values to choose the type of service.
+      enum:
+        - VRF_Service
+        - VLAN_Service
+        - L2VSN_Service
+        - L3VSN_Service
+    DetailField:
+      type: string
+      description: Enum values to send respective fields in detail response.
+      enum:
+        - UUIDs
+        - Tags
+    NodeState:
+      type: string
+      enum:
+        - expand
+        - collapse
+        - collapse-all
+        - snapshot
+        - search
+    area:
+      type: object
+      properties:
+        name:
+          type: string
+          description: Name of the area
+        id:
+          type: string
+          description: UUID of the area
+          example: 5b3da8f6-1213-4776-2342-a388db060000
+    fabric:
+      type: object
+      properties:
+        name:
+          type: string
+          description: Name of the fabric
+        id:
+          type: string
+          description: UUID of the fabric
+          example: 5b3da8f6-1213-4776-2342-a388db060000
+
+    deviceAttribute:
+      type: object
+      nullable: true
+      properties:
+        deviceType:
+          $ref: "#/components/schemas/DeviceType"
+        ipAddress:
+          type: string
+          description: Management IP Address of the device
+          example: "192.168.10.11"
+        commonServiceID:
+          type: integer
+          format: int64
+          description: ID used to refer to the device in common services
+          example: 12345
+        name:
+          type: string
+          description: Name of the device
+          example: "5720-48MW-FabricEngine"
+        isManaged:
+          type: boolean
+          description: whether the device is managed
+          example: true
+        isStack:
+          type: boolean
+          description: Indicates if the device is a stacked device
+          example: false
+        stackInfo:
+          $ref: "#/components/schemas/StackInfo"
+        serialNumber:
+          type: string
+          description: serial number of the device
+          example: "1234A-56789"
+        firmwareVersion:
+          type: string
+          description: firmware version of the device
+          example: "9.0.2.0"
+        operatingSystem:
+          $ref: "#/components/schemas/OsType"
+        modelName:
+          type: string
+          description: model name of the device
+          example: "5520-24W-FabricEngine"
+        macAddress:
+          type: string
+          description: mac address of the device
+          example: "00:04:96:11:22:33"
+        systemUpTime:
+          type: string
+          description: Time since the device was running
+          example: "2 day(s), 05:38:40"
+        location:
+          type: string
+          description: Location of the device
+          example: "Head Quarters, 12th floor"
+        systemDescription:
+          type: string
+          description: Description of the device
+          example: "5520-24W-FabricEngine (9.0.2.0_B718)"
+        cluster:
+          type: array
+          nullable: true
+          items:
+            $ref: "#/components/schemas/Cluster"
+        xiqConnectionStatus:
+          type: string
+          enum:
+            - CONNECTED
+            - DISCONNECTED
+            - UNKNOWN
+          description: XIQ connection status
+        xiqConnectionDuration:
+          type: string
+          description: XIQ connection duration
+          example: "2 day(s), 05:38:40"
+
+    StackInfo:
+      type: object
+      properties:
+        stackID:
+          type: integer
+          description: stacked ID
+          example: 438086768376
+        stackChassisID:
+          type: string
+          description: stacked device chassis ID
+          example: "209ef7808800"
+        slotInfo:
+          type: array
+          nullable: true
+          items:
+            $ref: "#/components/schemas/SlotInfo"
+
+    deviceState:
+      type: object
+      nullable: true
+      properties:
+        operationalSate:
+          type: string
+          description: Operational State of the Device
+        adminState:
+          type: string
+          description: Admin State of the Device
+        upTime:
+          type: string
+          description: Up time of the Device
+
+    fabricNodeInfo:
+      type: object
+      nullable: true
+      properties:
+        fabric:
+          $ref: "#/components/schemas/fabric"
+        ipAddress:
+          type: string
+          description: Management IP Address of the device
+          example: "192.168.10.11"
+        serialNumber:
+          type: string
+          description: serial number of the device
+          example: "1234A-56789"
+        sysID:
+          type: string
+          description: sysID of the Device
+          example: SwitchA
+        name:
+          type: string
+          description: Name of the device
+          example: "5720-48MW-FabricEngine"
+        nickName:
+          type: string
+          description: nick Name of the Node
+          example: SwitchA-Bob
+        macAddress:
+          type: string
+          description: mac address of the device
+          example: "00:04:96:11:22:33"
+        FAType:
+          type: string
+          description: Fabric attach type
+          example: Proxy
+        BVLAN1:
+          type: string
+          description: BVLAN1 of the Node
+          example: "4051"
+        BVLAN2:
+          type: string
+          description: BVLAN2 of the Node
+          example: "4052"
+        DVRDomain:
+          type: string
+          description: DVR Domain
+          example: D2315
+        DVRType:
+          type: string
+          description: DVR Domain
+          example: leaf
+        isBoundaryNode:
+          type: boolean
+          description: Indicates if the node is a boundary node
+          example: false
+        isStack:
+          type: boolean
+          description: Indicates if the device is a stacked device
+          example: false
+        homeArea:
+          $ref: "#/components/schemas/area"
+        remoteArea:
+          type: array
+          nullable: true
+          description: list of Remote Areas
+          items:
+            $ref: "#/components/schemas/area"
+        physicalNodeID:
+          type: string
+          description: UUID of the node ID that is traceable to this fabric Node
+        deviceType:
+          $ref: "#/components/schemas/DeviceType"
+        cluster:
+          type: array
+          nullable: true
+          items:
+            $ref: "#/components/schemas/Cluster"
+        xiqConnectionStatus:
+          type: string
+          enum:
+            - CONNECTED
+            - DISCONNECTED
+            - UNKNOWN
+          description: XIQ connection status
+        xiqConnectionDuration:
+          type: string
+          description: XIQ connection duration
+          example: "2 day(s), 05:38:40"
+
+    fabricAttachNodeInfo:
+      type: object
+      nullable: true
+      properties:
+        sysID:
+          type: string
+          description: Fabric Attach System Identifier of the Device
+          example: "00:04:96:11:22:33"
+        fabricAttachType:
+          type: string
+          enum:
+            - Client
+            - None
+            - Proxy
+            - Proxy-Ring
+            - Server
+            - Standalone-Proxy
+          description: Type of Fabric Attach the device is running as
+          example: "Server"
+        upLink:
+          type: string
+          description: Fabric Attach Standalone Proxy Uplink port
+          example: "1:1"
+        mgmtVlan:
+          type: integer
+          description: Fabric Attach advertised management VLAN
+          example: 0
+        serverSysID:
+          type: string
+          description: Fabric Attach Proxy's Server System Identifier
+          example: "00:04:96:11:22:34"
+        serverName:
+          type: string
+          description: Fabric Attach Proxy's Server Device Name
+          example: SwitchA
+        forwardMgmtVlan:
+          type: boolean
+          description: Fabric Attach Proxy's Management VLAN broadcast state
+          example: false
+        forwardMgmtVlanPorts:
+          type: string
+          description: Fabric Attach Proxy's Management VLAN broadcast Ports
+          example: "1:1,1:3"
+        assignmentTimeout:
+          type: integer
+          description: Fabric Attach assignment timeout
+          default: 0
+          example: 45
+        DiscoveryTimeout:
+          type: integer
+          description: Fabric Attach discovery timeout
+          default: 0
+          example: 45
+      required:
+        - assignmentTimeout
+        - DiscoveryTimeout
+
+    SlotInfo:
+      type: object
+      description: Slot information for the stacked device
+      properties:
+        slotNumber:
+          type: integer
+          description: Device Slot Number
+          example: 2
+        slotModel:
+          type: string
+          description: model name of the device
+          example: "5520-48W"
+        slotNodeState:
+          type: string
+          enum:
+            - UNKNOWN
+            - INIT
+            - FAIL
+            - DOWN
+            - PRIMARY
+            - BACKUP
+            - BACKUP_CONFIG_SYNCED
+            - BACKUP_IN_SYNC
+            - STANDBY
+            - OTHER
+            - INVALID
+        slotSerialNumber:
+          type: string
+          description: serial number of the slot
+          example: "1234A-56789"
+        slotOperationStatus:
+          $ref: "#/components/schemas/OperationalState"
+        onboardedToCloud:
+          type: boolean
+          description: Indicates if the slot is onboarded to cloud
+          example: true
+
+    deviceSyncAttribute:
+      type: object
+      nullable: true
+      properties:
+        ownerID:
+          type: integer
+          description: Owner identifier
+          example: 100
+
+    serviceNodeInfo:
+      type: object
+      description: Service Node Info
+      properties:
+        l2ServiceInfo:
+          $ref: "#/components/schemas/L2serviceDetailInfo"
+        l2ServiceEndpointInfo:
+          $ref: "#/components/schemas/L2ServiceEndpointInfo"
+        vlanServiceInfo:
+          $ref: "#/components/schemas/VlanServiceDetailInfo"
+        vlanInfo:
+          $ref: "#/components/schemas/VlanInfo"
+        l3ServiceInfo:
+          $ref: "#/components/schemas/L3ServiceDetailInfo"
+        l3ServiceEndpointInfo:
+          $ref: "#/components/schemas/L3ServiceEndpointInfo"
+        vrfServiceInfo:
+          $ref: "#/components/schemas/VrfServiceDetailInfo"
+        vrfInfo:
+          $ref: "#/components/schemas/VrfInfo"
+
+    L2serviceDetailInfo:
+      type: object
+      description: L2 Service Detail Info
+      required:
+        - id
+        - name
+      properties:
+        name:
+          type: string
+          description: L2 service Name
+          example: L2-101
+        id:
+          type: string
+          description: L2 Service ID
+          example: "101"
+        serviceUUID:
+          $ref: "#/components/schemas/UUID"
+        isidClassification:
+          $ref: '#/components/schemas/IsidClassificationType'
+        overlayType:
+          $ref: '#/components/schemas/OverlayType'
+        serviceSubType:
+          $ref: "#/components/schemas/ServiceSubType"
+        associatedVlans:
+          type: array
+          description: list of Vlans
+          items:
+            type: string
+            description: Vlan number on device
+            example: "20"
+        deviceUUIDList:
+          type: array
+          description: List of Associated Device uuids
+          items:
+            type: string
+            description: Device UUID
+            example: 5b3da8f6-1213-4776-2342-a388db060000
+        groupUUID:
+          type: array
+          description: UUIDs of the group nodes associated with the service
+          items:
+            $ref: "#/components/schemas/UUID"
+        associatedSubnets:
+          type: array
+          description: Subnets associated with the service
+          items:
+            $ref: "#/components/schemas/ServiceSubnetType"
+        enabledFeatures:
+          type: array
+          description: enabled Features
+          items:
+            $ref: "#/components/schemas/ServiceFeatureType"
+        endPointCount:
+          type: integer
+          description: Total L2 endpoints
+          example: 4
+        endPoints:
+          type: array
+          description: List of L2 endpoints
+          items:
+            $ref: '#/components/schemas/L2ServiceEndpointInfo'
+        ipSubnetList:
+          type: array
+          description: List of Subnet ips
+          items:
+            $ref: '#/components/schemas/IpSubnet'
+        tags:
+          type: array
+          description: List of tags associated with the service
+          items:
+            $ref: "#/components/schemas/tagInfo"
+          example:
+            - id: "5b3da8f6-bfc8-4776-ae72-a388db060000"
+              name: "l2vsn-service1"
+              type: "l2_service_tag"
+              origin: "manual"
+
+    IpSubnet:
+      type: object
+      description: IpSubnet Info
+      required:
+        - subnetIp
+        - subnetMaskLength
+        - vrfName
+      properties:
+        subnetIp:
+          type: string
+          description: Subnet ip
+          example: 10.0.0.0
+        subnetMaskLength:
+          type: string
+          description: SubnetMask Length
+          example: "24"
+        vrfName:
+          type: string
+          description: Vrf Name
+          example: vrf-red
+
+    L2ServiceEndpointInfo:
+      type: object
+      description: L2 Service Endpoint Info
+      required:
+        - l2Access
+      properties:
+        DeviceID:
+          $ref: "#/components/schemas/UUID"
+        l2Access:
+          type: array
+          description: List of L2 Access
+          items:
+            $ref: "#/components/schemas/L2Access"
+        l3Access:
+          type: array
+          description: List of L3 Access
+          items:
+            $ref: "#/components/schemas/L3Access"
+
+    L2Access:
+      type: object
+      description: L2 Access Details
+      required:
+        - l2AccessOrigin
+        - l2AccessType
+        - l2AccessVlan
+      properties:
+        l2AccessOrigin:
+          $ref: "#/components/schemas/L2AccessOriginList"
+        l2AccessType:
+          $ref: "#/components/schemas/L2AccessType"
+        l2AccessVlan:
+          $ref: "#/components/schemas/L2AccessVlan"
+      example:
+        l2AccessOrigin:
+          - CONFIG
+        l2AccessSource: Manual_L2_Access_Source
+        l2AccessType: CustomerVlanUNI
+        l2AccessVlan:
+          customerVLAN:
+            deviceUUID: 5b3da8f6-1213-4776-2342-a388db060000
+            vlanID: "123"
+            vlanType: PortVlan
+            associatedVlans:
+              - "100"
+              - "200"
+              - "300"
+
+    L2AccessOriginList:
+      type: array
+      description: List of L2 Access Origin
+      items:
+        $ref: "#/components/schemas/L2AccessOrigin"
+
+    L2AccessOrigin:
+      type: string
+      description: L2 Access Origin
+      enum:
+        - INVALID
+        - CONFIG
+        - DISCOVER-LOCAL
+        - DISCOVER-REMOTE
+        - MANAGEMENT
+        - EAP-LOCAL
+        - EAP-REMOTE
+        - AUTO-SENSE
+        - REDIST
+        - RADIUSL2VSN
+
+    L2AccessType:
+      type: string
+      description: L2 Access Types
+      enum:
+        - CustomerVlanUNI
+        - TransparentVlanUNI
+        - SwitchedVlanUNI
+
+    L2AccessVlan:
+      type: object
+      description: L2 Service Endpoint Info
+      properties:
+        customerVLAN:
+          $ref: "#/components/schemas/CustomerVlanUNI"
+        switchedVLAN:
+          $ref: "#/components/schemas/SwitchedVlanUNI"
+        transparentVLAN:
+          $ref: "#/components/schemas/TransparentVlanUNI"
+
+    CustomerVlanUNI:
+      type: object
+      description: CustomerVLAN Details
+      required:
+        - deviceUUID
+        - vlanID
+        - vlanType
+      properties:
+        deviceUUID:
+          $ref: "#/components/schemas/UUID"
+        vlanID:
+          type: string
+          description: vlan ID
+          example: "22"
+        vlanType:
+          $ref: '#/components/schemas/VlanType'
+        associatedVlans:
+          type: array
+          description: "Vlan IDs associated with this vlan. For a PVLAN, when id is Primary/Secondary\
+                      \ VLAN ID, this will be Secondary/Primary VLAN IDs respectively."
+          items:
+            type: string
+            description: Associated Vlan number
+          example:
+            - "20"
+            - "30"
+            - "40"
+
+    SwitchedVlanUNI:
+      type: object
+      description: SwitchedVlan Details
+      required:
+        - deviceUUID
+        - vlanID
+        - vlanType
+        - interfaceSwitchPortConfig
+      properties:
+        deviceUUID:
+          $ref: "#/components/schemas/UUID"
+        vlanID:
+          type: string
+          description: vlan ID
+          example: "22"
+        vlanType:
+          $ref: '#/components/schemas/VlanType'
+        associatedVlans:
+          type: array
+          description: "Vlan IDs associated with this vlan. For a PVLAN, when id is Primary/Secondary\
+                      \ VLAN ID, this will be Secondary/Primary VLAN IDs respectively."
+          items:
+            type: string
+            description: Associated Vlan number
+          example:
+            - "20"
+            - "30"
+            - "40"
+        interfaceSwitchPortConfig:
+          type: array
+          description: List of Interface Port config
+          items:
+            $ref: "#/components/schemas/InterfaceSwitchPortConfig"
+
+    TransparentVlanUNI:
+      type: object
+      description: TransparentVlan Details
+      required:
+        - deviceUUID
+        - interfaceSwitchPortConfig
+      properties:
+        deviceUUID:
+          $ref: "#/components/schemas/UUID"
+        interfaceSwitchPortConfig:
+          type: array
+          description: List of Interface Port config
+          items:
+            $ref: "#/components/schemas/InterfaceSwitchPortConfig"
+
+    VlanServiceDetailInfo:
+      type: object
+      description: Vlan Service Info
+      required:
+        - id
+      properties:
+        name:
+          type: string
+          description: Name of the Vlan
+          example: vlan-100
+        id:
+          type: string
+          description: Vlan number
+          example: "101"
+        serviceUUID:
+          $ref: "#/components/schemas/UUID"
+        deviceUUIDList:
+          type: array
+          description: List of Associated Device uuids
+          items:
+            type: string
+            description: Device UUID
+            example: 5b3da8f6-1213-4776-2342-a388db060000
+        groupUUID:
+          type: array
+          description: UUIDs of the group nodes associated with the service
+          items:
+            $ref: "#/components/schemas/UUID"
+        associatedSubnets:
+          type: array
+          description: Subnets associated with the service
+          items:
+            $ref: "#/components/schemas/ServiceSubnetType"
+        enabledFeatures:
+          type: array
+          description: enabled Features
+          items:
+            $ref: "#/components/schemas/ServiceFeatureType"
+        endPointCount:
+          type: integer
+          description: Total vlan endpoints
+          example: 4
+        deviceVlans:
+          type: array
+          description: List of vlan config on devices
+          items:
+            $ref: "#/components/schemas/VlanInfo"
+        vlanVsnTypes:
+          type: array
+          description: Lists out the vlan role in VSN, whether its SUNI vlan or CVLAN or a plain vlan
+          items:
+            $ref: "#/components/schemas/VlanVsnType"
+        ipSubnetList:
+          type: array
+          description: List of Subnet ips
+          items:
+            $ref: '#/components/schemas/IpSubnet'
+        tags:
+          type: array
+          description: List of tags associated with the service
+          items:
+            $ref: "#/components/schemas/tagInfo"
+          example:
+            - id: "5b3da8f6-bfc8-4776-ae72-a388db060000"
+              name: "vlan-service1"
+              type: "vlan_service_tag"
+              origin: "manual"
+
+    VlanInfo:
+      type: object
+      description: Vlan Info
+      required:
+        - id
+        - vlanType
+      properties:
+        name:
+          type: string
+          description: Vlan name
+          example: vlan-100
+        id:
+          type: string
+          description: Vlan number
+          example: "101"
+        deviceUUID:
+          $ref: "#/components/schemas/UUID"
+        serviceISIDs:
+          type: array
+          description: Associated L2 Service ISIDs
+          items:
+            type: string
+          example:
+            - "101"
+            - "102"
+            - "103"
+        vlanType:
+          $ref: '#/components/schemas/VlanType'
+        associatedVlans:
+          type: array
+          description: "Vlan IDs associated with this vlan. For a PVLAN, when id is Primary/Secondary\
+                      \ VLAN ID, this will be Secondary/Primary VLAN IDs respectively."
+          items:
+            type: string
+            description: Associated Vlan number
+          example:
+            - "20"
+            - "30"
+            - "40"
+        interfaceSwitchPortConfig:
+          type: array
+          description: List of Interface Port config
+          items:
+            $ref: "#/components/schemas/InterfaceSwitchPortConfig"
+        l3Access:
+          type: array
+          description: List of L3 Access
+          items:
+            $ref: "#/components/schemas/L3Access"
+
+    InterfaceSwitchPortConfig:
+      type: object
+      description: Interface Switch Port config
+      required:
+        - interface
+        - switchPortMode
+      properties:
+        interface:
+          $ref: "#/components/schemas/InterfaceKey"
+        switchPortMode:
+          $ref: "#/components/schemas/SwitchPortModeType"
+        privateVlanPortMode:
+          $ref: '#/components/schemas/PrivateVlanPortModeType'
+        interfaceMembers:
+          type: array
+          description: List of members associated with the lag. This is applicable only when the interface is of type LAG (Lag_Interface).
+          items:
+            $ref: "#/components/schemas/InterfaceKey"
+      example:
+        interface:
+          interfaceName: 1/1
+          interfaceType: Ethernet_Interface
+        switchPortMode: Trunk
+        privateVlanPortMode: IsolatedPvlanPortMode
+
+
+    SwitchPortModeType:
+      type: string
+      enum:
+        - Trunk
+        - Access
+      example: "Trunk"
+    PrivateVlanPortModeType:
+      type: string
+      description: Type of Private VLAN port mode.
+      enum:
+        - NonePvlanPortMode
+        - IsolatedPvlanPortMode
+        - PromiscuousPvlanPortMode
+        - TrunkPvlanPortMode
+      example: "IsolatedPvlanPortMode"
+    VlanType:
+      type: string
+      description: Type of a VLAN.
+      enum:
+        - PortVlan
+        - ProtocolVlan
+        - PrivateVlanPrimary
+        - PrivateVlanSecondaryIsolated
+        - PrivateVlanSecondaryNonIsolated
+        - SpbmBVlan
+        - Vman
+        - BrouterVlan
+        - FabricAttachVlan
+      example: "PortVlan"
+    VlanVsnType:
+      type: string
+      description: Vlan role in VSN, whether its SUNI vlan or CVLAN or a plain vlan
+      enum:
+        - none
+        - cvlan
+        - svlan
+      example: "svlan"
+    L3ServiceDetailInfo:
+      type: object
+      description: L3 Service Detail Info
+      required:
+        - id
+        - name
+      properties:
+        name:
+          type: string
+          description: L3 service name
+          example: L3-101
+        id:
+          type: string
+          description: L3 Service ID
+          example: "101"
+        serviceUUID:
+          $ref: "#/components/schemas/UUID"
+        isidClassification:
+          $ref: '#/components/schemas/IsidClassificationType'
+        overlayType:
+          $ref: '#/components/schemas/OverlayType'
+        serviceSubType:
+          $ref: "#/components/schemas/ServiceSubType"
+        associatedVlans:
+          type: array
+          description: associated list of Vlans
+          items:
+            type: string
+            description: Vlan number on device
+            example: "20"
+        associatedVrfs:
+          type: array
+          description: associated list of Vrfs
+          items:
+            type: string
+            description: Vrf name
+            example: Vrf-a
+        deviceUUIDList:
+          type: array
+          description: List of Associated Device uuids
+          items:
+            type: string
+            description: Device UUID
+            example: 5b3da8f6-1213-4776-2342-a388db060000
+        groupUUID:
+          type: array
+          description: UUIDs of the group nodes associated with the service
+          items:
+            $ref: "#/components/schemas/UUID"
+        associatedSubnets:
+          type: array
+          description: Subnets associated with the service
+          items:
+            $ref: "#/components/schemas/ServiceSubnetType"
+        enabledFeatures:
+          type: array
+          description: enabled Features
+          items:
+            $ref: "#/components/schemas/ServiceFeatureType"
+        endPointCount:
+          type: integer
+          description: Total L3 endpoints
+          example: 4
+        endPoints:
+          type: array
+          description: List of L3 service endpoints
+          items:
+            $ref: '#/components/schemas/L3ServiceEndpointInfo'
+        tags:
+          type: array
+          description: List of tags associated with the service
+          items:
+            $ref: "#/components/schemas/tagInfo"
+          example:
+            - id: "5b3da8f6-bfc8-4776-ae72-a388db060000"
+              name: "l3vsn-service1"
+              type: "l3_service_tag"
+              origin: "manual"
+
+    L3ServiceEndpointInfo:
+      type: object
+      description: L3 Service Endpoint Info
+      required:
+        - vrf
+      properties:
+        vrf:
+          $ref: "#/components/schemas/VrfInfo"
+
+    VrfServiceDetailInfo:
+      type: object
+      description: Vrf Service Info
+      required:
+        - name
+      properties:
+        name:
+          type: string
+          description: Vrf name
+          example: vrf-101
+        serviceUUID:
+            $ref: "#/components/schemas/UUID"
+        associatedVlans:
+          type: array
+          description: associated list of Vlans
+          items:
+            type: string
+            description: Vlan number on device
+            example: "20"
+        deviceUUIDList:
+          type: array
+          description: List of Associated Device uuids
+          items:
+            type: string
+            description: Device UUID
+            example: 5b3da8f6-1213-4776-2342-a388db060000
+        groupUUID:
+          type: array
+          description: UUIDs of the group nodes associated with the service
+          items:
+            $ref: "#/components/schemas/UUID"
+        associatedSubnets:
+          type: array
+          description: Subnets associated with the service
+          items:
+            $ref: "#/components/schemas/ServiceSubnetType"
+        enabledFeatures:
+          type: array
+          description: enabled Features
+          items:
+            $ref: "#/components/schemas/ServiceFeatureType"
+        endPointCount:
+          type: integer
+          description: Total Vrf endpoints
+          example: 4
+        deviceVrfs:
+          type: array
+          description: List of vrf config on devices
+          items:
+            $ref: "#/components/schemas/VrfInfo"
+        tags:
+          type: array
+          description: List of tags associated with the service
+          items:
+            $ref: "#/components/schemas/tagInfo"
+          example:
+            - id: "5b3da8f6-bfc8-4776-ae72-a388db060000"
+              name: "vrf-service1"
+              type: "vrf_service_tag"
+              origin: "manual"
+
+    VrfInfo:
+      type: object
+      description: Vrf Info
+      required:
+        - name
+      properties:
+        DeviceID:
+          $ref: "#/components/schemas/UUID"
+        name:
+          type: string
+          description: Vrf name
+          example: vrf-101
+        associatedVlans:
+          type: array
+          description: list of Vlans
+          items:
+            type: string
+            description: Vlan number on device
+            example: "20"
+        l3Access:
+          type: array
+          description: List of L3 Access
+          items:
+            $ref: "#/components/schemas/L3Access"
+
+    L3Access:
+      type: object
+      description: L3 Access Info
+      required:
+        - vrfID
+        - vrfName
+        - gatewayType
+        - gatewayIP
+        - gatewayInterface
+      properties:
+        vrfID:
+          type: string
+          description: VRF ID
+          example: "22"
+        vrfName:
+          type: string
+          description: VRF name
+          example: vrf-22
+        gatewayType:
+          $ref: "#/components/schemas/L3GatewayType"
+        gatewayIP:
+          type: string
+          description: Gateway IP
+          example: 10.20.20.4
+        gatewayIPMaskLength:
+          type: integer
+          description: Gateway IP MaskLength
+          example: 24
+        gatewayInterface:
+          $ref: "#/components/schemas/L3GatewayInterface"
+
+    L3GatewayInterface:
+      type: object
+      description: Gateway interface
+      required:
+        - interface
+      properties:
+        interface:
+          $ref: "#/components/schemas/InterfaceKey"
+        vrrpInstances:
+          type: array
+          description: List of VRRP node details
+          items:
+            $ref: "#/components/schemas/VrrpInstance"
+
+    ServiceSubnetType:
+      type: string
+      description: Service subnet types
+      enum:
+        - Ipv4_Unicast
+        - Ipv6_Unicast
+        - Ipv4_Multicast
+        - Ipv6_Multicast
+    ServiceFeatureType:
+      type: string
+      description: Service Feature types
+      enum:
+        - IP_Multicast
+        - IP_DHCP_Relay
+        - IP_ARP_Inspection
+        - SLPP_Guard
+
+    L3GatewayType:
+      type: string
+      description: L3 gateway type
+      enum:
+        - VRRP
+        - RSMLT
+        - Anycast
+
+    ServiceSubType:
+      type: string
+      description: Service sub type
+      enum:
+        - L3
+        - L2_AnyToAny_ELAN
+        - L2_PointToMultiPoint_ETREE
+        - L2_Transparent
+
+    VrrpState:
+      type: string
+      description: VRRP state
+      enum:
+        - UNKNOWN_VRRP
+        - INIT_VRRP
+        - BACKUP_VRRP
+        - MASTER_VRRP
+
+    VrrpInstance:
+      type: object
+      description: Vrrp Instance Details
+      required:
+        - instanceID
+        - virtualIPs
+      properties:
+        instanceID:
+          type: string
+          description: VRRP Instance ID
+          example: "23"
+        virtualIPs:
+          type: array
+          description: List of VRRP Virtual IP Address
+          items:
+            type: string
+        active:
+          type: boolean
+          description: VRRP active or not
+        state:
+          $ref: "#/components/schemas/VrrpState"
+
+    InterfaceKey:
+      type: object
+      description: Interface Key
+      required:
+        - interfaceName
+        - interfaceType
+      properties:
+        interfaceType:
+          $ref: "#/components/schemas/InterfaceType"
+        interfaceName:
+          type: string
+          description: Interface name
+          example: 0/21
+
+    fabricEdgeDetail:
+      type: object
+      nullable: true
+      description: Fabric details about the edge like its type and state
+      properties:
+        linkType:
+          $ref: "#/components/schemas/TopologyFabricLinkEnum"
+        sourceName:
+          type: string
+          description: Name of the Source End
+          example: eth 0/1
+        targetName:
+          type: string
+          description: Name of the destination End
+          example: eth 0/10
+        sourceIsisAdminState:
+          $ref: "#/components/schemas/AdminState"
+        targetIsisAdminState:
+          $ref: "#/components/schemas/AdminState"
+        sourceIsisOperState:
+          $ref: "#/components/schemas/OperationalState"
+        targetIsisOperState:
+          $ref: "#/components/schemas/OperationalState"
+        sourceAutoSenseAdminState:
+          $ref: "#/components/schemas/AdminState"
+        targetAutoSenseAdminState:
+          $ref: "#/components/schemas/AdminState"
+        sourceAutoSenseOperState:
+          $ref: "#/components/schemas/AutoSenseOperState"
+        targetAutoSenseOperState:
+          $ref: "#/components/schemas/AutoSenseOperState"
+        sourceFaAdminState:
+          $ref: "#/components/schemas/AdminState"
+        targetFaAdminState:
+          $ref: "#/components/schemas/AdminState"
+        sourceFaOperState:
+          $ref: "#/components/schemas/OperationalState"
+        targetFaOperState:
+          $ref: "#/components/schemas/OperationalState"
+        physicalEdgeID:
+          type: string
+        linkIsisOperStatus:
+          $ref: "#/components/schemas/OperationalState"
+        linkFaOperStatus:
+          $ref: "#/components/schemas/OperationalState"
+        edgeArea:
+          $ref: "#/components/schemas/area"
+        adjacencyState:
+          $ref: "#/components/schemas/FabricLinkAdjacencyStateEnum"
+
+    physicalEdgeDetail:
+      type: object
+      nullable: true
+      description: Physical details about the edge like its type and state
+      properties:
+        linkType:
+          $ref: "#/components/schemas/PhysicalLinkEnum"
+        sourceName:
+          type: string
+          description: Name of the Source End
+          example: eth 0/1
+        targetName:
+          type: string
+          description: Name of the destination End
+          example: eth 0/10
+        sourceAdminState:
+          $ref: "#/components/schemas/AdminState"
+        targetAdminState:
+          $ref: "#/components/schemas/AdminState"
+        sourceOperState:
+          $ref: "#/components/schemas/OperationalState"
+        targetOperState:
+          $ref: "#/components/schemas/OperationalState"
+        sourceAutoSenseAdminState:
+          $ref: "#/components/schemas/AdminState"
+        targetAutoSenseAdminState:
+          $ref: "#/components/schemas/AdminState"
+        sourceAutoSenseOperState:
+          $ref: "#/components/schemas/AutoSenseOperState"
+        targetAutoSenseOperState:
+          $ref: "#/components/schemas/AutoSenseOperState"
+        sourceMlagID:
+          type: string
+          description: MLAG ID of the source end
+        targetMlagID:
+          type: string
+          description: MLAG ID of the target end
+        sourceClusterInfo:
+          $ref: "#/components/schemas/Cluster"
+        targetClusterInfo:
+          $ref: "#/components/schemas/Cluster"
+        sourcePortDescription:
+          type: string
+          description: Port description of the source end
+        targetPortDescription:
+          type: string
+          description: Port description of the target end
+        sourceLagID:
+          type: string
+          description: LAG ID of the source end if this link is of type LAG
+        targetLagID:
+          type: string
+          description: LAG ID of the target end if this link is of type LAG
+        children:
+          description: To be filled in case of Lag, These are the children of the lags
+          type: array
+          items:
+            $ref: "#/components/schemas/LagEdgeLinks"
+
+    LagEdgeLinks:
+      type: object
+      properties:
+        id:
+          type: string
+          description: UUID of the edge-link
+          example: 5b3da8f6-1213-4776-2342-a388db060000
+        sourceName:
+          type: string
+          description: Name of the Source End
+          example: eth 0/1
+        targetName:
+          type: string
+          description: Name of the destination End
+          example: eth 0/10
+        sourceOperState:
+          $ref: "#/components/schemas/OperationalState"
+        targetOperState:
+          $ref: "#/components/schemas/OperationalState"
+        sourceAdminState:
+          $ref: "#/components/schemas/AdminState"
+        targetAdminState:
+          $ref: "#/components/schemas/AdminState"
+        sourceAutoSenseAdminState:
+          $ref: "#/components/schemas/AdminState"
+        targetAutoSenseAdminState:
+          $ref: "#/components/schemas/AdminState"
+        sourceAutoSenseOperState:
+          $ref: "#/components/schemas/AutoSenseOperState"
+        targetAutoSenseOperState:
+          $ref: "#/components/schemas/AutoSenseOperState"
+        sourcePortDescription:
+          type: string
+          description: Description of the source port
+        targetPortDescription:
+          type: string
+          description: Description of the target port
+
+    TopologyFabricLinkEnum:
+      type: string
+      enum:
+        - Wireless_Link
+        - SD-WAN_Link
+        - FE-IP_Link
+        - FE-VLAN_Link
+        - FA_Link
+
+    LogicalInformation:
+      type: object
+      description: Type, source and destination information for logical NNI
+      properties:
+        tunnelType:
+          $ref: "#/components/schemas/TunnelTypeEnum"
+        tunnelSource:
+          type: string
+          description: Tunnel source IP
+          example: 40.43.40.1
+        tunnelDestination:
+          type: string
+          description: Tunnel destination IP
+          example: 40.43.40.2
+
+    TunnelTypeEnum:
+      type: string
+      description: Tunnel type can be SDWAN, FE-IP, FE-VLAN
+      enum:
+        - SDWAN
+        - FE-IP
+        - FE-VLAN
+
+    FabricLinkEnum:
+      type: string
+      description: Valid values are Physical, LAG, Logical and FabricAttach
+
+    FabricLinkAdjacencyStateEnum:
+      type: string
+      enum:
+        - Primary
+        - Backup
+    PhysicalLinkEnum:
+      type: string
+      enum:
+        - Lag
+        - Interface
+        - Cloud
+
+    InterfaceType:
+      type: string
+      description: Interface Type
+      enum:
+        - Lag_Interface
+        - Ethernet_Interface
+        - Vlan_Interface
+        - None_Interface
+      example: Ethernet_Interface
+
+    UUID:
+      type: string
+      description: UUID of the entity
+      example: 5b3da8f6-1213-4776-2342-a388db060000
+
+    DeviceFabricLinkDetails:
+      type: object
+      nullable: true
+      description: Details of a Fabric NNI
+      properties:
+        link:
+          $ref: "#/components/schemas/deviceFabricLink"
+        port1State:
+          $ref: "#/components/schemas/deviceFabricPortInfo"
+        port2State:
+          $ref: "#/components/schemas/deviceFabricPortInfo"
+
+    deviceFabricLink:
+      type: object
+      nullable: true
+      description: Attributes identifying a Fabric NNI
+      properties:
+        device1Name:
+          type: string
+          description: Device1 (Device on one end of the link) name
+          example: "5520-24W-1"
+        device2Name:
+          type: string
+          description: Device2 (Device on another end of the link) name
+          example: "5520-24W-2"
+        port1Name:
+          type: string
+          description: Port1 (Port residing on Device1) name
+          example: "1:1"
+        port2Name:
+          type: string
+          description: Port2 (Port residing on Device1) name
+          example: "1:2"
+        nniType:
+          $ref: "#/components/schemas/FabricLinkEnum"
+
+    deviceFabricPortInfo:
+      type: object
+      nullable: true
+      description: Attributes identifying a Fabric device port
+      properties:
+        isisOperationalState:
+          $ref: "#/components/schemas/OperationalState"
+        isisAdminState:
+          $ref: "#/components/schemas/AdminState"
+        logicalInfo:
+          $ref: "#/components/schemas/LogicalInformation"
+        authType:
+          type: string
+          description: IS-IS Authentication Type
+        helloTimer:
+          type: string
+          description: IS-IS Hello Timer
+        helloMultiplier:
+          type: string
+          description: IS-IS Hello Multiplier
+        metric:
+          type: string
+          description: IS-IS Metric
+        faOperationalState:
+          $ref: "#/components/schemas/OperationalState"
+        faAdminState:
+          $ref: "#/components/schemas/AdminState"
+        faMessageAuthState:
+          type: boolean
+          description: Fabric Attach Message Authentication state
+        faLinkState:
+          type: string
+          enum:
+            - TAGGED
+            - TAGGED_UNTAGGED
+            - UNTAGGED
+          description: Fabric Attach Link State
+        faAuthOperationalState:
+          type: string
+          enum:
+            - NONE
+            - PASS
+            - FAIL
+            - SKIPPED
+          description: Fabric Attach Authentication operational state
+        faElementOperationalState:
+          type: string
+          enum:
+            - NONE
+            - SUCCESS_NO_AUTH
+            - SUCCESS_AUTH
+            - FAIL_MISMATCHED_KEYS
+            - FAIL_LOCAL_AUTH_REMOTE_NO_AUTH
+            - FAIL_LOCAL_NO_AUTH_REMOTE_AUTH
+          description: Fabric Attach Element operational state
+        faAssignOperationalState:
+          type: string
+          enum:
+            - NONE
+            - SUCCESS_NO_AUTH
+            - SUCCESS_AUTH
+            - FAIL_MISMATCHED_KEYS
+            - FAIL_LOCAL_AUTH_REMOTE_NO_AUTH
+            - FAIL_LOCAL_NO_AUTH_REMOTE_AUTH
+          description: Fabric Attach Assignment operational state
+        faTotalBindings:
+          type: integer
+          description: Fabric Attach total bindings count
+          example: 24
+        faActiveBindings:
+          type: integer
+          description: Fabric Attach active bindings count
+          example: 24
+        faPendingBindings:
+          type: integer
+          description: Fabric Attach pending bindings count
+          example: 24
+        faRejectedBindings:
+          type: integer
+          description: Fabric Attach rejected bindings count
+          example: 24
+
+    DevicePhysicalLinkDetails:
+      type: object
+      nullable: true
+      description: Details of ports associated with a link
+      properties:
+        link:
+          $ref: "#/components/schemas/devicePhysicalLink"
+        linkInfo:
+          $ref: "#/components/schemas/devicePhysicalLinkInfo"
+        port1State:
+          $ref: "#/components/schemas/devicePortState"
+        port2State:
+          $ref: "#/components/schemas/devicePortState"
+        memberLinksState:
+          type: array
+          description: Member ports information
+          items:
+            $ref: "#/components/schemas/lagMemberLinkState"
+    lagMemberLinkState:
+      type: object
+      nullable: true
+      description: Details of lag member ports
+      properties:
+        link:
+          $ref: "#/components/schemas/lagMemberPhysicalLink"
+        linkInfo:
+          $ref: "#/components/schemas/devicePhysicalLinkInfo"
+        port1State:
+          $ref: "#/components/schemas/devicePortState"
+        port2State:
+          $ref: "#/components/schemas/devicePortState"
+
+    devicePhysicalLink:
+      type: object
+      nullable: true
+      description: Attributes identifying a link
+      properties:
+        device1Name:
+          type: string
+          description: Device1 (Device on one end of the link) name
+          example: "5520-24W-1"
+        device2Name:
+          type: string
+          description: Device2 (Device on another end of the link) name
+          example: "5520-24W-2"
+        port1Name:
+          type: string
+          description: Port1 (Port residing on Device1) name
+          example: "1:1"
+        port2Name:
+          type: string
+          description: Port2 (Port residing on Device2) name
+          example: "1:2"
+        port1Description:
+          type: string
+          description: Description of Port1 (Port residing on Device1)
+          example: "4th floor port 1:12"
+        port2Description:
+          type: string
+          description: Description of Port2 (Port residing on Device2)
+          example: "4th floor port 1:12"
+        port1LagID:
+          type: string
+          description: LAG ID of Port1 (Port residing on Device1) if this link is of type LAG
+        port2LagID:
+          type: string
+          description: LAG ID of Port2 (Port residing on Device2) if this link is of type LAG
+        port1LagLinkInfo:
+          $ref: '#/components/schemas/deviceLagLinkInfo'
+        port2LagLinkInfo:
+          $ref: '#/components/schemas/deviceLagLinkInfo'
+
+    lagMemberPhysicalLink:
+      type: object
+      nullable: true
+      description: Attributes identifying a link
+      properties:
+        linkID:
+          type: string
+          description: UUID of the lag member link
+          example: 5b3da8f6-bfc8-4776-ae72-e388db060000
+        device1Name:
+          type: string
+          description: Device1 (Device on one end of the link) name
+          example: "5520-24W-1"
+        device2Name:
+          type: string
+          description: Device2 (Device on another end of the link) name
+          example: "5520-24W-2"
+        port1Name:
+          type: string
+          description: Port1 (Port residing on Device1) name
+          example: "1:1"
+        port2Name:
+          type: string
+          description: Port2 (Port residing on Device2) name
+          example: "1:2"
+        port1Description:
+          type: string
+          description: Description of Port1 (Port residing on Device1)
+          example: "4th floor port 1:12"
+        port2Description:
+          type: string
+          description: Description of Port2 (Port residing on Device2)
+          example: "4th floor port 1:12"
+
+    deviceLagLinkInfo:
+      type: object
+      properties:
+        lagMode:
+          type: string
+          description: Mode lag that link is configured as.
+          example: Trunk
+          enum:
+            - Trunk
+            - Access
+        lagProtocol:
+          type: string
+          description: Protocol that is running on the lag link.
+          example: LACP
+          enum:
+            - LACP
+            - Static
+            - Other
+        lagAlgorithm:
+          type: string
+          description: Algorithm used to hash lag traffic.
+          example: L2
+          enum:
+            - L2
+            - L3
+            - L3L4
+            - CUSTOM
+            - PORT
+        lagMembers:
+          type: string
+          description: All member ports of a lag
+          example: 1:1
+      description: Lag port link information
+      nullable: true
+      example:
+        lagMode: Trunk
+        lagProtocol: LACP
+        lagAlgorithm: L2
+
+    devicePhysicalLinkInfo:
+      type: object
+      nullable: true
+      description: Link Details
+      properties:
+        linkMediaType:
+          type: string
+          enum:
+            - Ethernet
+            - Wireless
+            - Unknown
+          description: |
+            Media type of the link.
+          example: "Ethernet"
+
+    devicePortState:
+      type: object
+      nullable: true
+      description: Details of the port
+      properties:
+        portUtilizationInfo:
+          $ref: "#/components/schemas/PortUtilizationInfo"
+        portInOutStats:
+          $ref: "#/components/schemas/PortInOutStats"
+        portErrorStats:
+          $ref: "#/components/schemas/PortErrorStats"
+        portDetails:
+          $ref: "#/components/schemas/PortDetails"
+
+    PortUtilizationInfo:
+      type: object
+      nullable: true
+      properties:
+        utilizationRx:
+          type: number
+          format: float
+          description: The percentage of bandwidth used for ingress.
+          example: 12.34
+        utilizationTx:
+          type: number
+          format: float
+          description: The percentage of bandwidth used for egress.
+          example: 56.78
+        utilizationMaxRx:
+          type: number
+          format: float
+          description: The maximum percentage of bandwidth reached, used for ingress.
+          example: 67.89
+        utilizationMaxTx:
+          type: number
+          format: float
+          description: The maximum percentage of bandwidth reached, used for egress.
+          example: 89.01
+
+    PortInOutStats:
+      type: object
+      nullable: true
+      properties:
+        inOctets:
+          type: integer
+          format: int64
+          minimum: 0
+          description: |
+            The total number of octets received on the interface,
+            including framing characters.
+          example: 12345
+        outOctets:
+          type: integer
+          format: int64
+          minimum: 0
+          description: |
+            The total number of octets transmitted out of the
+            interface, including framing characters.
+          example: 234567
+        inUcastPkts:
+          type: integer
+          format: int64
+          minimum: 0
+          description: |
+            The number of packets, delivered by this sub-layer to a
+            higher (sub-)layer, which were not addressed to a multicast
+            or broadcast address at this sub-layer.
+          example: 345678
+        outUcastPkts:
+          type: integer
+          format: int64
+          minimum: 0
+          description: |
+            The total number of packets that higher-level protocols
+            requested be transmitted, and which were not addressed to a
+            multicast or broadcast address at this sub-layer, including
+            those that were discarded or not sent.
+          example: 456789
+        inBroadcastPkts:
+          type: integer
+          format: int64
+          minimum: 0
+          description: |
+            The number of packets, delivered by this sub-layer to a
+            higher (sub-)layer, which were addressed to a broadcast
+            address at this sub-layer.
+          example: 123456
+        outBroadcastPkts:
+          type: integer
+          format: int64
+          minimum: 0
+          description: |
+            The total number of packets that higher-level protocols
+            requested be transmitted, and which were addressed to a
+            broadcast address at this sub-layer, including those that
+            were discarded or not sent.
+          example: 123456789
+        inMulticastPkts:
+          type: integer
+          format: int64
+          minimum: 0
+          description: |
+            The number of packets, delivered by this sub-layer to a
+            higher (sub-)layer, which were addressed to a multicast
+            address at this sub-layer. For a MAC layer protocol, this
+            includes both Group and Functional addresses.
+          example: 1234569012
+        outMulticastPkts:
+          type: integer
+          format: int64
+          minimum: 0
+          description: |
+            The total number of packets that higher-level protocols
+            requested be transmitted, and which were addressed to a
+            multicast address at this sub-layer, including those that
+            were discarded or not sent.  For a MAC layer protocol, this
+            includes both Group and Functional addresses.
+          example: 123456
+        inFlowCtrlPkts:
+          type: integer
+          format: int64
+          minimum: 0
+          description: |
+            The total number of flow control packets received
+            by this interface.
+          example: 123456
+        outFlowCtrlPkts:
+          type: integer
+          format: int64
+          minimum: 0
+          description: |
+            The total number of flow control packets transmitted 
+            by this interface.
+          example: 123456
+        inPfcPkts:
+          type: integer
+          format: int64
+          minimum: 0
+          description: |
+            The total number of Priority Flow Control (PFC)
+            packets received by this interface.
+          example: 123456
+        outPfcPkts:
+          type: integer
+          format: int64
+          minimum: 0
+          description: |
+            The total number of Priority Flow Control (PFC)
+            packets transmitted by this interface.
+          example: 123456
+
+    PortErrorStats:
+      type: object
+      nullable: true
+      properties:
+        inDiscards:
+          type: integer
+          format: int64
+          minimum: 0
+          description: |
+            The number of inbound packets which were chosen to be
+            discarded even though no errors had been detected to prevent
+            their being deliverable to a higher-layer protocol. One 
+            possible reason for discarding such a packet could be to free 
+            up buffer space.
+          example: 123456
+        outDiscards:
+          type: integer
+          format: int64
+          minimum: 0
+          description: |
+            The number of outbound packets which were chosen to be
+            discarded even though no errors had been detected to prevent
+            their being transmitted. One possible reason for discarding
+            such a packet could be to free up buffer space.
+          example: 123456
+        inErrors:
+          type: integer
+          format: int64
+          minimum: 0
+          description: |
+            For packet-oriented interfaces, the number of inbound
+            packets that contained errors preventing them from being
+            deliverable to a higher-layer protocol.
+          example: 123456
+        outErrors:
+          type: integer
+          format: int64
+          minimum: 0
+          description: |
+            For packet-oriented interfaces, the number of outbound
+            packets that could not be transmitted because of errors.
+            For character-oriented or fixed-length interfaces, the
+            number of outbound transmission units that could not be
+            transmitted because of errors.
+          example: 123456
+        linkFailures:
+          type: integer
+          format: int64
+          minimum: 0
+          description: |
+            The total number of link failures encountered on 
+            this interface.
+          example: 123456
+        linkInactive:
+          type: integer
+          format: int64
+          minimum: 0
+          description: |
+            The total number of link inactive errors encountered 
+            on this interface.
+          example: 123456
+        macRx:
+          type: integer
+          format: int64
+          minimum: 0
+          description: |
+            A count of frames for which reception on a
+            particular interface fails due to an internal
+            MAC sublayer receive error. A frame is only
+            counted by an instance of this object if it is
+            not counted by the corresponding instance of
+            either the dot3StatsFrameTooLongs object, the
+            dot3StatsAlignmentErrors object, or the
+            dot3StatsFCSErrors object
+          example: 123456
+        macTx:
+          type: integer
+          format: int64
+          minimum: 0
+          description: |
+            A count of frames for which transmission on a
+            particular interface fails due to an internal
+            MAC sublayer transmit error. A frame is only
+            counted by an instance of this object if it is
+            not counted by the corresponding instance of
+            either the dot3StatsLateCollisions object, the
+            dot3StatsExcessiveCollisions object, or the
+            dot3StatsCarrierSenseErrors object.
+          example: 123456
+        packet:
+          type: integer
+          format: int64
+          minimum: 0
+          description: |
+            The total number of packet errors encountered on 
+            this interface.
+          example: 123456
+        sqeTest:
+          type: integer
+          format: int64
+          minimum: 0
+          description: |
+            A count of times that the SQE TEST ERROR
+            message is generated by the PLS sublayer for a
+            particular interface.
+          example: 123456
+        unknownProtos:
+          type: integer
+          format: int64
+          minimum: 0
+          description: |
+            For packet-oriented interfaces - the number of packets
+            received via the interface which were discarded
+            because of an unknown or unsupported protocol. For
+            character-oriented or fixed-length interfaces which
+            support protocol multiplexing - the number of
+            transmission units received via the interface which
+            were discarded because of an unknown or unsupported
+            protocol. For any interface which does not support
+            protocol multiplexing this counter will always be 0.
+          example: 123456
+        alignment:
+          type: integer
+          format: int64
+          minimum: 0
+          description: |
+            A count of frames received on a particular
+            interface that are not an integral number of
+            octets in length and do not pass the FCS check.
+          example: 123456
+        carrier:
+          type: integer
+          format: int64
+          minimum: 0
+          description: |
+            The total number of carrier errors encountered on
+            this interface. Carrier errors occur when there is a 
+            problem with the modulation of the signal. This could 
+            indicate either a duplex mismatch, or a problem with 
+            the physical cable/connector.
+          example: 123456
+        carrierSense:
+          type: integer
+          format: int64
+          minimum: 0
+          description: |
+            The number of times that the carrier sense
+            condition was lost or never asserted when
+            attempting to transmit a frame on a particular
+            interface.
+          example: 123456
+        deferredTx:
+          type: integer
+          format: int64
+          minimum: 0
+          description: |
+            A count of frames for which the first
+            transmission attempt on a particular interface
+            is delayed because the medium is busy.
+          example: 123456
+        fcs:
+          type: integer
+          format: int64
+          minimum: 0
+          description: |
+            A count of frames received on a particular
+            interface that are an integral number of octets
+            in length but do not pass the FCS check.
+          example: 123456
+        frameTooLong:
+          type: integer
+          format: int64
+          minimum: 0
+          description: |
+            A count of frames received on a particular
+            interface that exceed the maximum permitted
+            frame size.
+          example: 123456
+        frameTooShort:
+          type: integer
+          format: int64
+          minimum: 0
+          description: |
+            The total number of frames that are too short 
+            that were encountered on this interface.
+          example: 123456
+        excessiveCollision:
+          type: integer
+          format: int64
+          minimum: 0
+          description: |
+            A count of frames for which transmission on a
+            particular interface fails due to excessive
+            collisions. This counter does not increment when 
+            the interface is operating in full-duplex mode.
+          example: 123456
+        lateCollision:
+          type: integer
+          format: int64
+          minimum: 0
+          description: |
+            The number of times that a collision is detected
+            on a particular interface later than 512 bit-times
+            into the transmission of a packet.
+          example: 123456
+        multipleCollision:
+          type: integer
+          format: int64
+          minimum: 0
+          description: |
+            A count of successfully transmitted frames on
+            a particular interface for which transmission
+            is inhibited by more than one collision.
+          example: 123456
+        singleCollision:
+          type: integer
+          format: int64
+          minimum: 0
+          description: |
+            A count of successfully transmitted frames on
+            a particular interface for which transmission
+            is inhibited by exactly one collision.
+          example: 123456
+
+    PortDetails:
+      type: object
+      nullable: true
+      properties:
+        mediaType:
+          description: Indicates the type of media used by the port for data transmission.
+          type: string
+          enum:
+            - RJ45
+            - TRANSCEIVER
+        portMode:
+          description: |
+            A value of Trunk indicates that the port on the current VLAN performs
+            tagging on the incoming and outgoing traffic. This is Fabric Engine
+            specific.
+          type: string
+          enum:
+            - Access
+            - Trunk
+          default: Access
+        transmissionMode:
+          description: Indicate this port's current duplex value.
+          type: string
+          enum:
+            - HALF
+            - FULL
+        portSpeed:
+          description: Indicate this port's current speed value.
+          type: string
+          enum:
+            - 0M
+            - 10M
+            - 100M
+            - 1G
+            - "2.5G"
+            - 5G
+            - 10G
+            - 20G
+            - 25G
+            - 40G
+            - 50G
+            - 100G
+        slppStatus:
+          description: >-
+            The SLPP safe guard status for the port. SLPP guard state is set to
+            MONITORING if the port is operational UP and SLPP guard is enabled
+            on that port. The state is set to BLOCKING when the port is disabled
+            by SLPP guard. If SLPP is not enabled on the port, the state is set
+            to NONE.
+          type: string
+          enum:
+            - BLOCKING
+            - MONITORING
+            - NONE
+        poePowerUsed:
+          description: Measured usage power expressed in Watts
+          type: number
+          format: float
+          example: 123.45
+        poeStatus:
+          description: |
+            The operational status of the port detection for PoE.
+          type: string
+          enum:
+            - DISABLED
+            - SEARCHING
+            - DISCOVERED
+            - DELIVERING
+            - FAULTED
+            - DISCONNECTED
+            - OTHER
+            - DENIED
+            - TEST
+        lldpNeighbor:
+          description: System name of LLDP neighbor.
+          type: string
+          example: "5720-48MW"
+        portOperStatus:
+          description: |
+            The current operational state of the interface.  The
+            testing state indicates that no operational packets can
+            be passed.  If admin state is down then oper state
+            should be down. If admin state is changed to up
+            then oper state should change to up and the interface is
+            ready to transmit and receive network traffic. It should
+            change to dormant if the interface is waiting for
+            external actions (such as a serial line waiting for an
+            incoming connection). It should remain in the down state
+            if and only if there is a fault that prevents it from going
+            to the up state; It should remain in the notPresent
+            state if the interface has missing (typically, hardware)
+            components.
+          type: string
+          enum:
+            - UP
+            - DOWN
+            - TESTING
+            - UNKNOWN
+            - DORMANT
+            - NOT-PRESENT
+            - LOWER-LAYER-DOWN
+        portAdminStatus:
+          $ref: "#/components/schemas/AdminState"
+        dhcpSnoopingStatus:
+          description: DHCP Snooping action on violation.
+          type: string
+          enum:
+            - DROP_PACKET
+            - BLOCK_MAC
+            - BLOCK_PORT
+            - NONE
+          default: NONE
+        autoSenseState:
+          $ref: "#/components/schemas/AdminState"
+        autoSenseOperState:
+          $ref: "#/components/schemas/AutoSenseOperState"
+
+    L2ServiceInfoList:
+      type: array
+      description: List of L2ServiceInfo
+      items:
+        $ref: "#/components/schemas/L2serviceInfo"
+
+    L3ServiceInfoList:
+      type: array
+      description: List of L3ServiceInfo
+      items:
+        $ref: "#/components/schemas/L3ServiceInfo"
+
+    VlanServiceInfoList:
+      type: array
+      description: List of VlanServiceInfo
+      items:
+        $ref: "#/components/schemas/VlanServiceInfo"
+
+    VrfServiceInfoList:
+      type: array
+      description: List of VrfServiceInfo
+      items:
+        $ref: "#/components/schemas/VrfServiceInfo"
+
+    ServiceBriefInfo:
+      type: object
+      description: Service Brief Info
+      properties:
+        serviceName:
+          type: string
+          description: service name
+          example: L2-ISID-200
+        serviceUUID:
+          $ref: "#/components/schemas/UUID"
+        serviceNumber:
+          type: string
+          description: service Number in Device
+          example: "200"
+        deviceUUID:
+          type: array
+          items:
+            $ref: "#/components/schemas/UUID"
+        groupUUID:
+          type: array
+          description: UUIDs of the group nodes associated with the service
+          items:
+            $ref: "#/components/schemas/UUID"
+
+    L2serviceInfo:
+      type: object
+      description: L2 Service Information
+      properties:
+        briefInfo:
+          $ref: "#/components/schemas/ServiceBriefInfo"
+        detailInfo:
+          $ref: '#/components/schemas/L2serviceDetailInfo'
+
+    L3ServiceInfo:
+      type: object
+      description: L3 Service Information
+      properties:
+        briefInfo:
+          $ref: "#/components/schemas/ServiceBriefInfo"
+        detailInfo:
+          $ref: '#/components/schemas/L3ServiceDetailInfo'
+
+    VlanServiceInfo:
+      type: object
+      description: Service Information
+      properties:
+        briefInfo:
+          $ref: "#/components/schemas/ServiceBriefInfo"
+        detailInfo:
+          $ref: '#/components/schemas/VlanServiceDetailInfo'
+
+    VrfServiceInfo:
+      type: object
+      description: Service Information
+      properties:
+        briefInfo:
+          $ref: "#/components/schemas/ServiceBriefInfo"
+        detailInfo:
+          $ref: '#/components/schemas/VrfServiceDetailInfo'
+
+    ServiceListResponse:
+      type: object
+      description: Service List Response
+      properties:
+        vlans:
+          $ref: "#/components/schemas/VlanServiceInfoList"
+        vrfs:
+          $ref: "#/components/schemas/VrfServiceInfoList"
+        l2Services:
+          $ref: "#/components/schemas/L2ServiceInfoList"
+        l3Services:
+          $ref: "#/components/schemas/L3ServiceInfoList"
+
+    ServiceKey:
+      type: object
+      description: Service Key Info
+      required:
+        - serviceType
+        - serviceName
+        - serviceNumber
+      properties:
+        serviceType:
+          $ref: "#/components/schemas/ServiceType"
+        serviceName:
+          type: string
+          description: service name
+          example: L2-ISID-200
+        serviceNumber:
+          type: string
+          description: service Number in Device
+          example: "200"
+
+    ServicesCriteria:
+      type: object
+      description: Service Criteria
+      properties:
+        serviceKey:
+          type: array
+          description: Service Key based filtering
+          items:
+            $ref: "#/components/schemas/ServiceKey"
+        detail:
+          type: boolean
+          description: Service detailed information required
+        deviceID:
+          type: array
+          description: List of Device UUIDS
+          items:
+            type: string
+            description: Device UUID
+            example: 5b3da8f6-bfc8-4776-ae72-a388db060000
+        fabricId:
+          type: string
+          description: Fabric Identifier
+        type:
+          type: array
+          description: List of service types
+          items:
+            $ref: "#/components/schemas/ServiceType"
+        detailFields:
+          type: array
+          description: List of fields to include in detail response
+          items:
+            $ref: "#/components/schemas/DetailField"
+
+    TopologyCriteria:
+      type: object
+      description: TopologyCriteria
+      properties:
+        generalCriteria:
+          $ref: "#/components/schemas/GeneralCriteria"
+        serviceCriteria:
+          $ref: "#/components/schemas/ServiceCriteria"
+
+    GeneralCriteria:
+      type: object
+      description: GeneralCriteria
+      properties:
+        action:
+          $ref: "#/components/schemas/NodeState"
+        type:
+          $ref: "#/components/schemas/TopologyType"
+        viewType:
+          $ref: "#/components/schemas/TopologyViewType"
+        chartHash:
+          type: string
+          description: Hash value of the Chart. This is computed and maintained by the GUI (Graphical User Interface)
+        nodeID:
+          type: string
+          description: ID of the node on which action will be performed. The Node ID can only be the Building ID for access layer.  
+        connectedState:
+          type: string
+          description: list of comma separated node ids
+        verboseType:
+          $ref: "#/components/schemas/VerboseType"
+        searchCriteria:
+          $ref: "#/components/schemas/SearchCriteria"
+
+    SearchCriteria:
+      type: object
+      description: SearchCriteria (Applicable when action is 'find')
+      properties:
+        type:
+          type: string
+          description: search for this specific type, device type is supported.
+        field:
+          type: string
+          description: field on which the type can be searched, supports name, serialNumber and ipAddress
+        key:
+          type: string
+          description: search string
+
+    GlobalServiceCriteria:
+      type: object
+      description: GlobalServiceCriteria
+      properties:
+        serviceList:
+          type: array
+          items:
+            $ref: "#/components/schemas/ServiceKey"
+
+    EndToEndServiceCriteria:
+      type: object
+      description: EndToEndServiceCriteria
+      properties:
+        sourceNodeType:
+          $ref: "#/components/schemas/NodeType"
+        sourceNodeUUID:
+          $ref: "#/components/schemas/UUID"
+        sourceNodeServiceList:
+          type: array
+          items:
+            $ref: "#/components/schemas/ServiceKey"
+        destinationNodeType:
+          $ref: "#/components/schemas/NodeType"
+        destinationNodeUUID:
+          $ref: "#/components/schemas/UUID"
+        destinationNodeServiceList:
+          type: array
+          items:
+            $ref: "#/components/schemas/ServiceKey"
+
+    ServiceCriteria:
+      type: object
+      description: ServiceCriteria
+      properties:
+        globalServiceCriteria:
+          $ref: "#/components/schemas/GlobalServiceCriteria"
+        endToEndServiceCriteria:
+          $ref: "#/components/schemas/EndToEndServiceCriteria"
+
+
+    deviceFabricAttribute:
+      type: object
+      nullable: true
+      properties:
+        ipAddress:
+          type: string
+          description: Management IP Address of the device
+          example: "192.168.10.11"
+        sysID:
+          type: string
+          description: ISIS system ID
+          example: "b.74.12"
+        name:
+          type: string
+          description: Name of the device
+          example: "5720-48MW-FabricEngine"
+        nickName:
+          type: string
+          description: SPBM nick-name
+          example: "d.74.12"
+        serialNumber:
+          type: string
+          description: serial number of the device
+          example: "1234A-56789"
+        isStack:
+          type: boolean
+          description: Indicates if the device is a stacked device
+          example: false
+        macAddress:
+          type: string
+          description: mac address of the device
+          example: "00:04:96:11:22:33"
+        FAType:
+          type: string
+          description: Fabric attach type
+          example: Proxy
+        areaName:
+          type: string
+          description: Home area name of SPBM instance
+          example: "Home-Area-Name"
+        areaID:
+          type: string
+          description: Manual area address of SPBM instance
+          example: "c0.2000.000.04"
+        bVIDs:
+          type: string
+          description: ISIS SPBM instance data VLAN IDs
+          example: "4051,4052"
+        dvrDomainID:
+          type: string
+          description: Distributed Virtual Routing (DVR) domain ID
+          example: "55"
+        dvrType:
+          type: string
+          description: Distributed Virtual Routing (DVR) type
+          enum:
+            - Controller
+            - Leaf
+        xiqConnectionStatus:
+          type: string
+          enum:
+            - CONNECTED
+            - DISCONNECTED
+            - UNKNOWN
+          description: XIQ connection status
+        xiqConnectionDuration:
+          type: string
+          description: XIQ connection duration
+          example: "2 day(s), 05:38:40"
+        areas:
+          type: array
+          items:
+            $ref: "#/components/schemas/deviceFabricAreaAttribute"
+        fabricAttach:
+          $ref: "#/components/schemas/fabricAttachNodeInfo"
+
+    deviceFabricAreaAttribute:
+      type: object
+      nullable: true
+      properties:
+        sysID:
+          type: string
+          description: System ID of an ISIS area the device is a part of
+          example: "b.74.12"
+        areaName:
+          type: string
+          description: Name of an ISIS area the device is a part of
+          example: "Area-Name"
+        areaID:
+          type: string
+          description: Manual address of an ISIS area the device is a part of
+          example: "c0.2000.000.04"
+
+    tagDetailInfo:
+      type: object
+      properties:
+        tag:
+          $ref: "#/components/schemas/tagInfo"
+        entities:
+          type: array
+          items:
+            $ref: "#/components/schemas/taggedEntity"
+      required:
+        - tag
+
+    tagInfo:
+      type: object
+      properties:
+        id:
+          type: string
+          description: UUID of the tag
+          example: 5b3da8f6-bfc8-4776-ae72-a388db060000
+        name:
+          type: string
+          description: Name of the tag
+          example: "lab1-device1"
+        type:
+          $ref: "#/components/schemas/TagType"
+        origin:
+          $ref: "#/components/schemas/TagOrigin"
+        criteria:
+          $ref: "#/components/schemas/tagCriteria"
+      required:
+        - id
+        - name
+        - type
+
+    tagCriteria:
+      type: object
+      properties:
+        outerCondition:
+          $ref: "#/components/schemas/TagLogicalCondition"
+        outerElements:
+          type: array
+          items:
+            $ref: "#/components/schemas/tagOuterElement"
+      required:
+        - outerCondition
+        - outerElements
+
+    tagElement:
+      type: object
+      properties:
+        identifier:
+          $ref: "#/components/schemas/TagMatchIdentifier"
+        matchCondition:
+          $ref: "#/components/schemas/TagMatchCondition"
+        matchValue:
+          type: string
+          example: "California"
+      required:
+        - identifier
+        - matchCondition
+        - matchValue
+
+    tagResponse:
+      type: object
+      properties:
+        tags:
+          type: array
+          items:
+            $ref: "#/components/schemas/tagDetailInfo"
+        paginationResponse:
+          type: array
+          items:
+            $ref: "#/components/schemas/PaginationResponse"
+
+    tagOuterElement:
+      type: object
+      properties:
+        condition:
+          $ref: "#/components/schemas/TagLogicalCondition"
+        elements:
+          type: array
+          items:
+            $ref: "#/components/schemas/tagElement"
+      required:
+        - condition
+        - elements
+
+    taggedEntity:
+      type: object
+      properties:
+        id:
+          type: string
+          description: UUID of the tagged entity
+          example: 5b3da8f6-bfc8-4776-ae72-a388db060000
+        type:
+          $ref: "#/components/schemas/TagEntityType"
+        name:
+          type: string
+          description: Name of the tagged entity
+          example: "device-1"
+        deviceType:
+          $ref: "#/components/schemas/DeviceType"
+      required:
+        - id
+        - type
+        - name
+
+    AssociateEntities:
+      type: object
+      properties:
+        entities:
+          type: array
+          items:
+            $ref: "#/components/schemas/TagEntityInfo"
+        tagIds:
+          type: array
+          items:
+            type: string
+            description: Array of tag IDs.
+      required:
+        - entities
+        - tagIds
+
+    OsType:
+      type: string
+      description: Operating system type of the device
+      enum:
+        - "fabricEngine"
+        - "switchEngine"
+        - "unknownOS"
+
+    DeviceType:
+      type: string
+      description: Type of the device
+      enum:
+        - "switch"
+        - "router"
+        - "sdWan"
+        - "accessPoint"
+        - "repeater"
+        - "bridge"
+        - "server"
+        - "ipCamera"
+        - "ipPhone"
+        - "laptop"
+        - "tablet"
+        - "mobile"
+        - "ipClientService"
+        - "internet"
+        - "telephone"
+
+    TagEntityType:
+      type: string
+      enum:
+        - device_tag_entity
+        - l2Service_tag_entity
+        - l3Service_tag_entity
+        - vlanService_tag_entity
+        - vrfService_tag_entity
+        - physical_link_tag_entity
+        - fabric_link_tag_entity
+
+    TagType:
+      type: string
+      enum:
+        - device_tag
+        - l2_service_tag
+        - l3_service_tag
+        - vlan_service_tag
+        - vrf_service_tag
+        - physical_link_tag
+        - fabric_link_tag
+
+    TagOrigin:
+      type: string
+      enum:
+        - default
+        - manual
+        - provisional
+
+    TagLogicalCondition:
+      type: string
+      enum:
+        - and
+        - or
+
+    TagMatchCondition:
+      type: string
+      enum:
+        - is
+        - is not
+
+    TagMatchIdentifier:
+      type: string
+      enum:
+        - location
+        - model
+        - deviceType
+        - serviceName
+        - serviceNumber
+        - vlanNumber
+        - vrfName
+        - link
+
+    UUIDList:
+      type: array
+      items:
+        type: string
+        description: UUID of the object to be deleted
+
+    OperationalState:
+      type: string
+      description: |
+        Operational State. In case of LAG, if all of the ports are not
+        operationally up, the state is returned as PARTIALLY_UP.
+      enum:
+        - UP
+        - DOWN
+        - PARTIALLY_UP
+        - OPER_UNKNOWN
+        - OPERATIONAL
+    AdminState:
+      type: string
+      description: Admin state
+      enum:
+        - Enabled
+        - Disabled
+        - Unknown
+    TagEntityInfo:
+      type: object
+      properties:
+        id:
+          type: string
+          description: UUID of the entity to which tag to be applied
+          example: 5b3da8f6-bfc8-4776-ae72-a388db060000
+        type:
+          $ref: "#/components/schemas/TagEntityType"
+    HideUnhideParamInfo:
+      type: array
+      items:
+        type: object
+        properties:
+          entityType:
+            $ref: "#/components/schemas/TagEntityType"
+          ids:
+            type: array
+            items:
+              type: string
+            description: An array of UUIDs associated with the entity type
+        required:
+          - entityType
+          - ids
+    HideUnhideResponse:
+      type: object
+      properties:
+        code:
+          type: integer
+          description: The status code of the response
+          example: 200
+        message:
+          type: string
+          description: A message providing additional information about the response
+          example: "Operation successful"
+    UserPreferenceInfo:
+      title: Preferences post Data
+      type: object
+      properties:
+        id:
+          type: string
+          description: UUID of the preference entry
+          example: "1"
+        key:
+          type: string
+          description: User preference key
+          example: "defaultView"
+        value:
+          type: string
+          description: User preference value
+          example: '{"settings_fabricFeatures_isArea":{"value":false,"type":"boolean"},"conditions":{"value":[],"type":"array"},"settings_fabricFeatures_ports":{"value":false,"type":"boolean"},"settings_physicalFeatures_traffic":{"value":false,"type":"boolean"},"settings_layoutType_selectedLayout":{"value":"forceLink","type":"string"},"LayerSelectorVal":{"value":["physical"],"type":"array"}}'
+    AutoSenseOperState:
+      type: string
+      enum:
+        - AUTOSENSE_DOWN
+        - FA_PROXY_NO_AUTH
+        - FA_PROXY
+        - FA_WAP
+        - NO_AUTOSENSE
+        - NNI
+        - NNI_ISIS_UP
+        - NNI_LOOP
+        - NNI_ONBOARDING
+        - NNI_PENDING
+        - AUTO_SENSE_SD_WAN
+        - SD_WAN_PENDING
+        - UNI_ONBOARDING
+        - VOICE
+        - WAIT
+
+    OverlayType:
+      type: string
+      description: Overlay type
+      enum:
+        - "EVPN"
+        - "SPBM"
+
+    IsidClassificationType:
+      type: string
+      description: I-SID Classification
+      enum:
+        - "NULL_ISID"
+        - "DEFAULT_ISID"
+        - "RESERVED_FOR_FUTURE_ISID"
+        - "SPBM_DEFAULT_ISID"
+        - "CUSTOMER_ISID"
+        - "ONBOARDING_ETREE_ISID"
+        - "EPT_DEFAULT_OFFSET_ISID"
+        - "SPBM_IP_MULTICAST_ISID"
+        - "DVR_LEAF_SWITCH_CLUSTER_ISID"
+        - "DVR_BACKBONE_ISID"
+        - "DVR_DOMAIN_ISID"
+        - "RSPAN_ISID"
+        - "FABRIC_AREA_NETWORK_ISID"
+        - "MSTP_FABRIC_MULTI_HOMING_ISID"
+        - "SPB_MULTI_AREA_ISID"
+        - "RESERVED_FOR_IMPLEMENTATION_ISID"
+      example: "CUSTOMER_ISID"
+
+    TagMatchIdentifierAttributes:
+      type: object
+      properties:
+        tagType:
+          $ref: "#/components/schemas/TagType"
+        attributes:
+          type: array
+          items:
+            type: string
+            description: Tag match identifiers which needs to be used.
+            enum:
+              - deviceType
+              - location
+              - model
+              - serviceNumber
+              - serviceName
+              - vlanNumber
+              - vrfName
+              - link
+            example: "location"
+
+    SchemaInfo:
+      type: object
+      title: This contains schema information with respect to the requested feature
+      properties:
+        tagMatchIdentifiers:
+          type: array
+          items:
+            $ref: "#/components/schemas/TagMatchIdentifierAttributes"
+
+    SchemaType:
+      type: string
+      description: Type of the schema
+      enum:
+        - TagMatchCriteria
+
+    Suggestion:
+      properties:
+        name:
+          type: string
+          description: Matched values with the key
+        field:
+          type: string
+          description: Field where the key has been found
+        id:
+          type: string
+          description: ID of the object where key has been found
+        parentID:
+            type: string
+            description: Parent ID of the object where key has been found
+
+    RefreshCriteria:
+      title: Refresh Criteria
+      type: object
+      properties:
+        nodeID:
+          type: string
+          description: UUID of the building or floor on which action will be performed
+          example: 5b3da8f6-bfc8-4776-ae72-a388db060000
+
+    RefreshResponse:
+      title: Refresh response.
+      type: object
+      properties:
+        refreshDeviceCount:
+          description: |
+            Number of devices getting refreshed. If this count is non-zero, a separate websocket 
+            notification will be sent once the refresh is complete. 
+            A count of zero indicates that there are no devices in the group or all the devices
+            are currently getting refreshed. No websocket notification will be sent.
+          type: integer
+        devicesNotRefreshedList:
+          description: List of device UUIDs that are not getting refreshed as refresh is in progress.
+          type: array
+          items:
+            type: string
+            description: Device UUID
+            example: 5b3da8f6-1213-4776-2342-a388db060000
+
+    WebSocketServicesEvents:
+      type: string
+      description: List of events that will be sent by services for sending the websocket updates
+      enum:
+        - RefreshGroupUpdate
+        - DeviceMessage
+        - DeviceAddition
+        - DeviceDelete
+        - DeviceTopologyPhysicalUpdate
+        - DeviceInspectorPanelPhysicalUpdate
+        - DeviceTopologyFabricUpdate
+        - DeviceInspectorPanelFabricUpdate
+        - LinkAddition
+        - LinkDelete
+        - LinkTopologyPhysicalUpdate
+        - LinkInspectorPanelPhysicalUpdate
+        - LinkTopologyFabricUpdate
+        - LinkInspectorPanelFabricUpdate
+        - ServiceCRUD
+
+    RefreshGroupUpdateInfo:
+      type: object
+      title: Sent using websocket to UI when refresh group is completed
+      properties:
+        nodeID:
+          type: string
+          description: Node ID for which refresh was initiated
+          example: 5b3da8f6-1213-4776-2342-a388db060000
+        resource:
+          $ref: "#/components/schemas/WebSocketServicesEvents"
+
+    ServiceCRUDInfo:
+      type: object
+      title: Sent using websocket to UI when service create/update/delete is detected
+      properties:
+        resource:
+          $ref: "#/components/schemas/WebSocketServicesEvents"
+        devices:
+          type: array
+          items:
+            $ref: "#/components/schemas/ServiceCRUDDeviceInfo"
+      required:
+        - resource
+        - devices
+
+    ServiceCRUDDeviceInfo:
+      type: object
+      description: service create/update/delete info per device
+      properties:
+        deviceUUID:
+          type: string
+          description: device UUID
+        operationTypes:
+          type: array
+          description: operation types due to which service change is detected
+          items:
+            type: string
+            enum:
+              - create
+              - update
+              - delete
+        createdVlanServiceNumbers:
+          type: array
+          description: list of vlan service numbers that got created when 'create' is present in operation type
+          items:
+            type: string
+        createdL2ServiceNumbers:
+          type: array
+          description: list of l2 service numbers that got created when 'create' is present in operation type
+          items:
+            type: string
+        createdL3ServiceNumbers:
+          type: array
+          description: list of l3 service numbers that got created when 'create' is present in operation type
+          items:
+            type: string
+        updatedVlanServiceNumbers:
+          type: array
+          description: list of vlan service numbers that got updated when 'update' is present in operation type
+          items:
+            type: string
+        updatedL2ServiceNumbers:
+          type: array
+          description: list of l2 service numbers that got updated when 'update' is present in operation type
+          items:
+            type: string
+        updatedL3ServiceNumbers:
+          type: array
+          description: list of l3 service numbers that got updated when 'update' is present in operation type
+          items:
+            type: string
+        deletedVlanServiceNumbers:
+          type: array
+          description: list of vlan service numbers that got deleted when 'delete' is present in operation type
+          items:
+            type: string
+        deletedL2ServiceNumbers:
+          type: array
+          description: list of l2 service numbers that got deleted when 'delete' is present in operation type
+          items:
+            type: string
+        deletedL3ServiceNumbers:
+          type: array
+          description: list of l3 service numbers that got deleted when 'delete' is present in operation type
+          items:
+            type: string
+      required:
+        - deviceUUID
+        - operationTypes
+
+
+    DeviceMessage:
+      type: object
+      title: Sent via Kafka to System with Device related websocket events.
+      properties:
+        DeviceUUID:
+          type: string
+          description: Device UUID
+          example: 5b3da8f6-1213-4776-2342-a388db060000
+        DeviceAdd:
+          $ref: "#/components/schemas/DeviceAdd"
+        DeviceDelete:
+          $ref: "#/components/schemas/DeviceDelete"
+        DeviceTopologyPhysicalUpdate:
+          $ref: "#/components/schemas/DeviceTopologyPhysicalUpdate"
+        DeviceTopologyFabricUpdate:
+          $ref: "#/components/schemas/DeviceTopologyFabricUpdate"
+        DeviceInspectorPhysicalUpdate:
+          $ref: "#/components/schemas/DeviceInspectorPanelPhysicalUpdate"
+        DeviceInspectorFabricUpdate:
+          $ref: "#/components/schemas/DeviceInspectorPanelFabricUpdate"
+        LinkAdd:
+          $ref: "#/components/schemas/LinkAdd"
+        LinkDelete:
+          $ref: "#/components/schemas/LinkDelete"
+        LinkTopologyPhysicalUpdate:
+          $ref: "#/components/schemas/LinkTopologyPhysicalUpdate"
+        LinkTopologyFabricUpdate:
+          $ref: "#/components/schemas/LinkTopologyFabricUpdate"
+        LinkInspectorPanelPhysicalUpdate:
+          $ref: "#/components/schemas/LinkInspectorPanelPhysicalUpdate"
+        LinkInspectorPanelFabricUpdate:
+          $ref: "#/components/schemas/LinkInspectorPanelFabricUpdate"
+
+    DeviceAdd:
+      type: object
+      title: Sent using websocket to UI when there is device add.
+      properties:
+        DeviceDataList:
+          description: List of devices with their data that was added
+          type: array
+          items:
+            $ref: "#/components/schemas/DeviceAddData"
+        resource:
+          $ref: "#/components/schemas/WebSocketServicesEvents"
+
+    DeviceAddData:
+      type: object
+      title: Device data for UI to determine where device has been added.
+      properties:
+        physicalNode:
+          $ref: "#/components/schemas/node"
+        fabricNode:
+          $ref: "#/components/schemas/node"
+        ParentIDList:
+          $ref: '#/components/schemas/UUIDList'
+        eventScope:
+          type: string
+          description: Scope of device addition
+          enum:
+            - physicalAndFabric
+            - physical
+            - fabric
+          example: fabric
+
+    DeviceDelete:
+      type: object
+      title: Sent using websocket to UI when there is device delete
+      properties:
+        DeviceDataList:
+          description: List of devices with their data that was deleted
+          type: array
+          items:
+            $ref: "#/components/schemas/DeviceDeleteData"
+        resource:
+          $ref: "#/components/schemas/WebSocketServicesEvents"
+
+    DeviceDeleteData:
+      type: object
+      title: Device data for UI to determine what device has been deleted.
+      properties:
+        deviceID:
+          type: string
+          description: Device UUID that got deleted
+          example: 5b3da8f6-1213-4776-2342-a388db060000
+        eventScope:
+          type: string
+          description: Scope of device deletion
+          enum:
+            - physicalAndFabric
+            - physical
+            - fabric
+          example: fabric
+
+    DeviceTopologyPhysicalUpdate:
+      type: object
+      title: Sent using websocket to UI when there is update on physical topology device information
+      properties:
+        NodeList:
+          description: List of device data that was updated
+          type: array
+          items:
+            $ref: "#/components/schemas/node"
+        resource:
+          $ref: "#/components/schemas/WebSocketServicesEvents"
+
+    DeviceInspectorPanelPhysicalUpdate:
+      type: object
+      title: Sent using websocket to UI when there is update on physical inspector panel device information
+      properties:
+        DeviceDataList:
+          description: List of devices with their data that got added or deleted
+          type: array
+          items:
+            $ref: "#/components/schemas/DeviceInspectorPanelPhysicalUpdateData"
+        resource:
+          $ref: "#/components/schemas/WebSocketServicesEvents"
+
+    DeviceInspectorPanelPhysicalUpdateData:
+      type: object
+      title: Physical Device data updated for inspector panel
+      properties:
+        deviceID:
+          type: string
+          description: Device ID for which there is an update
+          example: 5b3da8f6-1213-4776-2342-a388db060000
+        deviceAttribute:
+          $ref: "#/components/schemas/deviceAttribute"
+
+    DeviceTopologyFabricUpdate:
+      type: object
+      title: Sent using websocket to UI when there is an update on fabric topology device information
+      properties:
+        NodeList:
+          description: List of device data that was updated
+          type: array
+          items:
+            $ref: "#/components/schemas/node"
+        resource:
+          $ref: "#/components/schemas/WebSocketServicesEvents"
+
+    DeviceInspectorPanelFabricUpdate:
+      type: object
+      title: Sent using websocket to UI when there is an update on fabric inspector panel device information
+      properties:
+        DeviceDataList:
+          description: List of devices with their data that got added or deleted
+          type: array
+          items:
+            $ref: "#/components/schemas/DeviceInspectorPanelFabricUpdateData"
+        resource:
+          $ref: "#/components/schemas/WebSocketServicesEvents"
+
+    DeviceInspectorPanelFabricUpdateData:
+      type: object
+      title: Fabric Device data updated for inspector panel
+      properties:
+        deviceID:
+          type: string
+          description: Device ID for which there is an update
+          example: 5b3da8f6-1213-4776-2342-a388db060000
+        deviceFabricAttribute:
+          $ref: "#/components/schemas/deviceFabricAttribute"
+
+    LinkAdd:
+      type: object
+      title: Sent using websocket to UI when there is link add
+      properties:
+        LinkDataList:
+          description: List of links with their data that was added
+          type: array
+          items:
+            $ref: "#/components/schemas/LinkAddData"
+        resource:
+          $ref: "#/components/schemas/WebSocketServicesEvents"
+
+    LinkAddData:
+      type: object
+      title: Link data for UI to determine device connections.
+      properties:
+        physicalEdge:
+          $ref: "#/components/schemas/edge"
+        fabricEdge:
+          $ref: "#/components/schemas/edge"
+
+    LinkDelete:
+      type: object
+      title: Sent using websocket to UI when there is link delete
+      properties:
+        PhysicalLinkDataList:
+          description: List of physical links with their data that was deleted
+          type: array
+          items:
+            $ref: "#/components/schemas/LinkDeleteData"
+        FabricLinkDataList:
+          description: List of fabric links with their data that was deleted
+          type: array
+          items:
+            $ref: "#/components/schemas/LinkDeleteData"
+        resource:
+          $ref: "#/components/schemas/WebSocketServicesEvents"
+
+    LinkDeleteData:
+      type: object
+      title: Link data for UI to determine device connections.
+      properties:
+        linkID:
+          type: string
+          description: Link UUID that got deleted
+          example: 5b3da8f6-1213-4776-2342-a388db060000
+        source:
+          type: string
+          description: UUID of the source Node
+          example: 5b3da8f6-bfc8-4776-ae72-e388db062f21
+        target:
+          type: string
+          description: UUID of the target Node
+          example: 5b3da8f6-bfc8-4776-ae72-e388db062f22
+
+    LinkTopologyPhysicalUpdate:
+      type: object
+      title: Sent using websocket to UI when there is an update on physical topology link information
+      properties:
+        EdgeList:
+          description: List of link data that was updated
+          type: array
+          items:
+            $ref: "#/components/schemas/edge"
+        resource:
+          $ref: "#/components/schemas/WebSocketServicesEvents"
+
+    LinkTopologyFabricUpdate:
+      type: object
+      title: Sent using websocket to UI when there is an update on fabric topology link information
+      properties:
+        EdgeList:
+          description: List of link data that was updated
+          type: array
+          items:
+            $ref: "#/components/schemas/edge"
+        resource:
+          $ref: "#/components/schemas/WebSocketServicesEvents"
+
+    LinkInspectorPanelFabricUpdate:
+      type: object
+      title: Sent using websocket to UI when there is an update on fabric inspector panel link information
+      properties:
+        LinkDataList:
+          description: List of links with their data that got updated
+          type: array
+          items:
+            $ref: "#/components/schemas/LinkInspectorPanelFabricUpdateData"
+        resource:
+          $ref: "#/components/schemas/WebSocketServicesEvents"
+
+    LinkInspectorPanelFabricUpdateData:
+      type: object
+      title: Fabric Device data updated for inspector panel
+      properties:
+        linkID:
+          type: string
+          description: Link ID for which there is an update
+          example: 5b3da8f6-1213-4776-2342-a388db060000
+        DeviceFabricLinkDetails:
+          $ref: "#/components/schemas/DeviceFabricLinkDetails"
+
+    LinkInspectorPanelPhysicalUpdate:
+      type: object
+      title: Sent using websocket to UI when there is an update on physical inspector panel link information
+      properties:
+        LinkDataList:
+          description: List of links with their data that got updated
+          type: array
+          items:
+            $ref: "#/components/schemas/LinkInspectorPanelPhysicalUpdateData"
+        resource:
+          $ref: "#/components/schemas/WebSocketServicesEvents"
+
+    LinkInspectorPanelPhysicalUpdateData:
+      type: object
+      title: Physical Device data updated for inspector panel
+      properties:
+        linkID:
+          type: string
+          description: Link ID for which there is an update
+          example: 5b3da8f6-1213-4776-2342-a388db060000
+        DevicePhysicalLinkDetails:
+          $ref: "#/components/schemas/DevicePhysicalLinkDetails"
+
+    LoggingInfo:
+      type: object
+      properties:
+        service:
+          type: string
+          description: Service name
+          example: "system"
+        logDetails:
+          type: array
+          items:
+            $ref: "#/components/schemas/LogDetails"
+      required:
+        - service
+        - logDetails
+
+    LogDetails:
+      type: object
+      properties:
+        type:
+          type: string
+          description: Log type
+          example: "ServiceFile"
+        size:
+          type: integer
+          description: The maximum size in megabytes of the log file before it gets rotated
+          example: 100
+        maxBackups:
+          type: integer
+          description: The maximum number of old log files to retain
+          example: 10
+        level:
+          type: string
+          description: Log level details
+          enum:
+            - debug
+            - info
+            - warning
+            - error
+            - panic
+            - fatal
+          example: debug
+
+        status:
+          type: string
+          description: Execution status
+          example: "Success"
+      required:
+        - type
+        - level

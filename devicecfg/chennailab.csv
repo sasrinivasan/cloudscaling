@@ -1,0 +1,13 @@
+Device Name,IP Address,MAC Address,Serial Number,Device Model,OS Version,Location
+4120-24MW-4Y-SwitchEngine,10.127.13.13,40E317C87000,FF012335G-00067,Switch Engine 4120-24MW-4Y,33.3.1.4,Extreme Networks >> Chennai >> Chennai-Saidapet >> Temple Steps >> conf shree
+465_servnode__bharat,10.127.16.49,021188FEED70,N/A,X465-Series-Stack-(3),33.3.1.4,Extreme Networks >> Chennai >> Chennai-Saidapet >> Temple Steps >> conf bharat
+N/A,10.127.16.49,001188FEED70,1847F-10114,X465-24MU,33.3.1.4,N/A
+N/A,10.127.16.49,001188FEE064,1847F-10109,X465-24MU,33.3.1.4,N/A
+N/A,10.127.16.49,001188FEEEAA,1847F-10125,X465-24MU,33.3.1.4,N/A
+5420_8W_16P_confarea,10.127.16.196,00DCB2CE0C00,JA022113G-00012,Fabric Engine 5420F-8W-16P-4XE,9.2.0.0,Extreme Networks >> Chennai >> Chennai-Saidapet >> Temple Steps >> 8
+5420_8xe_floor8_core2,10.127.16.197,E444E5A48800,JA132145G-00083,Fabric Engine 5420M-48T-4YE,9.2.0.0,Extreme Networks >> Chennai >> Chennai-Saidapet >> Temple Steps >> 8
+5520-48T_floor8_core1,10.127.16.198,000496ECF000,2008G-01253,Fabric Engine 5520-48T,9.2.0.0,Extreme Networks >> Chennai >> Chennai-Saidapet >> Temple Steps >> 8
+5720_48W_8th_corenet3,10.127.16.44,F4CE48064000,AR032225Q-40003,Fabric Engine 5720-48MW,9.2.0.0,Extreme Networks >> Chennai >> Chennai-Saidapet >> Temple Steps >> 8
+5720_48W_8th_corenet4,10.127.16.62,F4CE48060800,AR042224Q-40008,Fabric Engine 5720-48MXW,9.2.0.0,Extreme Networks >> Chennai >> Chennai-Saidapet >> Temple Steps >> 8
+dut6_5720_floor4_mlagpeer1,10.127.16.195,F4CE48018000,AR042204Q-40013,Switch Engine 5720-48MXW,33.3.1.4,Extreme Networks >> Chennai >> Chennai-Saidapet >> Temple Steps >> 4
+dut7_5720_floor4_mlagpeer2,10.127.16.47,F4CE4806B000,AR012225Q-40004,Switch Engine 5720-24MW,33.3.1.4,Extreme Networks >> Chennai >> Chennai-Saidapet >> Temple Steps >> 4

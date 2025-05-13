@@ -1,0 +1,1240 @@
+curl -k -H Host: openapi.00496CE5F82 http://10.139.44.110:20161/rest/openapi/v0/configuration/snmp
+{
+    "contact": "https://www.extremenetworks.com/support/",
+    "location": "",
+    "name": "IQEMU-SA-000255",
+    "v1v2": {
+        "enable": false
+    },
+    "v3": {
+        "enable": false
+    }
+}
+
+curl -k -H Host: openapi.00496CE5F82 http://10.139.44.110:20161/rest/openapi/v1/configuration/snmp
+{
+    "contact": "https://www.extremenetworks.com/support/",
+    "location": "",
+    "name": "IQEMU-SA-000255",
+    "v1v2": {
+        "enable": false
+    },
+    "v3": {
+        "enable": false
+    }
+}
+
+curl -k -H Host: openapi.00496CE5F82 http://10.139.44.110:20161/rest/openapi/v1/state/ports
+[
+    {
+        "name": "1:1",
+        "settings": {
+            "macAddress": "06:29:78:ab:20:90",
+            "operState": "UP",
+            "operSpeed": "1G",
+            "operDuplex": "FULL",
+            "type": "ETHERNET",
+            "lldp": {
+                "chassisId": "06:29:78:ab:20:90",
+                "sysName": "AP_04101900460421",
+                "sysDesc": "Access Point 04101900460421"
+            },
+            "connectorType": "RJ45"
+        }
+    },
+    {
+        "name": "1:2",
+        "settings": {
+            "macAddress": "06:29:78:ab:20:a0",
+            "operState": "UP",
+            "operSpeed": "1G",
+            "operDuplex": "FULL",
+            "type": "ETHERNET",
+            "lldp": {
+                "chassisId": "06:29:78:ab:20:a0",
+                "sysName": "AP_04101900460422",
+                "sysDesc": "Access Point 04101900460422"
+            },
+            "connectorType": "RJ45"
+        }
+    },
+    {
+        "name": "1:3",
+        "settings": {
+            "macAddress": "06:29:78:ab:20:b0",
+            "operState": "UP",
+            "operSpeed": "1G",
+            "operDuplex": "FULL",
+            "type": "ETHERNET",
+            "lldp": {
+                "chassisId": "06:29:78:ab:20:b0",
+                "sysName": "AP_04101900460423",
+                "sysDesc": "Access Point 04101900460423"
+            },
+            "connectorType": "RJ45"
+        }
+    },
+    {
+        "name": "1:4",
+        "settings": {
+            "macAddress": "06:29:78:ab:20:c0",
+            "operState": "UP",
+            "operSpeed": "1G",
+            "operDuplex": "FULL",
+            "type": "ETHERNET",
+            "lldp": {
+                "chassisId": "06:29:78:ab:20:c0",
+                "sysName": "AP_04101900460424",
+                "sysDesc": "Access Point 04101900460424"
+            },
+            "connectorType": "RJ45"
+        }
+    },
+    {
+        "name": "1:5",
+        "settings": {
+            "macAddress": "06:29:78:ab:20:d0",
+            "operState": "UP",
+            "operSpeed": "1G",
+            "operDuplex": "FULL",
+            "type": "ETHERNET",
+            "lldp": {
+                "chassisId": "06:29:78:ab:20:d0",
+                "sysName": "AP_04101900460425",
+                "sysDesc": "Access Point 04101900460425"
+            },
+            "connectorType": "RJ45"
+        }
+    },
+    {
+        "name": "1:6",
+        "settings": {
+            "macAddress": "06:29:78:ab:20:e0",
+            "operState": "UP",
+            "operSpeed": "1G",
+            "operDuplex": "FULL",
+            "type": "ETHERNET",
+            "lldp": {
+                "chassisId": "06:29:78:ab:20:e0",
+                "sysName": "AP_04101900460426",
+                "sysDesc": "Access Point 04101900460426"
+            },
+            "connectorType": "RJ45"
+        }
+    },
+    {
+        "name": "1:7",
+        "settings": {
+            "macAddress": "06:29:78:ab:20:f0",
+            "operState": "UP",
+            "operSpeed": "1G",
+            "operDuplex": "FULL",
+            "type": "ETHERNET",
+            "lldp": {
+                "chassisId": "06:29:78:ab:20:f0",
+                "sysName": "AP_04101900460427",
+                "sysDesc": "Access Point 04101900460427"
+            },
+            "connectorType": "RJ45"
+        }
+    },
+    {
+        "name": "1:8",
+        "settings": {
+            "macAddress": "06:29:78:ab:21:00",
+            "operState": "UP",
+            "operSpeed": "1G",
+            "operDuplex": "FULL",
+            "type": "ETHERNET",
+            "lldp": {
+                "chassisId": "06:29:78:ab:21:00",
+                "sysName": "AP_04101900460428",
+                "sysDesc": "Access Point 04101900460428"
+            },
+            "connectorType": "RJ45"
+        }
+    },
+    {
+        "name": "1:9",
+        "settings": {
+            "macAddress": "06:29:78:ab:21:10",
+            "operState": "UP",
+            "operSpeed": "1G",
+            "operDuplex": "FULL",
+            "type": "ETHERNET",
+            "lldp": {
+                "chassisId": "06:29:78:ab:21:10",
+                "sysName": "AP_04101900460429",
+                "sysDesc": "Access Point 04101900460429"
+            },
+            "connectorType": "RJ45"
+        }
+    },
+    {
+        "name": "1:10",
+        "settings": {
+            "macAddress": "06:29:78:ab:21:20",
+            "operState": "UP",
+            "operSpeed": "1G",
+            "operDuplex": "FULL",
+            "type": "ETHERNET",
+            "lldp": {
+                "chassisId": "06:29:78:ab:21:20",
+                "sysName": "AP_04101900460430",
+                "sysDesc": "Access Point 04101900460430"
+            },
+            "connectorType": "RJ45"
+        }
+    }
+]
+
+curl -k -H Host: openapi.00496CE5F82 http://10.139.44.110:20161/rest/openapi/v0/state/ports
+[
+    {
+        "name": "1:1",
+        "settings": {
+            "macAddress": "06:29:78:ab:20:90",
+            "operState": "UP",
+            "operSpeed": "1G",
+            "operDuplex": "FULL",
+            "type": "ETHERNET",
+            "lldp": {
+                "chassisId": "06:29:78:ab:20:90",
+                "sysName": "AP_04101900460421",
+                "sysDesc": "Access Point 04101900460421"
+            },
+            "transceiverType": "NONE",
+            "transceiverSpeed": "NOT_APPLICABLE"
+        }
+    },
+    {
+        "name": "1:2",
+        "settings": {
+            "macAddress": "06:29:78:ab:20:a0",
+            "operState": "UP",
+            "operSpeed": "1G",
+            "operDuplex": "FULL",
+            "type": "ETHERNET",
+            "lldp": {
+                "chassisId": "06:29:78:ab:20:a0",
+                "sysName": "AP_04101900460422",
+                "sysDesc": "Access Point 04101900460422"
+            },
+            "transceiverType": "NONE",
+            "transceiverSpeed": "NOT_APPLICABLE"
+        }
+    },
+    {
+        "name": "1:3",
+        "settings": {
+            "macAddress": "06:29:78:ab:20:b0",
+            "operState": "UP",
+            "operSpeed": "1G",
+            "operDuplex": "FULL",
+            "type": "ETHERNET",
+            "lldp": {
+                "chassisId": "06:29:78:ab:20:b0",
+                "sysName": "AP_04101900460423",
+                "sysDesc": "Access Point 04101900460423"
+            },
+            "transceiverType": "NONE",
+            "transceiverSpeed": "NOT_APPLICABLE"
+        }
+    },
+    {
+        "name": "1:4",
+        "settings": {
+            "macAddress": "06:29:78:ab:20:c0",
+            "operState": "UP",
+            "operSpeed": "1G",
+            "operDuplex": "FULL",
+            "type": "ETHERNET",
+            "lldp": {
+                "chassisId": "06:29:78:ab:20:c0",
+                "sysName": "AP_04101900460424",
+                "sysDesc": "Access Point 04101900460424"
+            },
+            "transceiverType": "NONE",
+            "transceiverSpeed": "NOT_APPLICABLE"
+        }
+    },
+    {
+        "name": "1:5",
+        "settings": {
+            "macAddress": "06:29:78:ab:20:d0",
+            "operState": "UP",
+            "operSpeed": "1G",
+            "operDuplex": "FULL",
+            "type": "ETHERNET",
+            "lldp": {
+                "chassisId": "06:29:78:ab:20:d0",
+                "sysName": "AP_04101900460425",
+                "sysDesc": "Access Point 04101900460425"
+            },
+            "transceiverType": "NONE",
+            "transceiverSpeed": "NOT_APPLICABLE"
+        }
+    },
+    {
+        "name": "1:6",
+        "settings": {
+            "macAddress": "06:29:78:ab:20:e0",
+            "operState": "UP",
+            "operSpeed": "1G",
+            "operDuplex": "FULL",
+            "type": "ETHERNET",
+            "lldp": {
+                "chassisId": "06:29:78:ab:20:e0",
+                "sysName": "AP_04101900460426",
+                "sysDesc": "Access Point 04101900460426"
+            },
+            "transceiverType": "NONE",
+            "transceiverSpeed": "NOT_APPLICABLE"
+        }
+    },
+    {
+        "name": "1:7",
+        "settings": {
+            "macAddress": "06:29:78:ab:20:f0",
+            "operState": "UP",
+            "operSpeed": "1G",
+            "operDuplex": "FULL",
+            "type": "ETHERNET",
+            "lldp": {
+                "chassisId": "06:29:78:ab:20:f0",
+                "sysName": "AP_04101900460427",
+                "sysDesc": "Access Point 04101900460427"
+            },
+            "transceiverType": "NONE",
+            "transceiverSpeed": "NOT_APPLICABLE"
+        }
+    },
+    {
+        "name": "1:8",
+        "settings": {
+            "macAddress": "06:29:78:ab:21:00",
+            "operState": "UP",
+            "operSpeed": "1G",
+            "operDuplex": "FULL",
+            "type": "ETHERNET",
+            "lldp": {
+                "chassisId": "06:29:78:ab:21:00",
+                "sysName": "AP_04101900460428",
+                "sysDesc": "Access Point 04101900460428"
+            },
+            "transceiverType": "NONE",
+            "transceiverSpeed": "NOT_APPLICABLE"
+        }
+    },
+    {
+        "name": "1:9",
+        "settings": {
+            "macAddress": "06:29:78:ab:21:10",
+            "operState": "UP",
+            "operSpeed": "1G",
+            "operDuplex": "FULL",
+            "type": "ETHERNET",
+            "lldp": {
+                "chassisId": "06:29:78:ab:21:10",
+                "sysName": "AP_04101900460429",
+                "sysDesc": "Access Point 04101900460429"
+            },
+            "transceiverType": "NONE",
+            "transceiverSpeed": "NOT_APPLICABLE"
+        }
+    },
+    {
+        "name": "1:10",
+        "settings": {
+            "macAddress": "06:29:78:ab:21:20",
+            "operState": "UP",
+            "operSpeed": "1G",
+            "operDuplex": "FULL",
+            "type": "ETHERNET",
+            "lldp": {
+                "chassisId": "06:29:78:ab:21:20",
+                "sysName": "AP_04101900460430",
+                "sysDesc": "Access Point 04101900460430"
+            },
+            "transceiverType": "NONE",
+            "transceiverSpeed": "NOT_APPLICABLE"
+        }
+    }
+]
+
+curl -k -H Host: openapi.00496CE5F82 http://10.139.44.110:20161/rest/openapi/v0/state/lldp
+{
+    "neighbors": [
+        {
+            "chassisId": "06:29:78:ab:bf:50",
+            "chassisIdSubtype": "MAC_ADDRESS",
+            "dot3": {
+                "linkAggPortId": 0,
+                "linkAggStatus": "AGG_CAPABLE",
+                "maxFrameSize": 1500,
+                "power": {
+                    "class": "CLASS4",
+                    "mdiEnabled": false,
+                    "mdiSupported": false,
+                    "pairControlable": false,
+                    "pairs": "SIGNAL",
+                    "portClass": "CLASS_PD"
+                }
+            },
+            "fabricAttach": {
+                "authEnabled": false,
+                "connectionType": "SINGLE_PORT",
+                "lagId": 0,
+                "linkInfo": "00-00-00-00",
+                "macAddr": "06:29:78:ab:bf:50",
+                "mgmtVlanId": 1,
+                "portName": "1:1",
+                "smltId": 0,
+                "state": 32,
+                "type": "CLIENT_WAP1"
+            },
+            "index": 1,
+            "managementAddressList": [
+                {
+                    "address": "10.127.16.126",
+                    "addressIfId": 19,
+                    "addressIfSubtype": "IFINDEX",
+                    "addressSubtype": "IPV4"
+                }
+            ],
+            "med": {
+                "capCurrent": [
+                    "CAPABILITIES",
+                    "EXTENDED_PD"
+                ],
+                "capSupported": [
+                    "CAPABILITIES",
+                    "EXTENDED_PD"
+                ],
+                "deviceClass": "ENDPOINT_CLASS_1",
+                "poe": {
+                    "deviceType": "PD_DEVICE",
+                    "pd": {
+                        "powerPriority": "CRITICAL",
+                        "powerReq": 255,
+                        "powerSource": "PSE"
+                    }
+                }
+            },
+            "orgDefInfoList": [
+                {
+                    "index": 1,
+                    "oui": "00:04:0d",
+                    "subtype": 11,
+                    "value": "bd:dd:63:1e:33:11:b7:22:51:a6:54:1e:61:83:ff:02:94:0e:32:ed:0e:54:6b:44:c2:6d:7b:e7:e0:51:91:be:1a:00:01:00:00:0a:1a:3a:a7:40:00:00:00:00"
+                },
+                {
+                    "index": 1,
+                    "oui": "00:12:bb",
+                    "subtype": 1,
+                    "value": "00:11:01"
+                }
+            ],
+            "portDesc": "",
+            "portId": "1:1",
+            "portIdSubtype": "INTERFACE_NAME",
+            "portName": "1:1",
+            "sysCapEnabled": [
+                "BRIDGE",
+                "WLAN_AP"
+            ],
+            "sysCapSupported": [
+                "BRIDGE",
+                "WLAN_AP"
+            ],
+            "sysDesc": "",
+            "sysName": "AP_04101900462961",
+            "timeMark": 0,
+            "unknownTlvList": []
+        },
+        {
+            "chassisId": "06:29:78:ab:bf:60",
+            "chassisIdSubtype": "MAC_ADDRESS",
+            "dot3": {
+                "linkAggPortId": 0,
+                "linkAggStatus": "AGG_CAPABLE",
+                "maxFrameSize": 1500,
+                "power": {
+                    "class": "CLASS4",
+                    "mdiEnabled": false,
+                    "mdiSupported": false,
+                    "pairControlable": false,
+                    "pairs": "SIGNAL",
+                    "portClass": "CLASS_PD"
+                }
+            },
+            "fabricAttach": {
+                "authEnabled": false,
+                "connectionType": "SINGLE_PORT",
+                "lagId": 0,
+                "linkInfo": "00-00-00-00",
+                "macAddr": "06:29:78:ab:bf:60",
+                "mgmtVlanId": 1,
+                "portName": "1:2",
+                "smltId": 0,
+                "state": 32,
+                "type": "CLIENT_WAP1"
+            },
+            "index": 2,
+            "managementAddressList": [
+                {
+                    "address": "10.127.16.126",
+                    "addressIfId": 19,
+                    "addressIfSubtype": "IFINDEX",
+                    "addressSubtype": "IPV4"
+                }
+            ],
+            "med": {
+                "capCurrent": [
+                    "CAPABILITIES",
+                    "EXTENDED_PD"
+                ],
+                "capSupported": [
+                    "CAPABILITIES",
+                    "EXTENDED_PD"
+                ],
+                "deviceClass": "ENDPOINT_CLASS_1",
+                "poe": {
+                    "deviceType": "PD_DEVICE",
+                    "pd": {
+                        "powerPriority": "CRITICAL",
+                        "powerReq": 255,
+                        "powerSource": "PSE"
+                    }
+                }
+            },
+            "orgDefInfoList": [
+                {
+                    "index": 1,
+                    "oui": "00:04:0d",
+                    "subtype": 11,
+                    "value": "bd:dd:63:1e:33:11:b7:22:51:a6:54:1e:61:83:ff:02:94:0e:32:ed:0e:54:6b:44:c2:6d:7b:e7:e0:51:91:be:1a:00:01:00:00:0a:1a:3a:a7:40:00:00:00:00"
+                },
+                {
+                    "index": 1,
+                    "oui": "00:12:bb",
+                    "subtype": 1,
+                    "value": "00:11:01"
+                }
+            ],
+            "portDesc": "",
+            "portId": "1:2",
+            "portIdSubtype": "INTERFACE_NAME",
+            "portName": "1:2",
+            "sysCapEnabled": [
+                "BRIDGE",
+                "WLAN_AP"
+            ],
+            "sysCapSupported": [
+                "BRIDGE",
+                "WLAN_AP"
+            ],
+            "sysDesc": "",
+            "sysName": "AP_04101900462962",
+            "timeMark": 0,
+            "unknownTlvList": []
+        },
+        {
+            "chassisId": "06:29:78:ab:bf:70",
+            "chassisIdSubtype": "MAC_ADDRESS",
+            "dot3": {
+                "linkAggPortId": 0,
+                "linkAggStatus": "AGG_CAPABLE",
+                "maxFrameSize": 1500,
+                "power": {
+                    "class": "CLASS4",
+                    "mdiEnabled": false,
+                    "mdiSupported": false,
+                    "pairControlable": false,
+                    "pairs": "SIGNAL",
+                    "portClass": "CLASS_PD"
+                }
+            },
+            "fabricAttach": {
+                "authEnabled": false,
+                "connectionType": "SINGLE_PORT",
+                "lagId": 0,
+                "linkInfo": "00-00-00-00",
+                "macAddr": "06:29:78:ab:bf:70",
+                "mgmtVlanId": 1,
+                "portName": "1:3",
+                "smltId": 0,
+                "state": 32,
+                "type": "CLIENT_WAP1"
+            },
+            "index": 3,
+            "managementAddressList": [
+                {
+                    "address": "10.127.16.126",
+                    "addressIfId": 19,
+                    "addressIfSubtype": "IFINDEX",
+                    "addressSubtype": "IPV4"
+                }
+            ],
+            "med": {
+                "capCurrent": [
+                    "CAPABILITIES",
+                    "EXTENDED_PD"
+                ],
+                "capSupported": [
+                    "CAPABILITIES",
+                    "EXTENDED_PD"
+                ],
+                "deviceClass": "ENDPOINT_CLASS_1",
+                "poe": {
+                    "deviceType": "PD_DEVICE",
+                    "pd": {
+                        "powerPriority": "CRITICAL",
+                        "powerReq": 255,
+                        "powerSource": "PSE"
+                    }
+                }
+            },
+            "orgDefInfoList": [
+                {
+                    "index": 1,
+                    "oui": "00:04:0d",
+                    "subtype": 11,
+                    "value": "bd:dd:63:1e:33:11:b7:22:51:a6:54:1e:61:83:ff:02:94:0e:32:ed:0e:54:6b:44:c2:6d:7b:e7:e0:51:91:be:1a:00:01:00:00:0a:1a:3a:a7:40:00:00:00:00"
+                },
+                {
+                    "index": 1,
+                    "oui": "00:12:bb",
+                    "subtype": 1,
+                    "value": "00:11:01"
+                }
+            ],
+            "portDesc": "",
+            "portId": "1:3",
+            "portIdSubtype": "INTERFACE_NAME",
+            "portName": "1:3",
+            "sysCapEnabled": [
+                "BRIDGE",
+                "WLAN_AP"
+            ],
+            "sysCapSupported": [
+                "BRIDGE",
+                "WLAN_AP"
+            ],
+            "sysDesc": "",
+            "sysName": "AP_04101900462963",
+            "timeMark": 0,
+            "unknownTlvList": []
+        },
+        {
+            "chassisId": "06:29:78:ab:bf:80",
+            "chassisIdSubtype": "MAC_ADDRESS",
+            "dot3": {
+                "linkAggPortId": 0,
+                "linkAggStatus": "AGG_CAPABLE",
+                "maxFrameSize": 1500,
+                "power": {
+                    "class": "CLASS4",
+                    "mdiEnabled": false,
+                    "mdiSupported": false,
+                    "pairControlable": false,
+                    "pairs": "SIGNAL",
+                    "portClass": "CLASS_PD"
+                }
+            },
+            "fabricAttach": {
+                "authEnabled": false,
+                "connectionType": "SINGLE_PORT",
+                "lagId": 0,
+                "linkInfo": "00-00-00-00",
+                "macAddr": "06:29:78:ab:bf:80",
+                "mgmtVlanId": 1,
+                "portName": "1:4",
+                "smltId": 0,
+                "state": 32,
+                "type": "CLIENT_WAP1"
+            },
+            "index": 4,
+            "managementAddressList": [
+                {
+                    "address": "10.127.16.126",
+                    "addressIfId": 19,
+                    "addressIfSubtype": "IFINDEX",
+                    "addressSubtype": "IPV4"
+                }
+            ],
+            "med": {
+                "capCurrent": [
+                    "CAPABILITIES",
+                    "EXTENDED_PD"
+                ],
+                "capSupported": [
+                    "CAPABILITIES",
+                    "EXTENDED_PD"
+                ],
+                "deviceClass": "ENDPOINT_CLASS_1",
+                "poe": {
+                    "deviceType": "PD_DEVICE",
+                    "pd": {
+                        "powerPriority": "CRITICAL",
+                        "powerReq": 255,
+                        "powerSource": "PSE"
+                    }
+                }
+            },
+            "orgDefInfoList": [
+                {
+                    "index": 1,
+                    "oui": "00:04:0d",
+                    "subtype": 11,
+                    "value": "bd:dd:63:1e:33:11:b7:22:51:a6:54:1e:61:83:ff:02:94:0e:32:ed:0e:54:6b:44:c2:6d:7b:e7:e0:51:91:be:1a:00:01:00:00:0a:1a:3a:a7:40:00:00:00:00"
+                },
+                {
+                    "index": 1,
+                    "oui": "00:12:bb",
+                    "subtype": 1,
+                    "value": "00:11:01"
+                }
+            ],
+            "portDesc": "",
+            "portId": "1:4",
+            "portIdSubtype": "INTERFACE_NAME",
+            "portName": "1:4",
+            "sysCapEnabled": [
+                "BRIDGE",
+                "WLAN_AP"
+            ],
+            "sysCapSupported": [
+                "BRIDGE",
+                "WLAN_AP"
+            ],
+            "sysDesc": "",
+            "sysName": "AP_04101900462964",
+            "timeMark": 0,
+            "unknownTlvList": []
+        },
+        {
+            "chassisId": "06:29:78:ab:bf:90",
+            "chassisIdSubtype": "MAC_ADDRESS",
+            "dot3": {
+                "linkAggPortId": 0,
+                "linkAggStatus": "AGG_CAPABLE",
+                "maxFrameSize": 1500,
+                "power": {
+                    "class": "CLASS4",
+                    "mdiEnabled": false,
+                    "mdiSupported": false,
+                    "pairControlable": false,
+                    "pairs": "SIGNAL",
+                    "portClass": "CLASS_PD"
+                }
+            },
+            "fabricAttach": {
+                "authEnabled": false,
+                "connectionType": "SINGLE_PORT",
+                "lagId": 0,
+                "linkInfo": "00-00-00-00",
+                "macAddr": "06:29:78:ab:bf:90",
+                "mgmtVlanId": 1,
+                "portName": "1:5",
+                "smltId": 0,
+                "state": 32,
+                "type": "CLIENT_WAP1"
+            },
+            "index": 5,
+            "managementAddressList": [
+                {
+                    "address": "10.127.16.126",
+                    "addressIfId": 19,
+                    "addressIfSubtype": "IFINDEX",
+                    "addressSubtype": "IPV4"
+                }
+            ],
+            "med": {
+                "capCurrent": [
+                    "CAPABILITIES",
+                    "EXTENDED_PD"
+                ],
+                "capSupported": [
+                    "CAPABILITIES",
+                    "EXTENDED_PD"
+                ],
+                "deviceClass": "ENDPOINT_CLASS_1",
+                "poe": {
+                    "deviceType": "PD_DEVICE",
+                    "pd": {
+                        "powerPriority": "CRITICAL",
+                        "powerReq": 255,
+                        "powerSource": "PSE"
+                    }
+                }
+            },
+            "orgDefInfoList": [
+                {
+                    "index": 1,
+                    "oui": "00:04:0d",
+                    "subtype": 11,
+                    "value": "bd:dd:63:1e:33:11:b7:22:51:a6:54:1e:61:83:ff:02:94:0e:32:ed:0e:54:6b:44:c2:6d:7b:e7:e0:51:91:be:1a:00:01:00:00:0a:1a:3a:a7:40:00:00:00:00"
+                },
+                {
+                    "index": 1,
+                    "oui": "00:12:bb",
+                    "subtype": 1,
+                    "value": "00:11:01"
+                }
+            ],
+            "portDesc": "",
+            "portId": "1:5",
+            "portIdSubtype": "INTERFACE_NAME",
+            "portName": "1:5",
+            "sysCapEnabled": [
+                "BRIDGE",
+                "WLAN_AP"
+            ],
+            "sysCapSupported": [
+                "BRIDGE",
+                "WLAN_AP"
+            ],
+            "sysDesc": "",
+            "sysName": "AP_04101900462965",
+            "timeMark": 0,
+            "unknownTlvList": []
+        },
+        {
+            "chassisId": "06:29:78:ab:bf:a0",
+            "chassisIdSubtype": "MAC_ADDRESS",
+            "dot3": {
+                "linkAggPortId": 0,
+                "linkAggStatus": "AGG_CAPABLE",
+                "maxFrameSize": 1500,
+                "power": {
+                    "class": "CLASS4",
+                    "mdiEnabled": false,
+                    "mdiSupported": false,
+                    "pairControlable": false,
+                    "pairs": "SIGNAL",
+                    "portClass": "CLASS_PD"
+                }
+            },
+            "fabricAttach": {
+                "authEnabled": false,
+                "connectionType": "SINGLE_PORT",
+                "lagId": 0,
+                "linkInfo": "00-00-00-00",
+                "macAddr": "06:29:78:ab:bf:a0",
+                "mgmtVlanId": 1,
+                "portName": "1:6",
+                "smltId": 0,
+                "state": 32,
+                "type": "CLIENT_WAP1"
+            },
+            "index": 6,
+            "managementAddressList": [
+                {
+                    "address": "10.127.16.126",
+                    "addressIfId": 19,
+                    "addressIfSubtype": "IFINDEX",
+                    "addressSubtype": "IPV4"
+                }
+            ],
+            "med": {
+                "capCurrent": [
+                    "CAPABILITIES",
+                    "EXTENDED_PD"
+                ],
+                "capSupported": [
+                    "CAPABILITIES",
+                    "EXTENDED_PD"
+                ],
+                "deviceClass": "ENDPOINT_CLASS_1",
+                "poe": {
+                    "deviceType": "PD_DEVICE",
+                    "pd": {
+                        "powerPriority": "CRITICAL",
+                        "powerReq": 255,
+                        "powerSource": "PSE"
+                    }
+                }
+            },
+            "orgDefInfoList": [
+                {
+                    "index": 1,
+                    "oui": "00:04:0d",
+                    "subtype": 11,
+                    "value": "bd:dd:63:1e:33:11:b7:22:51:a6:54:1e:61:83:ff:02:94:0e:32:ed:0e:54:6b:44:c2:6d:7b:e7:e0:51:91:be:1a:00:01:00:00:0a:1a:3a:a7:40:00:00:00:00"
+                },
+                {
+                    "index": 1,
+                    "oui": "00:12:bb",
+                    "subtype": 1,
+                    "value": "00:11:01"
+                }
+            ],
+            "portDesc": "",
+            "portId": "1:6",
+            "portIdSubtype": "INTERFACE_NAME",
+            "portName": "1:6",
+            "sysCapEnabled": [
+                "BRIDGE",
+                "WLAN_AP"
+            ],
+            "sysCapSupported": [
+                "BRIDGE",
+                "WLAN_AP"
+            ],
+            "sysDesc": "",
+            "sysName": "AP_04101900462966",
+            "timeMark": 0,
+            "unknownTlvList": []
+        },
+        {
+            "chassisId": "06:29:78:ab:bf:b0",
+            "chassisIdSubtype": "MAC_ADDRESS",
+            "dot3": {
+                "linkAggPortId": 0,
+                "linkAggStatus": "AGG_CAPABLE",
+                "maxFrameSize": 1500,
+                "power": {
+                    "class": "CLASS4",
+                    "mdiEnabled": false,
+                    "mdiSupported": false,
+                    "pairControlable": false,
+                    "pairs": "SIGNAL",
+                    "portClass": "CLASS_PD"
+                }
+            },
+            "fabricAttach": {
+                "authEnabled": false,
+                "connectionType": "SINGLE_PORT",
+                "lagId": 0,
+                "linkInfo": "00-00-00-00",
+                "macAddr": "06:29:78:ab:bf:b0",
+                "mgmtVlanId": 1,
+                "portName": "1:7",
+                "smltId": 0,
+                "state": 32,
+                "type": "CLIENT_WAP1"
+            },
+            "index": 7,
+            "managementAddressList": [
+                {
+                    "address": "10.127.16.126",
+                    "addressIfId": 19,
+                    "addressIfSubtype": "IFINDEX",
+                    "addressSubtype": "IPV4"
+                }
+            ],
+            "med": {
+                "capCurrent": [
+                    "CAPABILITIES",
+                    "EXTENDED_PD"
+                ],
+                "capSupported": [
+                    "CAPABILITIES",
+                    "EXTENDED_PD"
+                ],
+                "deviceClass": "ENDPOINT_CLASS_1",
+                "poe": {
+                    "deviceType": "PD_DEVICE",
+                    "pd": {
+                        "powerPriority": "CRITICAL",
+                        "powerReq": 255,
+                        "powerSource": "PSE"
+                    }
+                }
+            },
+            "orgDefInfoList": [
+                {
+                    "index": 1,
+                    "oui": "00:04:0d",
+                    "subtype": 11,
+                    "value": "bd:dd:63:1e:33:11:b7:22:51:a6:54:1e:61:83:ff:02:94:0e:32:ed:0e:54:6b:44:c2:6d:7b:e7:e0:51:91:be:1a:00:01:00:00:0a:1a:3a:a7:40:00:00:00:00"
+                },
+                {
+                    "index": 1,
+                    "oui": "00:12:bb",
+                    "subtype": 1,
+                    "value": "00:11:01"
+                }
+            ],
+            "portDesc": "",
+            "portId": "1:7",
+            "portIdSubtype": "INTERFACE_NAME",
+            "portName": "1:7",
+            "sysCapEnabled": [
+                "BRIDGE",
+                "WLAN_AP"
+            ],
+            "sysCapSupported": [
+                "BRIDGE",
+                "WLAN_AP"
+            ],
+            "sysDesc": "",
+            "sysName": "AP_04101900462967",
+            "timeMark": 0,
+            "unknownTlvList": []
+        },
+        {
+            "chassisId": "06:29:78:ab:bf:c0",
+            "chassisIdSubtype": "MAC_ADDRESS",
+            "dot3": {
+                "linkAggPortId": 0,
+                "linkAggStatus": "AGG_CAPABLE",
+                "maxFrameSize": 1500,
+                "power": {
+                    "class": "CLASS4",
+                    "mdiEnabled": false,
+                    "mdiSupported": false,
+                    "pairControlable": false,
+                    "pairs": "SIGNAL",
+                    "portClass": "CLASS_PD"
+                }
+            },
+            "fabricAttach": {
+                "authEnabled": false,
+                "connectionType": "SINGLE_PORT",
+                "lagId": 0,
+                "linkInfo": "00-00-00-00",
+                "macAddr": "06:29:78:ab:bf:c0",
+                "mgmtVlanId": 1,
+                "portName": "1:8",
+                "smltId": 0,
+                "state": 32,
+                "type": "CLIENT_WAP1"
+            },
+            "index": 8,
+            "managementAddressList": [
+                {
+                    "address": "10.127.16.126",
+                    "addressIfId": 19,
+                    "addressIfSubtype": "IFINDEX",
+                    "addressSubtype": "IPV4"
+                }
+            ],
+            "med": {
+                "capCurrent": [
+                    "CAPABILITIES",
+                    "EXTENDED_PD"
+                ],
+                "capSupported": [
+                    "CAPABILITIES",
+                    "EXTENDED_PD"
+                ],
+                "deviceClass": "ENDPOINT_CLASS_1",
+                "poe": {
+                    "deviceType": "PD_DEVICE",
+                    "pd": {
+                        "powerPriority": "CRITICAL",
+                        "powerReq": 255,
+                        "powerSource": "PSE"
+                    }
+                }
+            },
+            "orgDefInfoList": [
+                {
+                    "index": 1,
+                    "oui": "00:04:0d",
+                    "subtype": 11,
+                    "value": "bd:dd:63:1e:33:11:b7:22:51:a6:54:1e:61:83:ff:02:94:0e:32:ed:0e:54:6b:44:c2:6d:7b:e7:e0:51:91:be:1a:00:01:00:00:0a:1a:3a:a7:40:00:00:00:00"
+                },
+                {
+                    "index": 1,
+                    "oui": "00:12:bb",
+                    "subtype": 1,
+                    "value": "00:11:01"
+                }
+            ],
+            "portDesc": "",
+            "portId": "1:8",
+            "portIdSubtype": "INTERFACE_NAME",
+            "portName": "1:8",
+            "sysCapEnabled": [
+                "BRIDGE",
+                "WLAN_AP"
+            ],
+            "sysCapSupported": [
+                "BRIDGE",
+                "WLAN_AP"
+            ],
+            "sysDesc": "",
+            "sysName": "AP_04101900462968",
+            "timeMark": 0,
+            "unknownTlvList": []
+        },
+        {
+            "chassisId": "06:29:78:ab:bf:d0",
+            "chassisIdSubtype": "MAC_ADDRESS",
+            "dot3": {
+                "linkAggPortId": 0,
+                "linkAggStatus": "AGG_CAPABLE",
+                "maxFrameSize": 1500,
+                "power": {
+                    "class": "CLASS4",
+                    "mdiEnabled": false,
+                    "mdiSupported": false,
+                    "pairControlable": false,
+                    "pairs": "SIGNAL",
+                    "portClass": "CLASS_PD"
+                }
+            },
+            "fabricAttach": {
+                "authEnabled": false,
+                "connectionType": "SINGLE_PORT",
+                "lagId": 0,
+                "linkInfo": "00-00-00-00",
+                "macAddr": "06:29:78:ab:bf:d0",
+                "mgmtVlanId": 1,
+                "portName": "1:9",
+                "smltId": 0,
+                "state": 32,
+                "type": "CLIENT_WAP1"
+            },
+            "index": 9,
+            "managementAddressList": [
+                {
+                    "address": "10.127.16.126",
+                    "addressIfId": 19,
+                    "addressIfSubtype": "IFINDEX",
+                    "addressSubtype": "IPV4"
+                }
+            ],
+            "med": {
+                "capCurrent": [
+                    "CAPABILITIES",
+                    "EXTENDED_PD"
+                ],
+                "capSupported": [
+                    "CAPABILITIES",
+                    "EXTENDED_PD"
+                ],
+                "deviceClass": "ENDPOINT_CLASS_1",
+                "poe": {
+                    "deviceType": "PD_DEVICE",
+                    "pd": {
+                        "powerPriority": "CRITICAL",
+                        "powerReq": 255,
+                        "powerSource": "PSE"
+                    }
+                }
+            },
+            "orgDefInfoList": [
+                {
+                    "index": 1,
+                    "oui": "00:04:0d",
+                    "subtype": 11,
+                    "value": "bd:dd:63:1e:33:11:b7:22:51:a6:54:1e:61:83:ff:02:94:0e:32:ed:0e:54:6b:44:c2:6d:7b:e7:e0:51:91:be:1a:00:01:00:00:0a:1a:3a:a7:40:00:00:00:00"
+                },
+                {
+                    "index": 1,
+                    "oui": "00:12:bb",
+                    "subtype": 1,
+                    "value": "00:11:01"
+                }
+            ],
+            "portDesc": "",
+            "portId": "1:9",
+            "portIdSubtype": "INTERFACE_NAME",
+            "portName": "1:9",
+            "sysCapEnabled": [
+                "BRIDGE",
+                "WLAN_AP"
+            ],
+            "sysCapSupported": [
+                "BRIDGE",
+                "WLAN_AP"
+            ],
+            "sysDesc": "",
+            "sysName": "AP_04101900462969",
+            "timeMark": 0,
+            "unknownTlvList": []
+        },
+        {
+            "chassisId": "06:29:78:ab:bf:e0",
+            "chassisIdSubtype": "MAC_ADDRESS",
+            "dot3": {
+                "linkAggPortId": 0,
+                "linkAggStatus": "AGG_CAPABLE",
+                "maxFrameSize": 1500,
+                "power": {
+                    "class": "CLASS4",
+                    "mdiEnabled": false,
+                    "mdiSupported": false,
+                    "pairControlable": false,
+                    "pairs": "SIGNAL",
+                    "portClass": "CLASS_PD"
+                }
+            },
+            "fabricAttach": {
+                "authEnabled": false,
+                "connectionType": "SINGLE_PORT",
+                "lagId": 0,
+                "linkInfo": "00-00-00-00",
+                "macAddr": "06:29:78:ab:bf:e0",
+                "mgmtVlanId": 1,
+                "portName": "1:10",
+                "smltId": 0,
+                "state": 32,
+                "type": "CLIENT_WAP1"
+            },
+            "index": 10,
+            "managementAddressList": [
+                {
+                    "address": "10.127.16.126",
+                    "addressIfId": 19,
+                    "addressIfSubtype": "IFINDEX",
+                    "addressSubtype": "IPV4"
+                }
+            ],
+            "med": {
+                "capCurrent": [
+                    "CAPABILITIES",
+                    "EXTENDED_PD"
+                ],
+                "capSupported": [
+                    "CAPABILITIES",
+                    "EXTENDED_PD"
+                ],
+                "deviceClass": "ENDPOINT_CLASS_1",
+                "poe": {
+                    "deviceType": "PD_DEVICE",
+                    "pd": {
+                        "powerPriority": "CRITICAL",
+                        "powerReq": 255,
+                        "powerSource": "PSE"
+                    }
+                }
+            },
+            "orgDefInfoList": [
+                {
+                    "index": 1,
+                    "oui": "00:04:0d",
+                    "subtype": 11,
+                    "value": "bd:dd:63:1e:33:11:b7:22:51:a6:54:1e:61:83:ff:02:94:0e:32:ed:0e:54:6b:44:c2:6d:7b:e7:e0:51:91:be:1a:00:01:00:00:0a:1a:3a:a7:40:00:00:00:00"
+                },
+                {
+                    "index": 1,
+                    "oui": "00:12:bb",
+                    "subtype": 1,
+                    "value": "00:11:01"
+                }
+            ],
+            "portDesc": "",
+            "portId": "1:10",
+            "portIdSubtype": "INTERFACE_NAME",
+            "portName": "1:10",
+            "sysCapEnabled": [
+                "BRIDGE",
+                "WLAN_AP"
+            ],
+            "sysCapSupported": [
+                "BRIDGE",
+                "WLAN_AP"
+            ],
+            "sysDesc": "",
+            "sysName": "AP_04101900462970",
+            "timeMark": 0,
+            "unknownTlvList": []
+        }
+    ]
+}
+
