@@ -144,29 +144,74 @@ def post_xiqOnboardDevices (apiurl=apiurl,authurl=authurl,xiquser=xiquser,xiqpas
     return OnBoarded
 
 #Returns a dictionary list of  onboarded  devices
-def get_xiqdeviceListDict(apiurl=apiurl,authurl=authurl,xiquser=xiquser,xiqpass=xiqpass,path="devices?page=1&limit=100&deviceTypes=REAL&deviceTypes=DIGITAL_TWIN&async=false",auth_token="None"):
-    url=apiurl+path
-    DeviceInfo={}
-    if auth_token=="None":
-        logger.info("get_xiqdeviceListDict-Auth token not passed- Generating new token")
-        auth_token=xiqlogin(authurl=authurl,xiquser=xiquser,xiqpass=xiqpass)
+def get_xiqdeviceListDict(apiurl=apiurl, authurl=authurl, xiquser=xiquser, xiqpass=xiqpass, path="devices?page=1&limit=100&deviceTypes=REAL&deviceTypes=DIGITAL_TWIN&async=false", auth_token="None"):
+    """
+    Retrieves the list of onboarded devices from XIQ by iterating through all pages.
+
+    Returns:
+    - A dictionary containing the complete list of devices.
+    """
+    url = apiurl + path
+    DeviceInfo = {"data": []}
+
+    if auth_token == "None":
+        logger.info("get_xiqdeviceListDict - Auth token not passed - Generating new token")
+        auth_token = xiqlogin(authurl=authurl, xiquser=xiquser, xiqpass=xiqpass)
     else:
-        auth_token=auth_token
-    headers={'accept': 'application/json',"Authorization": auth_token,}
-    response=requests.get(url, headers=headers)
-    statusCode=response.status_code
-    responseOK=CheckRestError(status_code=statusCode,response=response.text)
-    
-    if responseOK!=False:
-        #print(auth_response.text)
-        logger.debug("get_xiqdeviceList-XIQ added list of devices:")
-        logger.debug(response.json())
-        DeviceInfo=response.json()
-    
+        auth_token = auth_token
+
+    headers = {'accept': 'application/json', "Authorization": auth_token}
+
+    # Fetch the first page to determine the total number of pages
+    response = requests.get(url, headers=headers)
+    statusCode = response.status_code
+    responseOK = CheckRestError(status_code=statusCode, response=response.text)
+
+    if not responseOK:
+        logger.error("Failed to fetch device list from XIQ.")
+        return DeviceInfo
+
+    first_page_data = response.json()
+    total_pages = first_page_data.get("total_pages", 1)  # Default to 1 if not present
+    logger.info(f"Total pages to fetch: {total_pages}")
+
+    # Add devices from the first page
+    DeviceInfo["data"].extend(first_page_data.get("data", []))
+    seen_ids = set(device.get("id") for device in DeviceInfo["data"] if "id" in device)
+
+    # Iterate through the remaining pages
+    for page in range(2, total_pages + 1):
+        paginated_url = f"{apiurl}devices?page={page}&limit=100&deviceTypes=REAL&deviceTypes=DIGITAL_TWIN&async=false"
+        logger.info(f"Fetching page {page} from URL: {paginated_url}")
+        print(f"Fetching page {page} from URL: {paginated_url}")
+        response = requests.get(paginated_url, headers=headers)
+        statusCode = response.status_code
+        responseOK = CheckRestError(status_code=statusCode, response=response.text)
+
+        if not responseOK:
+            logger.error(f"Failed to fetch page {page}. Skipping to the next page.")
+            continue
+
+        page_data = response.json()
+        new_devices = page_data.get("data", [])
+        if not new_devices:
+            logger.info(f"No devices returned on page {page}. Stopping pagination.")
+            break
+
+        # Stop if all device IDs on this page are already seen (API bug workaround)
+        new_ids = set(device.get("id") for device in new_devices if "id" in device)
+        if not new_ids - seen_ids:
+            logger.info(f"All device IDs on page {page} are duplicates. Stopping pagination.")
+            break
+
+        DeviceInfo["data"].extend(new_devices)
+        seen_ids.update(new_ids)
+
+    logger.info(f"Total devices retrieved: {len(DeviceInfo['data'])}")
     return DeviceInfo
 
 #Returns a dictionary list of  clients connected to  onboarded devices
-def get_xiqclientListDict(apiurl=apiurl,authurl=authurl,xiquser=xiquser,xiqpass=xiqpass,path="clients/active?page=1&limit=10000", auth_token="None"):
+def get_xiqclientListDict(apiurl=apiurl,authurl=authurl,xiquser=xiquser,xiqpass=xiqpass,path="clients/active?page=1&limit=100   ", auth_token="None"):
     url=apiurl+path
     ClientInfo={}
     if auth_token=="None":
@@ -1217,10 +1262,86 @@ def postAdvanceOnboard(apiurl, authurl, xiquser, xiqpass, csv_file_path, auth_to
         logger.error("Failed to advanced onboard devices.")
         return None
 
+def getAllDeviceIds(apiurl, authurl, xiquser, xiqpass, auth_token="None"):
+    """
+    Retrieves the device dictionary using get_xiqdeviceListDict, extracts all device IDs, and returns them in a list.
 
+    Parameters:
+    - apiurl: The base API URL.
+    - authurl: The authentication URL.
+    - xiquser: The username for authentication.
+    - xiqpass: The password for authentication.
+    - auth_token: Optional authentication token. If not provided, a new token will be generated.
 
+    Returns:
+    - device_ids (list): A list of device IDs.
+    """
+    # Call get_xiqdeviceListDict to retrieve the device dictionary
+    deviceDict = get_xiqdeviceListDict(apiurl=apiurl, authurl=authurl, xiquser=xiquser, xiqpass=xiqpass)
+
+    # Initialize an empty list to store device IDs
+    device_ids = []
+
+    # Check if the 'data' key exists in the dictionary
+    if 'data' in deviceDict:
+        for device in deviceDict['data']:
+            if 'id' in device:
+                device_ids.append(device['id'])
+
+    logger.info(f"Total device IDs extracted: {len(device_ids)}")
+    return device_ids
+
+def cleanupDevicesFromViq(apiurl, authurl, xiquser, xiqpass, auth_token="None"):
+    """
+    Cleans up all devices from the VIQ by:
+    1. Retrieving all device IDs using getAllDeviceIds.
+    2. Deleting all devices by directly calling devices/:delete.
+    3. Confirming that no devices remain in the VIQ.
+
+    Returns:
+    - success (bool): True if cleanup was successful, False otherwise.
+    """
+    if auth_token == "None":
+        logger.info("cleanupDevicesFromViq - Auth token not passed - Generating new token")
+        auth_token = xiqlogin(authurl=authurl, xiquser=xiquser, xiqpass=xiqpass)
+    else:
+        auth_token = auth_token
+    logger.info("Retrieving all device IDs from VIQ...")
+    device_ids = getAllDeviceIds(apiurl, authurl, xiquser, xiqpass, auth_token=auth_token)
+    print(device_ids)
+
+    if not device_ids:
+        logger.info("No devices found in the VIQ. Cleanup not required.")
+        return True
+
+    logger.info(f"Total devices to delete: {len(device_ids)}")
+    # Step 2: Delete all devices
+    url = apiurl + "devices/:delete"
+    payload = {"ids": device_ids}
+    headers = {'accept': 'application/json', "Authorization": auth_token}
+
+    response = requests.post(url, json=payload, headers=headers)
+    statusCode = response.status_code
+    responseOK = CheckRestError(status_code=statusCode, response=response.text)
+
+    if not responseOK:
+        logger.error("Failed to delete devices from VIQ.")
+        return False
+
+    logger.info("Devices deleted successfully. Verifying cleanup...")
+
+    # Step 3: Confirm no devices remain
+    remaining_device_ids = getAllDeviceIds(apiurl, authurl, xiquser, xiqpass, auth_token)
+
+    if not remaining_device_ids:
+        logger.info("Cleanup successful. No devices remain in the VIQ.")
+        return True
+    else:
+        logger.error(f"Cleanup failed. Devices still present in the VIQ: {remaining_device_ids}")
+        return False
     
-   
+
+
 if __name__=="__main__":
     print("In XIQ rest main")
     
@@ -1254,7 +1375,7 @@ if __name__=="__main__":
 
     # Create sites for each city
     for city_dict in cities:
-        for city, details in city_dict.items():
+               for city, details in city_dict.items():
             postxiqCreateSite(
                 apiurl=apiurl,
                 authurl=authurl,
@@ -1289,3 +1410,16 @@ if __name__=="__main__":
 
     #postAdvanceOnboard(apiurl, authurl, xiquser, xiqpass, csv_file_path="../devicecfg/sathish.csv")
     #generateOnboardCsvWithAP(device_type="EXOS", num_devices=100, model="x435-24s", serial_prefix="SA", serial_start=1, output_file="../devicecfg/apscaling.csv", num_aps=800, ap_start_serial="04101900460420", ap_model="AP410C")
+    apiurl="https://ws3-api.qa.xcloudiq.com/"
+    xiquser="sasrinivasan+scaling@extremenetworks.com"
+    xiqpass="Extreme@123"
+    authurl="https://ws3-api.qa.xcloudiq.com/login"
+    #deviceID,deviceidLen=getDeviceIdsFromCsv(apiurl, authurl, xiquser, xiqpass, csv_file_path="../devicecfg/apscaling.csv")
+    #print(deviceID)
+    #print(deviceidLen)
+    #deviceDict=get_xiqdeviceListDict(apiurl=apiurl, authurl=authurl, xiquser=xiquser, xiqpass=xiqpass)
+    #print(deviceDict)
+    #deviceids=getAllDeviceIds(apiurl, authurl, xiquser, xiqpass)
+    #print(deviceids)
+    clean=cleanupDevicesFromViq(apiurl, authurl, xiquser, xiqpass)
+    print(clean)
